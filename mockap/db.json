@@ -1,0 +1,42 @@
+user: 
+{ 
+  name: 
+  surname:
+  firm: 
+  budowa: [{ nazwa, adres}, {nazwa, adres}]
+  logo: 
+  coworkers: [{ nazwa, adres}, {nazwa, adres}]
+}
+
+order:
+[{  
+   id: 
+   orderId: "20082301"
+   dateAuthor: ["send", "end"] 
+   dateDeliveryAuthor: ["from "," ideal", " to "] 
+   delivery: " " 
+   placeDelivery: " "
+   firm: " " 
+   authorComments: " " 
+   status: " " 
+   order: [{
+		lp:
+		material:
+		measure:
+		quantity:
+		commentsAuthor:
+		},{}]
+
+
+   dateFirm:["send", "end"]  
+   dateDeliveryFirm: ["from "," ideal", " to "] 
+   freeDelivery: " "
+   costDelivery: " " 
+   firm: " " 
+   firmComments: " " 
+   order: [{
+		commentsFirm:
+		cost:
+		sumCost:
+		},{}]
+},{},{}]

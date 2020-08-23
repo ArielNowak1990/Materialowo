@@ -1,0 +1,729 @@
+{
+  "user": {
+<<<<<<< HEAD
+=======
+    "name": "ewrwerw",
+    "isLogged": true,
+    "initialized": true,
+    "userEmail": "fsfds@gg.pl"
+>>>>>>> f39c92256a308a38cf3b295b580e4436dc8763bb
+  },
+  "recipes": [
+    {
+      "name": "qwrwerqw",
+      "description": "ewqrwr\n",
+      "steps": [
+        "erweqtqewgt"
+      ],
+      "ingredients": [
+        "fdgfdgfd",
+        "wwww"
+      ],
+      "id": 2
+    },
+    {
+      "name": "weqwewqeweqwewqeweqwewqe",
+      "description": "weqwewqeweqwewqeweqwewqeweqwewqeweqwewqe",
+      "steps": [
+        "weqwewqeweqwewqev",
+        "weqwewqeweqwewqeweqwewqe",
+        "weqwewqeweqwewqeweqwewqeweqwewqe"
+      ],
+      "ingredients": [
+        "weqwewqeweqwewqeweqwewqe",
+        "weqwewqeweqwewqe",
+        "weqwewqeweqwewqeweqwewqeweqwewqeweqwewqe"
+      ],
+      "id": 3
+    },
+    {
+      "name": "ewrewr",
+      "description": "werewrw",
+      "steps": [],
+      "ingredients": [],
+      "id": 4
+    },
+    {
+      "name": "\"name\": \"Wegetariański tydzień\"",
+      "description": "\"name\": \"Wegetariański tydzień\"\"name\": \"Wegetariański tydzień\"\"name\": \"Wegetariański tydzień\"",
+      "steps": [
+        "\"name\": \"Wegetariański tydzień\"\"name\": \"Wegetariański tydzień\"\n\"name\": \"Wegetariański tydzień\"\n\"name\": \"Wegetariański tydzień\"\n\"name\": \"Wegetariański tydzień\"",
+        "\"name\": \"Wegetariański tydzień\"",
+        "\"name\": \"Wegetariański tydzień\""
+      ],
+      "ingredients": [
+        "\"name\": \"Wegetariański tydzień\"",
+        "\"name\": \"Wegetariański tydzień\"\"name\": \"Wegetariański tydzień\""
+      ],
+      "id": 5
+    },
+    {
+      "name": "Przepis dodano - Wprowadź nowy przepis",
+      "description": "",
+      "steps": [],
+      "ingredients": [],
+      "id": 6
+    },
+    {
+      "name": [],
+      "description": [],
+      "steps": [],
+      "ingredients": [],
+      "id": 7
+    },
+    {
+      "name": [],
+      "description": [],
+      "steps": [],
+      "ingredients": [],
+      "id": 8
+    },
+    {
+      "name": "Przepis dodano - Wprowadź nowy przepis",
+      "description": "aaaa",
+      "steps": [
+        "fdsf"
+      ],
+      "ingredients": [
+        "sfdsf"
+      ],
+      "id": 9
+    },
+    {
+      "name": "",
+      "description": "",
+      "steps": [],
+      "ingredients": [],
+      "id": 10
+    },
+    {
+      "name": "sdsad",
+      "description": "asdsa",
+      "steps": [],
+      "ingredients": [],
+      "id": 11
+    }
+  ],
+  "schedules": [
+    {
+      "name": "TyetłT",
+      "description": "ładny opis",
+      "weekNumber": "3",
+      "monday": [
+        "",
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "ewrewr",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "ewrewr",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "\"name\": \"Wegetariański tydzień\"",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "ewrewr",
+        ""
+      ],
+      "id": 1,
+      "thursday": [
+        "ewrewr",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł2",
+      "description": "Opis dsfestretrey etr4trev  tre 1",
+      "weekNumber": "3",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "ewrewr",
+        "\"name\": \"Wegetariański tydzień\"",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "\"name\": \"Wegetariański tydzień\"",
+        "ewrewr",
+        "Przepis dodano - Wprowadź nowy przepis"
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "\"name\": \"Wegetariański tydzień\"",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 2,
+      "thursday": [
+        "",
+        "",
+        "ewrewr",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "32",
+      "monday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 4
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "3",
+      "monday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 5,
+      "thursday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "3",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 6,
+      "thursday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "3",
+      "monday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 7
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "3",
+      "monday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        "\"name\": \"Wegetariański tydzień\""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 8,
+      "thursday": [
+        "",
+        "",
+        "ewrewr",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "35",
+      "monday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 9
+    },
+    {
+      "name": "TyetłTyetłTyetł Tyetł234",
+      "description": "Opis dsfestretrey etr4trev  tre 13",
+      "weekNumber": "13",
+      "monday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "",
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thrusday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "satruday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 10
+    },
+    {
+      "name": "vvvvvvvvvvvvvvvvvvvv",
+      "description": "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv",
+      "weekNumber": "12",
+      "monday": [
+        "\"name\": \"Wegetariański tydzień\"",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "tuesday": [
+        "ewrewr",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "wednesday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "thursday": [
+        "weqwewqeweqwewqeweqwewqe",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "friday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "saturday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "sunday": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": 11
+    }
+  ]
+}
