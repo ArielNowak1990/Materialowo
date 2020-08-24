@@ -1,0 +1,33 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 20px;
+  @include desktop {
+    margin-top: 60px;
+  }
+}
+
+.proof_popular {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 102px;
+  width: 90%;
+  min-width: 300px;
+  @include desktop {
+    flex-direction: row;
+    min-width: 500px;
+  }
+}
+
+.proof_popular h2,
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: black;
+}

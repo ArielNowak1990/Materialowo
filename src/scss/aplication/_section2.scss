@@ -1,0 +1,147 @@
+.pricing {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+
+  @include desktop(850px){
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+
+}
+
+.pricing h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+
+  @include desktop(850px) {
+    margin-bottom: 50px;
+  }
+}
+
+.pricing_option {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+}
+
+.pricing_option .option {
+  text-align: center;
+  border: 1px solid #FB3B64;
+  border-radius: 18px;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  @media (max-width: 750px) {
+    margin-bottom: 40px;
+    width: 70%;
+  }
+}
+
+.pricing_option .option h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+
+.pricing_option .option li {
+  font-size: 14px;
+  line-height: 34px;
+}
+
+.option span:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 61px;
+  margin-top: 15px;
+}
+
+.option span:first-of-type {
+  font-size: 46px;
+  color: #FB3B64;
+}
+
+.option button {
+  padding: 16px 57px;
+  background-color: #FB3B64;
+  color: white;
+  border-radius: 23px;
+  border: 0;
+  position: relative;
+  bottom: -25px;
+}
+
+.pricing_option .option:nth-of-type(2) {
+  border: 1px solid #07ACE6;
+  width: 35%;
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 5px 10px 27px #07ACE629;
+  @media (max-width: 750px) {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+}
+
+.option:nth-of-type(2) span:first-of-type {
+  font-size: 46px;
+  color: #07ACE6;
+}
+
+.option:nth-of-type(2) button {
+  padding: 16px 57px;
+  background-color: #07ACE6;
+  color: white;
+  border-radius: 23px;
+  border: 0;
+  position: relative;
+  bottom: -55px;
+}
+
+.pricing_option .option:nth-of-type(3) {
+  border: 1px solid #55DFB4;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  @media (max-width: 750px) {
+    margin-bottom: 40px;
+    width: 70%;
+  }
+}
+
+.option:nth-of-type(3) span:first-of-type {
+  font-size: 46px;
+  color: #55DFB4;
+}
+
+.option:nth-of-type(3) button {
+  padding: 16px 57px;
+  background-color: #55DFB4;
+  color: white;
+  border-radius: 23px;
+  border: 0;
+  position: relative;
+  bottom: -27px;
+}

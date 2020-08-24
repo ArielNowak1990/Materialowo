@@ -1,0 +1,96 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 20px;
+  @include desktop {
+    margin-top: 60px;
+  }
+}
+
+.proof_popular {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 102px;
+  width: 90%;
+  min-width: 300px;
+  @include desktop {
+    flex-direction: row;
+    min-width: 500px;
+  }
+}
+
+.proof_popular h2,
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: black;
+}
+
+.popular .box div {
+  content: " ";
+  display: block;
+  height: 62px;
+  width: 62px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.proof_popular .box:first-of-type div {
+  background-color: #FB3B64;
+}
+
+.proof_popular .box:nth-child(2) div {
+  background-color: #08A6E4;
+}
+
+.proof_popular .box:last-of-type div {
+  background-color: #55DFB4;
+}
+
+.proof_popular .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.proof_popular .box img {
+  position: relative;
+  left: 30px;
+}
+
+.proof_popular .box:nth-child(2) img {
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+
+.proof_popular .box:nth-child(3) img {
+  position: relative;
+  top: 5px;
+}
+
+.proof_popular .box h3 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 6px;
+  font-weight: 800;
+}
+
+.proof_popular .box p {
+  width: 130px;
+  height: 50px;
+  text-align: center;
+}
