@@ -1,0 +1,38 @@
+@import "src/scss/variables/variables";
+
+.landing_Page {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 100vw;
+  max-width: 1600px;
+  background-color: $color-background-first;
+  color: $color-background-font;
+}
+
+  header nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid red;
+
+    .brand{
+      font-size: 2em;
+      color: $color-background-second;
+    }
+
+    .nav_menu ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.2em;
+
+      li{
+        margin-left: 40px;
+        padding: 15px;
+      }
+    }
+  }
+
+

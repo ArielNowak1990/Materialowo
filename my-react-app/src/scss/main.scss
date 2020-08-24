@@ -1,0 +1,14 @@
+@import "reset/reset";
+@import "variables/variables";
+//@import "variables/fonts";
+//@import "variables/images";
+//@import "variables/sizes";
+//@import "variables/base";
+
+@import "src/scss/aplication/header";
+
+//normalize
+* {
+  box-sizing: border-box;
+}
+
