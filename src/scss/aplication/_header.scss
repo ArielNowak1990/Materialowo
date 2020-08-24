@@ -22,8 +22,13 @@
       font-size: 1.2em;
 
       li{
-        margin-left: 40px;
-        padding: 15px;
+          display: none;
+
+        @include desktop(850px){
+          display: block;
+          margin-left: 40px;
+          padding: 15px;
+        }
       }
     }
   }

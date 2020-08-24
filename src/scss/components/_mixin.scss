@@ -1,11 +1,6 @@
-@mixin desktop-min ($desktop-width-min: 500px) {
-    @media (min-width: $desktop-width-min) {
+@mixin desktop ($desktop-width: 899px) {
+    @media (min-width: $desktop-width) {
         @content;
     }
 }
 
-@mixin desktop-max ($desktop-width-max: 899px) {
-    @media (max-width: $desktop-width-max) {
-        @content;
-    }
-}

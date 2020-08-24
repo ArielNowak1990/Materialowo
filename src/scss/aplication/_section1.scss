@@ -3,24 +3,31 @@
 
 .section1 {
   width: 100%;
-  min-width: 900px;
+  min-width: 500px;
   height: calc(100vh - 62px);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
+  flex-direction: column;
 
-  @include desktop-max {
-    flex-direction: column;
-    min-width: 500px;
+
+  @include desktop {
+  flex-direction: row;
+    min-width: 900px;
   }
 
   .login_sign{
-    height: 50%;
-    width: 30%;
+    height: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include desktop {
+      height: 50%;
+      width: 30%;
+    }
 
     p{
       font-size: 1.2em;
@@ -37,17 +44,20 @@
   }
 
   .carousel{
-    height: 70%;
-    min-height: 500px;
-    width: 60%;
-    min-width: 600px;
+    height: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     color: white;
+    margin-top: 20px;
 
-
+    @include desktop {
+      height: 70%;
+      width: 60%;
+      margin-top: 0px;
+    }
 
     p{
       position: absolute;
@@ -66,13 +76,18 @@
         bottom: 0px;
         left: 50%;
         transform: translate(-50%);
-        height: 15%;
+        height: 25%;
         width: 50%;
         background-color: rgba(2, 40, 89, 0.8);
         color: white;
         font-size: 1.8em;
         text-align: center;
         padding: 10px;
+
+        @include desktop {
+          height: 15%;
+          width: 50%;
+        }
       }
     }
     button{
