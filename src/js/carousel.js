@@ -1,4 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import image1 from "../images/wakacje.jpg"
+import image2 from "../images/kurier.jpg"
+import image3 from "../images/pieniadze.jpg"
+import image4 from "../images/czas.jpg"
+
 
 function Carousel() {
     const [counter, setCounter] = useState(0)
@@ -9,7 +14,7 @@ function Carousel() {
             return (
                 <>
                 <p>Z nami masz więcej czasu na wakacje!</p>
-                <img src="../images/wakacje.jpg" alt="wakacje"/>
+                <img src={image1} alt="wakacje"/>
                 </>
                 )
         }
@@ -17,7 +22,7 @@ function Carousel() {
             return (
                     <>
                         <p>Kurier dostarczy materiał na czas!</p>
-                        <img src="../images/kurier.jpg" alt="kurier"/>
+                        <img src={image2} alt="kurier"/>
                         </>
                 )
         }
@@ -25,7 +30,7 @@ function Carousel() {
             return (
                 <>
                     <p>Masz pewność że nie przepłacisz!</p>
-                    <img src="../images/pieniadze.jpg" alt="pieniądze"/>
+                    <img src={image3} alt="pieniądze"/>
                     </>
             )
         }
@@ -33,7 +38,7 @@ function Carousel() {
             return (
                 <>
                     <p>Najprostszy sposób aby zyskać to wszystko!</p>
-                    <img src="./czas.jpg" alt="zegar"/>
+                    <img src={image4} alt="zegar"/>
                 </>
             )
         }
