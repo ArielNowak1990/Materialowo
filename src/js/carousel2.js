@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import image1 from "../images/wakacje.jpg"
-import image2 from "../images/kurier.jpg"
-import image3 from "../images/pieniadze.jpg"
-import image4 from "../images/czas.jpg"
-import image5 from "../images/pieniadze.jpg"
+import image1 from "../images/cooperatives1.png"
+import image2 from "../images/cooperatives2.png"
+import image3 from "../images/cooperatives3.jpg"
+import image4 from "../images/cooperatives4.png"
+import image5 from "../images/cooperatives5.png"
 
 
 function Carousel2() {
@@ -52,12 +52,23 @@ function Carousel2() {
                 </>
             )
         }
+        if (counter === 4) {
+            return (
+                <>
+                    <div><img src={image5} alt="wakacje"/></div>
+                    <div><img src={image1} alt="wakacje"/></div>
+                    <div><img src={image2} alt="wakacje"/></div>
+                    <div><img src={image3} alt="wakacje"/></div>
+                </>
+            )
+        }
+
     };
 
 
     useEffect(() => {
             const timeOut = setTimeout(() => {
-                if (counter === 3) {setCounter(0)}
+                if (counter === 4) {setCounter(0)}
                 else {setCounter(prevState => prevState + 1)}
 
                 },2500
@@ -69,12 +80,12 @@ function Carousel2() {
     )
 
     const handlePrev = () => {
-        if (counter === 0) {setCounter(3)}
+        if (counter === 0) {setCounter(4)}
         else {setCounter(prevState => prevState - 1)}
     }
 
     const handleNext = () => {
-        if (counter === 3) {setCounter(0)}
+        if (counter === 4) {setCounter(0)}
         else {setCounter(prevState => prevState + 1)}
     }
 
