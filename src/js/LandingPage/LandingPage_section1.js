@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Carousel from "./carousel";
+import {Link} from "react-router-dom";
 
 
 
@@ -14,8 +15,9 @@ function LandingPageSection1() {
              <p> Cieszymy się że jesteś! </p>
              <p> Chętnie pomożemy Ci zarządzać Twoim procesem zamówień materiałów wszelkiego rodzaju !</p>
              <div className={"buttonsy"}>
-                 <button className={"button_main"}>Zaloguj się</button>
-                 <button className={"button_main"}>Zarejestruj się</button>
+                 <Link to='/app/log'><button className={"button_main"}>Zaloguj się</button></Link>
+                 <Link to='/app/sign'><button className={"button_main"}>Zarejestruj się</button></Link>
+
              </div>
 
          </div>

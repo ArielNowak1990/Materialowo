@@ -1,14 +1,16 @@
 @import "reset/reset";
 @import "variables/variables";
 @import "components/mixin";
-@import "aplication/all";
-@import "aplication/header";
-@import "aplication/section1";
-@import "aplication/section2";
-@import "aplication/section3";
-@import "aplication/section4";
-@import "aplication/section5";
-@import "aplication/footer";
+@import "aplication/LandingPage/all";
+@import "aplication/LandingPage/header";
+@import "aplication/LandingPage/section1";
+@import "aplication/LandingPage/section2";
+@import "aplication/LandingPage/section3";
+@import "aplication/LandingPage/section4";
+@import "aplication/LandingPage/section5";
+@import "aplication/LandingPage/footer";
+
+@import "aplication/SignLog/SignLog";
 
 //@import "variables/fonts";
 //@import "variables/images";

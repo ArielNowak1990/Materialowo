@@ -1,0 +1,37 @@
+@import "src/scss/variables/variables";
+
+.LogSign_all{
+  background-color: $color-background-first;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .LogSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    input{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .LogSign:nth-of-type(1){
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+
+
+  }
+  .LogSign:nth-of-type(2){
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    opacity: 1;
+
+  }
+}
