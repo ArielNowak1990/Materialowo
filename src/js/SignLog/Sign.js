@@ -9,7 +9,8 @@ function PageSign() {
     const [mail, setMail] = useState([])
     const [password, setPassword] = useState([])
     const [passwordRepeat, setPasswordRepeat] = useState([])
-    const [error, setError]=useState([])
+    const [error, setError]= useState([])
+
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -19,7 +20,9 @@ function PageSign() {
         if (mail.indexOf("@") < 0) (arrayErrors.push("Mail nie posiada znaku @"))
         if (password.length <5) (arrayErrors.push("hasło musi mieć min. 5 znaków"))
         if (password !== passwordRepeat) (arrayErrors.push("powtórzone hasło musi się zgadzać z hasłem"))
-        if (arrayErrors.length === 0) (
+        if (arrayErrors.length === 0) (alert("Konto dodane. Możesz się zalogować"))
+        if (arrayErrors.length === 0) {
+            return (
             addUser(
                 {
                     name: name,
@@ -35,6 +38,8 @@ function PageSign() {
                 }
             )
         )
+        }
+
         setError([...arrayErrors])
     }
 

@@ -12,7 +12,7 @@ function PageLog() {
     const [user, setUser] = useState(false)
 
     useEffect(()=>{
-       if (user) (window.location.href=`${PAGE_URL}`)
+       if (user) (window.location.href=`${PAGE_URL}/app/MainApp`)
     },[user, error])
 
 

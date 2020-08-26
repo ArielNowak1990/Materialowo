@@ -9,6 +9,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import MainApp from "./js/App/MainApp";
 
 
 //tutaj renderowanie końcowe
@@ -20,7 +21,8 @@ function App() {
                 <Switch>
                     <Route path={'/'} exact component={LandingPage}/>
                     <Route path={'/app/log'} component={Log}/>
-                    <Route path={'/app/sign'}  component={Sign}/>
+                    <Route path={'/app/sign'} component={Sign}/>
+                    <Route path={'/app/MainApp'} component={MainApp}/>
                 </Switch>
             </Router>
         </>
