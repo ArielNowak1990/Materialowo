@@ -1,0 +1,45 @@
+@import "src/scss/variables/variables";
+
+
+.back{
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-color: $color-background-first;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .back_container{
+    height: 70%;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .front_container{
+      height: 80%;
+      width: 90%;
+
+      .choice_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+
+        .choice{
+          border: 1px solid black;
+          width: 22%;
+          height: 80%;
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+}

@@ -3,13 +3,14 @@ import './scss/main.scss';
 import LandingPage from "./js/LandingPage/LandingPage";
 import Log from "./js/SignLog/Log"
 import Sign from "./js/SignLog/Sign"
+import MainApp from "./js/App/MainApp";
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
-import MainApp from "./js/App/MainApp";
+
 
 
 //tutaj renderowanie końcowe

@@ -1,0 +1,86 @@
+@import "src/scss/variables/variables";
+
+
+.back {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-color: $color-background-first;
+
+
+  .form {
+    border: 1px solid black;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1.6em;
+    }
+
+    .NewOrder {
+      width: 90%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      border: 1px solid black;
+    }
+  }
+}
+
+
+.order {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+
+  tr, td, th {
+    border: 1px solid black;
+    line-height: 1.6em;
+    input{
+      width: 98%;
+      border: 0px solid black;
+    }
+  }
+  tr:nth-child(2n){
+    background-color: orange;
+  }
+
+  th{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.8em;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 4%;
+  }
+
+  th:nth-child(2), td:nth-child(2)  {
+    width: 40%;
+  }
+
+  th:nth-child(3), td:nth-child(3)  {
+    width: 5%;
+  }
+
+  th:nth-child(4), td:nth-child(4)  {
+    width: 5%;
+  }
+
+  th:nth-child(5), td:nth-child(5)  {
+    width: 45%;
+  }
+
+
+}
+.hidden-textbox {
+  visibility: hidden;
+}
+
+input[type='radio']:checked + input {
+  visibility: visible;
+}
