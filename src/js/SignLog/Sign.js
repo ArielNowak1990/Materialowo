@@ -46,42 +46,41 @@ function PageSign() {
     return (
         <section className={"container"}>
             <LandingPageHeader/>
-            <div className={"LogSign_all"}>
+            <div className={"LogSign_all2"}>
                 <div className={"LogSign"}>
                     <Link to='/app/log'>
                         <button className={"button_main"}>Zaloguj się</button>
                     </Link>
                 </div>
-
                 <div className={"LogSign"}>
-                    Zarejestruj się:
+                   <h3>Zarejestruj się:</h3>
                     <form onSubmit={handleSubmit}>
                         <div>
 
                             <input type="text"
                                    value={name}
-                                   placeholder={"Tutaj wpisz jak masz na imię"}
+                                   placeholder={"Imię"}
                                    onChange={e => setName(e.target.value)}
                             />
                         </div>
                         <div>
                             <input type="password"
                                    value={password}
-                                   placeholder={"Tutaj wpisz hasło"}
+                                   placeholder={"Haslo"}
                                    onChange={e => setPassword(e.target.value)}
                             />
                         </div>
                         <div>
                             <input type="password"
                                    value={passwordRepeat}
-                                   placeholder={"Tutaj powtórz hasło"}
+                                   placeholder={"Powtórz hasło"}
                                    onChange={e => setPasswordRepeat(e.target.value)}
                             />
                         </div>
                         <div>
                             <input type="text"
                                    value={mail}
-                                   placeholder={"Tutaj wpisz maila"}
+                                   placeholder={"Mail"}
                                    onChange={e => setMail(e.target.value)}
                             />
                         </div>

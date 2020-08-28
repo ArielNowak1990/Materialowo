@@ -3,10 +3,14 @@
 .LogSign_all{
   background-color: $color-background-first;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  button:nth-child(3){
+    margin-top: 15px;
+  }
 
   .LogSign{
     display: flex;
@@ -14,17 +18,40 @@
     align-items: center;
     flex-direction: column;
 
+    h3{
+      font-size: 1.5em;
+      background-color: inherit;
+      margin-bottom: 15px;
+    }
+
     input{
       margin-top: 10px;
       margin-bottom: 10px;
     }
+
   }
+
+  form{
+    background-color: #282c34;
+    color: white;
+  }
+  div{
+    background-color: #282c34;
+    color: white;
+  }
+  input{
+    background-color: $color-background-first;
+    color: $color-background-second;
+    font-size: 1.2em;
+  }
+
 
   .LogSign:nth-of-type(1){
     width: 350px;
     height: 350px;
     border: 1px solid black;
-
+    background-color: #282c34;
+    color: white;
 
   }
   .LogSign:nth-of-type(2){
@@ -32,6 +59,72 @@
     height: 350px;
     border: 1px solid black;
     opacity: 1;
+    background-color: white;
+    color: #282c34;
 
+  }
+}
+
+
+.LogSign_all2{
+  background-color: $color-background-first;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button:nth-child(5){
+    margin-top: 15px;
+  }
+
+  .LogSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3{
+      font-size: 1.5em;
+      background-color: inherit;
+      margin-bottom: 15px;
+    }
+
+    input{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    form{
+      background-color: #282c34;
+      color: white;
+    }
+    div{
+      background-color: #282c34;
+      color: white;
+    }
+    input{
+      background-color: $color-background-first;
+      color: $color-background-second;
+      font-size: 1.2em;
+    }
+  }
+
+
+  .LogSign:nth-of-type(1){
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    background-color: white;
+    color: #282c34;
+
+  }
+  .LogSign:nth-of-type(2){
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    opacity: 1;
+    background-color: #282c34;
+    color: white;
   }
 }

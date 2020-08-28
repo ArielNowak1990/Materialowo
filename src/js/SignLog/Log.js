@@ -53,20 +53,20 @@ function PageLog() {
             <LandingPageHeader/>
             <div className={"LogSign_all"}>
                 <div className={"LogSign"}>
-                    Log ins
+                    <h3>Logowanie</h3>
                     <form onSubmit={handleSubmit}>
                         <div>
 
                             <input type="text"
                                    value={name}
-                                   placeholder={"Tutaj wpisz jak masz na imię"}
+                                   placeholder={"Imię"}
                                    onChange={e => setName(e.target.value)}
                             />
                         </div>
                         <div>
                             <input type="password"
                                    value={password}
-                                   placeholder={"Tutaj wpisz hasło"}
+                                   placeholder={"Haslo"}
                                    onChange={e => setPassword(e.target.value)}
                             />
                         </div>
@@ -78,7 +78,7 @@ function PageLog() {
                         })}
                     </form>
                 </div>
-                <div className={"LogSign"}>
+                <div className={"LogSign white"}>
                     <Link to='/app/sign'>
                         <button className={"button_main"}>Zarejestruj się</button>
                     </Link>
