@@ -7,6 +7,7 @@
   flex-direction: column;
   padding-bottom: 50px;
 
+
   @include desktop(850px){
     margin-top: 50px;
     padding-bottom: 150px;
@@ -58,7 +59,7 @@
 }
 
 .pricing_option .option li {
-  font-size: 14px;
+  font-size: 1.2em;
   line-height: 34px;
 }
 
@@ -144,4 +145,14 @@
   border: 0;
   position: relative;
   bottom: -27px;
+}
+
+.fa-do-not-enter {
+color: red;
+
+}
+
+.fa-check-circle{
+  color: green;
+
 }
