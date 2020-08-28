@@ -1,10 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {API_URL} from "../Fetch/fetch";
-import NewForm_Table from "./NewForm_table";
+import React, {useEffect, useState} from 'react';
+import {API_URL, PAGE_URL} from "../Fetch/fetch";
 
-
-function NewForm(id) {
-    const [user, setUser] = useState(false)
+function NewForm(user) {
 
     const [elements, setElements] = useState([])
     const [fabric, setFabric] = useState("")
@@ -15,7 +12,6 @@ function NewForm(id) {
 
     const [place, setPlace] = useState("");
 
-    const [dateDeliveryAuthor, setDateDeliveryAuthor] = useState([])
     const [dateFrom, setDateFrom] = useState([])
     const [dateIdeal, setDateIdeal] = useState([])
     const [dateTo, setDateTo] = useState([])
@@ -24,6 +20,25 @@ function NewForm(id) {
     const [firms, setFirms] = useState([])
     const [firm, setFirm] = useState("")
     const [editFirm, setEditFirm] = useState(false)
+
+    const data = new Date();
+
+    const[orders, setOrders] = useState([])
+
+    useEffect(() => {
+        fetch(`${API_URL}/orders`)
+            .then(response => {
+                if (response.ok === false) {
+                    throw new Error("błąd sieci!")
+                } else {
+                    return response.json();
+                }
+            })
+            .then(order => {
+                setOrders([...order])
+            })
+            .catch(err => console.log(err));
+    },[])
 
     const handleChangeFabric = (event) => {
         setFabric(event.target.value)
@@ -42,7 +57,6 @@ function NewForm(id) {
         if (edit !== false) {
             const newArray = [...elements];
             newArray[edit] = {
-
                 fabric: fabric,
                 unit: unit,
                 quantity: quantity,
@@ -78,7 +92,6 @@ function NewForm(id) {
                 setQuantity(elem.quantity)
                 setNote(elem.note)
             }
-
         })
     }
 
@@ -91,7 +104,6 @@ function NewForm(id) {
     const handleChangePlace = (event) => {
         setPlace(event.target.value)
     }
-
     const handleChangeDateFrom = (event) => {
         setDateFrom(event.target.value)
     }
@@ -116,7 +128,6 @@ function NewForm(id) {
             setFirms([...firms, firm]);
             setFirm("")
         }
-
     }
 
     const handleEditeFirm = (e, index) => {
@@ -134,12 +145,59 @@ function NewForm(id) {
         setFirms([...newArray]);
     }
 
-
-
-
-
     const handleChangeDateFinish = (event) => {
         setDateFinish(event.target.value)
+    }
+
+    const handleSend =() =>{
+       let zmienna = `${user.id}AorderA${orders.length + 1}`
+            const order = {
+                author: user.userEmail,
+                id:  zmienna,
+                dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
+                delivery: "jeśli jest adres to dostawa:",
+                placeDelivery: place,
+                firm: firms,
+                status: "send",
+                elements: elements,
+                dateAuthor: [data, dateFinish],
+            }
+        for (let i=0; i<firms.length; i++){
+            let zmiennaOfert= `${zmienna}AofertA${i}`
+            const ofert = {
+                author: user.userEmail,
+                id:  zmiennaOfert,
+                dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
+                delivery: "jeśli jest adres to dostawa:",
+                placeDelivery: place,
+                firm: firms,
+                status: "send",
+                elements: elements,
+                dateAuthor: [data, dateFinish],
+            }
+            fetch(`${API_URL}/ofert`, {
+                method: 'POST',
+                body: JSON.stringify(ofert),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+                .then(response => response.json())
+                .catch(error => console.log(error))
+
+        }
+
+        fetch(`${API_URL}/orders`, {
+            method: 'POST',
+            body: JSON.stringify(order),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(response => response.json())
+            .then(window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
+            .then(alert("zapytanie zostało zapisane"))
+            .catch(error => console.log(error))
     }
 
 
@@ -180,7 +238,7 @@ function NewForm(id) {
                                 <tbody>
                                 {elements.map((elements, index) => {
                                     return (
-                                        <tr key={elements.lp}>
+                                        <tr key={index}>
                                             <td>{index + 1}</td>
                                             <td>{elements.fabric}</td>
                                             <td>{elements.unit}</td>
@@ -199,25 +257,25 @@ function NewForm(id) {
                         </div>
                         <div className={"order_2pkt"}>2. Forma odbioru:
                             <div>
-                                <label><input type="radio" id={"odbiór osobisty"} name={"przekazanie"}
-                                              value={"odbiór"}/> Odbiór osobisty</label>
-
-                                <div className="question"><label><input type="radio" id={"dostawa"} name={"przekazanie"}
-                                                                        value={"dostarczenie"}
-                                                                        onChange={handleChangePlace}/> Dostawa na adres:<input
-                                    type="text"
-                                    className="hidden-textbox"/> </label>
+                                <label>
+                                    <input type="radio" id={"odbiór osobisty"} name={"przekazanie"}
+                                              value={"odbiór"}/> Odbiór osobisty
+                                </label>
+                                <div className="question"><label>
+                                    <input type="radio" id={"dostawa"} name={"przekazanie"}
+                                           value={"dostarczenie"} onChange={handleChangePlace}/>
+                                    Dostawa na adres:
+                                    <input type="text" className="hidden-textbox"/> </label>
                                 </div>
-
                             </div>
                             <div className={"order_3pkt"}>3. Termin odbioru/dostawy:
                                 najwcześniejsza: <input type="text" value={dateFrom} onChange={handleChangeDateFrom}/>
                                 idealna: <input type="text" value={dateIdeal} onChange={handleChangeDateIdeal}/>
                                 najpóźniejsza: <input type="text" value={dateTo} onChange={handleChangeDateto}/></div>
                         </div>
-                        <div className={"order_4pkt"}>4. Wyślij do ( podaj email): <input type="text" value={firm}
-                                                                                          onChange={handleAddFirm}/><i
-                            className="fas fa-plus-square" onClick={handleAddFirms}/></div>
+                        <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
+                            <input type="text" value={firm} onChange={handleAddFirm}/>
+                        <i className="fas fa-plus-square" onClick={handleAddFirms}/></div>
                         <div>
                             <ol> {firms.map((elements, index) => {
                                 return (<li key={index}>{index + 1}. {elements}
@@ -225,12 +283,11 @@ function NewForm(id) {
                                 <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/></li>)
                             })}</ol>
                         </div>
-                        <div className={"order_5pkt"}>4. Termin oczekiwania na oferty: <input type="text"
-                                                                                              value={dateFinish}
-                                                                                              onChange={handleChangeDateFinish}/>
+                        <div className={"order_5pkt"}>4. Termin oczekiwania na oferty:
+                            <input type="text" value={dateFinish} onChange={handleChangeDateFinish}/>
                         </div>
                     </div>
-                    <button>WYŚLIJ ZAPYTANIE</button>
+                    <button onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>
                 </div>
             </div>
 
