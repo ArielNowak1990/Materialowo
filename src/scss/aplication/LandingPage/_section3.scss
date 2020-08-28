@@ -5,6 +5,8 @@
   margin-top: 40px;
   text-align: center;
   padding: 0 20px;
+  border-bottom: 1px solid $color-background-second;
+  border-top: 1px solid $color-background-second;
   @include desktop {
     margin-top: 60px;
   }
@@ -16,7 +18,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 102px;
+  margin-top: 50px;
   width: 90%;
   min-width: 300px;
   @include desktop {
@@ -30,6 +32,7 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   color: black;
+  margin-top: 40px;
 }
 
 .popular .box div {
@@ -93,4 +96,34 @@ h2 {
   width: 130px;
   height: 50px;
   text-align: center;
+}
+
+.fa-clock{
+  font-size: 65px;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+.fa-money-bill-alt{
+  font-size: 65px;
+  margin-top: -3px;
+  margin-left: -10px;
+  color: green;
+}
+.fa-coins{
+  font-size: 65px;
+  margin-top: -3px;
+  margin-left: -3px;
+  color: yellow;
+}
+.fa-laugh-wink{
+  font-size: 65px;
+  margin-top: -3px;
+  margin-left: -3px;
+  color: #ffffff;
+}
+.fa-thumbs-up{
+  font-size: 65px;
+  margin-top: -3px;
+  margin-left: -3px;
+  color: black;
 }
