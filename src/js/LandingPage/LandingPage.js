@@ -19,6 +19,7 @@ function LandingPage() {
             <LandingPageSection4/>
             <LandingPageSection5/>
             <LandingPageFooter/>
+            <div className={"stworzone"}>Ariel Nowak 2020</div>
         </div>
 
     );

@@ -4,7 +4,7 @@ import React from 'react';
 function LandingPageFooter() {
  return (
      <div className="container">
-         <section className="footer">
+         <section className="footer" id={"kontakt"}>
              <div className={"Footer_nav"}>
                  <h3>Nawigacja</h3>
                  <ul>

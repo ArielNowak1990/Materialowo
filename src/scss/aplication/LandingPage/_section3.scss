@@ -15,7 +15,8 @@
 .proof_popular {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
@@ -23,6 +24,7 @@
   min-width: 300px;
   @include desktop {
     flex-direction: row;
+    flex-wrap: wrap;
     min-width: 500px;
   }
 }

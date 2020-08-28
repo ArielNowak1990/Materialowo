@@ -4,8 +4,8 @@ import Carousel2 from "./carousel2";
 function LandingPageSection3() {
  return (
      <div className="container">
-      <section className="popular2">
-       <h2>Nie-Zamawialiśmy materiały dla:</h2>
+      <section className="popular2" id={"beneficjenci"}>
+       <h2>Aspirujemy aby zamawiać materiały dla:</h2>
        <div className="proof_popular2">
             <Carousel2/>
        </div>
