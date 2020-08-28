@@ -4,7 +4,7 @@ import React from 'react';
 function LandingPageSection2() {
  return (
      <div className="container">
-      <section className="pricing">
+      <section className="pricing" id={"pricing"}>
        <h2>Cennik</h2>
        <div className="pricing_option">
         <div className="option">

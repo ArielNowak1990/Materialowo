@@ -17,9 +17,7 @@ function LandingPageSection1() {
              <div className={"buttonsy"}>
                  <Link to='/app/log'><button className={"button_main"}>Zaloguj się</button></Link>
                  <Link to='/app/sign'><button className={"button_main"}>Zarejestruj się</button></Link>
-
              </div>
-
          </div>
             <Carousel/>
          </div>

@@ -9,10 +9,16 @@
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    margin-top: 40px;
 
     .brand{
       font-size: 2em;
       color: $color-background-second;
+
+      span{
+        color: $color-background-font;
+      }
     }
 
     .nav_menu ul{

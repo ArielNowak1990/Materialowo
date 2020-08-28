@@ -9,6 +9,10 @@ import {
     Route,
 } from "react-router-dom";
 import {API_URL} from "../Fetch/fetch";
+import ActualForm from "./ActualForm";
+import HistoryForm from "./HistoryForm";
+import NewCardChoice from "./NewCardChoice";
+import ActualCardChoice from "./ActualCardChoice";
 
 
 
@@ -49,7 +53,11 @@ function MainApp() {
                 <section className={"container"}>
                     <LandingPageHeader/>
                     <Route path={'/app/MainApp'} component={ () => Welcome(name)}/>
-                    <Route path={'/app/NewForm'} component={ () => NewForm(myUser.id)}/>
+                    <Route path={'/app/NewForm'} component={ () => NewForm(myUser)}/>
+                    <Route path={'/app/ActualForm'} component={ () => ActualForm(myUser)}/>
+                    <Route path={'/app/HistoryForm'} component={ () => HistoryForm(myUser)}/>
+                    <Route path={'/app/NewCardChoice'} component={ () => NewCardChoice(myUser)}/>
+                    <Route path={'/app/ActualCardChoice'} component={ () => ActualCardChoice(myUser)}/>
                 </section>
             </Switch>
         </Router>

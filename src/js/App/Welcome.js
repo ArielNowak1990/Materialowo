@@ -14,9 +14,9 @@ function Welcome(names) {
                        <h2>Welcome {names}</h2>
                         <div className={"choice_menu"}>
                             <Link to='/app/NewForm'> <div className="choice">Stwórz zamówienie</div></Link>
-                            <div className="choice">Wysłane zapytania</div>
-                            <div className="choice">Gotowe karty wyboru</div>
-                            <div className="choice">Historia Twoich zamówień</div>
+                            <Link to='/app/ActualForm'><div className="choice">Wysłane zapytania</div></Link>
+                            <Link to='/app/ActualCardChoice'><div className="choice">Gotowe karty wyboru</div></Link>
+                            <Link to='/app/HistoryForm'><div className="choice">Historia Twoich zamówień</div></Link>
                         </div>
                     </div>
                 </div>

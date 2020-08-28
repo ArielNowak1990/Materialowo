@@ -1,0 +1,183 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Ariel",
+      "password": "haslo",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "alek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false"
+    },
+    {
+      "id": 2,
+      "name": "Admin",
+      "password": "haslo",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "alek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false"
+    },
+    {
+      "name": "Tomek",
+      "password": "tomek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "alek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 3
+    },
+    {
+      "name": "Kamil",
+      "password": "kuchar",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kuchar@a",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 4
+    },
+    {
+      "name": "Marek",
+      "password": "marek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "marek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 5
+    },
+    {
+      "name": "Marek",
+      "password": "marek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "marek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 6
+    },
+    {
+      "name": "Marek",
+      "password": "marek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "marek123@",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 7
+    },
+    {
+      "name": "Marek",
+      "password": "marek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "marek123@",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 8
+    },
+    {
+      "name": "edek",
+      "password": "edeks",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "edek123@",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 9
+    },
+    {
+      "name": "grzesiek",
+      "password": "grzesiek",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "grzesiek123@",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 10
+    },
+    {
+      "name": "Kasia",
+      "password": "haslo",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kasia123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 11
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "author": "kasia123@wp.pl",
+      "dateDeliveryAuthor:": [
+        "2020-10-04",
+        "2020-10-05",
+        "2020-10-05"
+      ],
+      "delivery": "dostawa",
+      "placeDelivery": "Brzegi, Kosowskiego 15",
+      "firm": [
+        "alek123@wp.pl",
+        "en48@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "papa",
+          "unit": "m2",
+          "quantity": "10",
+          "note": "konieczny jest atest"
+        },
+        {
+          "fabric": "bloczki",
+          "unit": "szt",
+          "quantity": "50",
+          "note": "konieczny rozładunek"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-27",
+        "2020-08-29"
+      ]
+    }
+  ]
+}

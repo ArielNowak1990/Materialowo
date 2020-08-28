@@ -4,7 +4,7 @@ import React from 'react';
 function LandingPageSection3() {
  return (
      <div className="container">
-      <section className="popular">
+      <section className="popular" id={"popular"}>
        <h2>Dlatego warto skorzystać z naszych usług:</h2>
        <div className="proof_popular">
         <div className="box">

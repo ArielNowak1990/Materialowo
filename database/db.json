@@ -11,8 +11,7 @@
       "firm": "false",
       "placeWork": "false",
       "logo": "false",
-      "coworkers": "false",
-
+      "coworkers": "false"
     },
     {
       "id": 2,
@@ -41,95 +40,274 @@
       "id": 3
     },
     {
-      "name": "Kamil",
-      "password": "kuchar",
+      "name": "Kasia",
+      "password": "haslo",
       "isLogged": "false",
       "initialized": "false",
-      "userEmail": "kuchar@a",
+      "userEmail": "kasia123@wp.pl",
       "surname": "false",
       "firm": "false",
       "placeWork": "false",
       "logo": "false",
       "coworkers": "false",
       "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "author": "kasia123@wp.pl",
+      "dateDeliveryAuthor:": [
+        "2020-10-04",
+        "2020-10-05",
+        "2020-10-05"
+      ],
+      "delivery": "dostawa",
+      "placeDelivery": "Brzegi, Kosowskiego 15",
+      "firm": [
+        "alek123@wp.pl",
+        "en48@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "papa",
+          "unit": "m2",
+          "quantity": "10",
+          "note": "konieczny jest atest"
+        },
+        {
+          "fabric": "bloczki",
+          "unit": "szt",
+          "quantity": "50",
+          "note": "konieczny rozładunek"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-27",
+        "2020-08-29"
+      ]
     },
     {
-      "name": "Marek",
-      "password": "marek",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "marek123@wp.pl",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 5
+      "author": "alek123@wp.pl",
+      "id": "2+AorderA+2",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "Czajnik",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "przezroczysty"
+        },
+        {
+          "fabric": "parownik",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "stojacy"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T13:46:38.127Z",
+        []
+      ]
     },
     {
-      "name": "Marek",
-      "password": "marek",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "marek123@wp.pl",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 6
+      "author": "alek123@wp.pl",
+      "id": "2AorderA3",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@",
+        "123",
+        "sdasd",
+        "sssa"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asd",
+          "quantity": "1",
+          "note": "asdasd"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T14:01:04.069Z",
+        []
+      ]
+    }
+  ],
+  "ofert": [
+    {
+      "id": 1,
+      "author": "kasia123@wp.pl",
+      "dateDeliveryAuthor:": [
+        "2020-10-04",
+        "2020-10-05",
+        "2020-10-05"
+      ],
+      "delivery": "dostawa",
+      "placeDelivery": "Brzegi, Kosowskiego 15",
+      "firm": [
+        "alek123@wp.pl",
+        "en48@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "papa",
+          "unit": "m2",
+          "quantity": "10",
+          "note": "konieczny jest atest"
+        },
+        {
+          "fabric": "bloczki",
+          "unit": "szt",
+          "quantity": "50",
+          "note": "konieczny rozładunek"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-27",
+        "2020-08-29"
+      ]
     },
     {
-      "name": "Marek",
-      "password": "marek",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "marek123@",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 7
+      "author": "alek123@wp.pl",
+      "id": "2AorderA3AofertA0",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@",
+        "123",
+        "sdasd",
+        "sssa"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asd",
+          "quantity": "1",
+          "note": "asdasd"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T14:01:04.069Z",
+        []
+      ]
     },
     {
-      "name": "Marek",
-      "password": "marek",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "marek123@",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 8
+      "author": "alek123@wp.pl",
+      "id": "2AorderA3AofertA1",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@",
+        "123",
+        "sdasd",
+        "sssa"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asd",
+          "quantity": "1",
+          "note": "asdasd"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T14:01:04.069Z",
+        []
+      ]
     },
     {
-      "name": "edek",
-      "password": "edeks",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "edek123@",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 9
+      "author": "alek123@wp.pl",
+      "id": "2AorderA3AofertA2",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@",
+        "123",
+        "sdasd",
+        "sssa"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asd",
+          "quantity": "1",
+          "note": "asdasd"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T14:01:04.069Z",
+        []
+      ]
     },
     {
-      "name": "grzesiek",
-      "password": "grzesiek",
-      "isLogged": "false",
-      "initialized": "false",
-      "userEmail": "grzesiek123@",
-      "surname": "false",
-      "firm": "false",
-      "placeWork": "false",
-      "logo": "false",
-      "coworkers": "false",
-      "id": 10
+      "author": "alek123@wp.pl",
+      "id": "2AorderA3AofertA3",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@",
+        "123",
+        "sdasd",
+        "sssa"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asd",
+          "quantity": "1",
+          "note": "asdasd"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-28T14:01:04.069Z",
+        []
+      ]
     }
   ]
 }

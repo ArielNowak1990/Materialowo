@@ -1,11 +1,16 @@
 @import "src/scss/variables/variables";
 
+*{
+  background-color: $color-background-first;
+}
+
 .landing_Page {
   margin: 0 auto;
   width: 98vw;
   max-width: 1600px;
   background-color: $color-background-first;
   color: $color-background-font;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .container{
@@ -29,5 +34,11 @@ h1{
 h2{
   font-size: 1.8em;
   line-height: 2.6em;
+  margin-bottom: 15px;
 }
 
+a{
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}

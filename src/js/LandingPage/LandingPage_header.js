@@ -1,16 +1,18 @@
 import React from 'react';
 
+
+
 function LandingPageHeader() {
  return (
       <header>
           <nav>
-              <a href={"#"}><div className={"brand"}>MaterialOWO</div></a>
+              <a href={"http://localhost:3001/"}><div className={"brand"}>Material<span>OWO</span></div></a>
               <div className={"nav_menu"}>
                   <ul>
-                      <li> <a href={"#"}> Ceny Pakietów </a> </li>
-                      <li> <a href={"#"}> Pracodawcy </a> </li>
-                      <li> <a href={"#"}> Zalety </a> </li>
-                      <li> <a href={"#"}> Kontakt </a> </li>
+                      <li> <a href={"#pricing"}> PAKIETY </a> </li>
+                      <li> <a href={"#popular2"}> USŁUGOBIORCY </a> </li>
+                      <li> <a href={"#popular"}> ZALETY </a> </li>
+                      <li> <a href={"#footer"}> KONTAKT </a> </li>
                   </ul>
               </div>
           </nav>
