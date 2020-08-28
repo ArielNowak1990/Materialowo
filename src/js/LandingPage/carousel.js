@@ -3,6 +3,7 @@ import image1 from "../../images/wakacje.jpg"
 import image2 from "../../images/kurier.jpg"
 import image3 from "../../images/pieniadze.jpg"
 import image4 from "../../images/czas.jpg"
+import {Link} from "react-router-dom";
 
 
 function Carousel() {
@@ -13,44 +14,52 @@ function Carousel() {
         if (counter === 0) {
             return (
                 <>
+                    <div className={"section1"}>
+                    <img src={image1} alt="wakacje"/>
+                    <div className={"login_sign1"} style={{back}}>
+                        <h2> Witaj !</h2>
+                        <p> Cieszymy się że jesteś! </p>
+                        <p> Chętnie pomożemy Ci zarządzać Twoim procesem zamówień materiałów wszelkiego rodzaju !</p>
+                        <div className={"buttonsy"}>
+                            <Link to='/app/log'><button className={"button_main"}>Zaloguj się</button></Link>
+                            <Link to='/app/sign'><button className={"button_main"}>Zarejestruj się</button></Link>
+                        </div>
+                    </div>
                 <p>Z nami masz więcej czasu na wakacje!</p>
-                <img src={image1} alt="wakacje"/>
+                    </div>
                 </>
                 )
         }
         if (counter === 1) {
             return (
                     <>
-                        <p>Kurier dostarczy materiał na czas!</p>
+                    <div className={"section1"}>
                         <img src={image2} alt="kurier"/>
+                        <div className={"login_sign2"}>
+                            <h2> Witaj !</h2>
+                            <p> Cieszymy się że jesteś! </p>
+                            <p> Chętnie pomożemy Ci zarządzać Twoim procesem zamówień materiałów wszelkiego rodzaju !</p>
+                            <div className={"buttonsy"}>
+                                <Link to='/app/log'><button className={"button_main"}>Zaloguj się</button></Link>
+                                <Link to='/app/sign'><button className={"button_main"}>Zarejestruj się</button></Link>
+                            </div>
+                        </div>
+                        <p>Kurier dostarczy materiał na czas!</p>
+                    </div>
                         </>
                 )
         }
-        if (counter === 2) {
-            return (
-                <>
-                    <p>Masz pewność że nie przepłacisz!</p>
-                    <img src={image3} alt="pieniądze"/>
-                    </>
-            )
-        }
-        if (counter === 3) {
-            return (
-                <>
-                    <p>Najprostszy sposób aby zyskać to wszystko!</p>
-                    <img src={image4} alt="zegar"/>
-                </>
-            )
-        }
+
+
     };
 
 
     useEffect(() => {
             const timeOut = setTimeout(() => {
-                if (counter === 3) {setCounter(0)}
+                if (counter === 1) {setCounter(0)}
                 else {setCounter(prevState => prevState + 1)}
 
-                },2500
+                },3500
             );
             return() => {clearTimeout(timeOut);
         }
@@ -59,12 +68,12 @@ function Carousel() {
     )
 
     const handlePrev = () => {
-        if (counter === 0) {setCounter(3)}
+        if (counter === 0) {setCounter(1)}
         else {setCounter(prevState => prevState - 1)}
     }
 
     const handleNext = () => {
-        if (counter === 3) {setCounter(0)}
+        if (counter === 1) {setCounter(0)}
         else {setCounter(prevState => prevState + 1)}
     }
 
