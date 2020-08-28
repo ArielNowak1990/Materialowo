@@ -3,50 +3,75 @@
 
 .back {
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 120px);
   background-color: $color-background-first;
 
 
   .form {
     border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 30px;
     width: 90%;
+    height: 95%;
     background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
+
+    button{
+      margin-bottom: 20px;
+    }
+
 
     h3 {
       font-size: 1.6em;
+      background-color: white;
     }
 
     .NewOrder {
       width: 90%;
+      height: 90%;
       margin-bottom: 30px;
       margin-top: 30px;
       border: 1px solid black;
+      font-size: 1.2em;
+      padding: 15px;
+      line-height: 1.6em;
+      background-color: white;
+      overflow-y: scroll;
+
+      *{
+        background-color: white;
+      }
     }
   }
 }
 
 
 .order {
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
   text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
 
+  i{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+
   tr, td, th {
     border: 1px solid black;
-    line-height: 1.6em;
+    line-height: 2em;
     input{
       width: 98%;
-      border: 0px solid black;
+      border: 0 solid black;
+      font-size: 0.8em;
     }
-  }
-  tr:nth-child(2n){
-    background-color: orange;
   }
 
   th{
@@ -56,7 +81,7 @@
   }
 
   th:nth-child(1), td:nth-child(1) {
-    width: 4%;
+    width: 5%;
   }
 
   th:nth-child(2), td:nth-child(2)  {
@@ -64,23 +89,105 @@
   }
 
   th:nth-child(3), td:nth-child(3)  {
-    width: 5%;
+    width: 7%;
   }
 
   th:nth-child(4), td:nth-child(4)  {
-    width: 5%;
+    width: 7%;
   }
 
   th:nth-child(5), td:nth-child(5)  {
-    width: 45%;
+    width: 30%;
+  }
+
+  tr{
+    td:last-child{
+      border: 1px solid white;
+    }
   }
 
 
 }
+
 .hidden-textbox {
   visibility: hidden;
+  width: 350px;
 }
 
 input[type='radio']:checked + input {
   visibility: visible;
+}
+
+.order_ID{
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.order_1pkt{
+  margin-bottom: 10px;
+}
+
+.order_2pkt{
+  margin-bottom: 20px;
+  input{
+    border: 0 solid black;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+.order_3pkt{
+  margin-bottom: 20px;
+  input{
+    border: 0 solid black;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.order_4pkt{
+  margin-bottom: 20px;
+  input{
+    border: 0 solid black;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  i{
+    margin-left: 10px;
+  }
+}
+.order_5pkt{
+  margin-bottom: 20px;
+  input{
+    border: 0 solid black;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+ol{
+
+  i{
+    margin-left: 10px;
+
+  }
+  margin-bottom: 20px;
+}
+
+.fa-plus-square{
+  color: green;
+  font-size: 1.4em;
+}
+
+.fa-trash-alt{
+  color: red;
+}
+
+.fa-edit{
+  color: orange;
 }

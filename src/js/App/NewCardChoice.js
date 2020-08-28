@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import {API_URL, PAGE_URL} from "../Fetch/fetch";
+import React from 'react';
 
 function NewCardChoice(user) {
 

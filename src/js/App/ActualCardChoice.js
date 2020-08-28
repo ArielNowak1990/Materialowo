@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {API_URL, PAGE_URL} from "../Fetch/fetch";
-import {Link} from "react-router-dom";
+import {API_URL} from "../Fetch/fetch";
 
 function ActualCardChoice(user) {
     const [myUser, setMyUser] = useState(user)

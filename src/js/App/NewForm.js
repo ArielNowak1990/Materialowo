@@ -148,6 +148,7 @@ function NewForm(user) {
     const handleChangeDateFinish = (event) => {
         setDateFinish(event.target.value)
     }
+    let zmienna = `${user.id}AorderA${orders.length + 1}`
 
     const handleSend =() =>{
        let zmienna = `${user.id}AorderA${orders.length + 1}`
@@ -207,7 +208,7 @@ function NewForm(user) {
                 <div className={"form"}>
                     <h3>Zamówienie nr 1</h3>
                     <div className={"NewOrder"}>
-                        <div className={"order_ID"}>ID Zamówienia ..........</div>
+                        <div className={"order_ID"}>ID Zamówienia: {zmienna}</div>
                         <div className={"order_1pkt"}>1. Dodaj materiały do zamówienia</div>
                         <div className={"order_tab1"}>
                             <table className={"order"}>
@@ -231,9 +232,9 @@ function NewForm(user) {
                                 </tr>
                                 </tbody>
                             </table>
+<br/>
                             <table className={"order"}>
                                 <thead>
-
                                 </thead>
                                 <tbody>
                                 {elements.map((elements, index) => {
@@ -253,13 +254,13 @@ function NewForm(user) {
                                 })}
                                 </tbody>
                             </table>
-
+                            <br/>
                         </div>
                         <div className={"order_2pkt"}>2. Forma odbioru:
                             <div>
                                 <label>
                                     <input type="radio" id={"odbiór osobisty"} name={"przekazanie"}
-                                              value={"odbiór"}/> Odbiór osobisty
+                                              value={"odbiór"}/>Odbiór osobisty
                                 </label>
                                 <div className="question"><label>
                                     <input type="radio" id={"dostawa"} name={"przekazanie"}
@@ -268,11 +269,13 @@ function NewForm(user) {
                                     <input type="text" className="hidden-textbox"/> </label>
                                 </div>
                             </div>
+                        </div>
                             <div className={"order_3pkt"}>3. Termin odbioru/dostawy:
                                 najwcześniejsza: <input type="text" value={dateFrom} onChange={handleChangeDateFrom}/>
                                 idealna: <input type="text" value={dateIdeal} onChange={handleChangeDateIdeal}/>
-                                najpóźniejsza: <input type="text" value={dateTo} onChange={handleChangeDateto}/></div>
-                        </div>
+                                najpóźniejsza: <input type="text" value={dateTo} onChange={handleChangeDateto}/>
+                            </div>
+
                         <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
                             <input type="text" value={firm} onChange={handleAddFirm}/>
                         <i className="fas fa-plus-square" onClick={handleAddFirms}/></div>
@@ -283,11 +286,11 @@ function NewForm(user) {
                                 <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/></li>)
                             })}</ol>
                         </div>
-                        <div className={"order_5pkt"}>4. Termin oczekiwania na oferty:
+                        <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:
                             <input type="text" value={dateFinish} onChange={handleChangeDateFinish}/>
                         </div>
                     </div>
-                    <button onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>
+                    <button className={"button_main"} onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>
                 </div>
             </div>
 
