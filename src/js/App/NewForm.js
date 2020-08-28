@@ -206,7 +206,7 @@ function NewForm(user) {
         <section className={"container"}>
             <div className={"back"}>
                 <div className={"form"}>
-                    <h3>Zamówienie nr 1</h3>
+                    <h3>Zamówienie nr {orders.length + 1}</h3>
                     <div className={"NewOrder"}>
                         <div className={"order_ID"}>ID Zamówienia: {zmienna}</div>
                         <div className={"order_1pkt"}>1. Dodaj materiały do zamówienia</div>
