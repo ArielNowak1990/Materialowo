@@ -8,15 +8,15 @@ function Welcome(names) {
 
     return (
         <section className={"container"}>
-            <div className={"back"}>
-                <div className={"back_container"}>
+            <div className={"Welcome_back"}>
+                <div className={"Welcome_back_container"}>
+                    <h2>Witaj {names} !</h2>
                     <div className={"front_container"}>
-                       <h2>Welcome {names}</h2>
                         <div className={"choice_menu"}>
-                            <Link to='/app/NewForm'> <div className="choice">Stwórz zamówienie</div></Link>
-                            <Link to='/app/ActualForm'><div className="choice">Wysłane zapytania</div></Link>
-                            <Link to='/app/ActualCardChoice'><div className="choice">Gotowe karty wyboru</div></Link>
-                            <Link to='/app/HistoryForm'><div className="choice">Historia Twoich zamówień</div></Link>
+                            <div className="choice"><Link to='/app/NewForm'>Stwórz zamówienie</Link></div>
+                            <div className="choice"><Link to='/app/ActualForm'>Wysłane zapytania</Link></div>
+                            <div className="choice"><Link to='/app/ActualCardChoice'>Gotowe karty wyboru</Link></div>
+                            <div className="choice"><Link to='/app/HistoryForm'>Historia Twoich zamówień</Link></div>
                         </div>
                     </div>
                 </div>
