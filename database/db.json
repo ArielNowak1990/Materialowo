@@ -152,6 +152,24 @@
         "2020-08-28T14:01:04.069Z",
         []
       ]
+    },
+    {
+      "author": "alek123@wp.pl",
+      "id": "1AorderA4",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [],
+      "status": "send",
+      "elements": [],
+      "dateAuthor": [
+        "2020-08-28T22:53:07.632Z",
+        "2020-10-10"
+      ]
     }
   ],
   "ofert": [
