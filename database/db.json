@@ -222,6 +222,58 @@
         "2020-08-28T22:53:07.632Z",
         "2020-10-10"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA5",
+      "dateDeliveryAuthor": [
+        [],
+        [],
+        []
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "datapicker",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "datapicker"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-29T09:02:23.866Z",
+        []
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-02T09:08:01.000Z",
+        "2020-09-04T09:08:01.000Z",
+        "2020-09-05T09:08:01.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "derulo",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "dzejson"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-29T09:08:41.896Z",
+        "2020-08-29T09:08:01.491Z"
+      ]
     }
   ],
   "ofert": [
@@ -377,6 +429,33 @@
       "dateAuthor": [
         "2020-08-28T14:01:04.069Z",
         []
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA6AofertA0",
+      "dateDeliveryAuthor": [
+        "2020-09-02T09:08:01.000Z",
+        "2020-09-04T09:08:01.000Z",
+        "2020-09-05T09:08:01.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "derulo",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "dzejson"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-29T09:08:41.896Z",
+        "2020-08-29T09:08:01.491Z"
       ]
     }
   ]

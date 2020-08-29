@@ -14,10 +14,10 @@ function NewForm(user) {
 
     const [place, setPlace] = useState("");
 
-    const [dateFrom, setDateFrom] = useState([])
-    const [dateIdeal, setDateIdeal] = useState([])
-    const [dateTo, setDateTo] = useState([])
-    const [dateFinish, setDateFinish] = useState([])
+    const [dateFrom, setDateFrom] = useState(new Date())
+    const [dateIdeal, setDateIdeal] = useState(new Date())
+    const [dateTo, setDateTo] = useState(new Date())
+    const [dateFinish, setDateFinish] = useState(new Date())
 
     const [firms, setFirms] = useState([])
     const [firm, setFirm] = useState("")
@@ -26,7 +26,7 @@ function NewForm(user) {
     const data = new Date();
 
     const[orders, setOrders] = useState([])
-    const [startDate, setStartDate] = useState(new Date());
+
 
     useEffect(() => {
         fetch(`${API_URL}/orders`)
@@ -107,21 +107,15 @@ function NewForm(user) {
     const handleChangePlace = (event) => {
         setPlace(event.target.value)
     }
-    const handleChangeDateFrom = (event) => {
-        setDateFrom(event.target.value)
-    }
-    const handleChangeDateIdeal = (event) => {
-        setDateIdeal(event.target.value)
-    }
-    const handleChangeDateto = (event) => {
-        setDateTo(event.target.value)
-    }
-
-    const handleDataPicker = () => {
-        return (
-            <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-        );
-    };
+    // const handleChangeDateFrom = (event) => {
+    //     setDateFrom(event.target.value)
+    // }
+    // const handleChangeDateIdeal = (event) => {
+    //     setDateIdeal(event.target.value)
+    // }
+    // const handleChangeDateto = (event) => {
+    //     setDateTo(event.target.value)
+    // }
 
     const handleAddFirm = (event) => {
         setFirm(event.target.value)
@@ -154,9 +148,9 @@ function NewForm(user) {
         setFirms([...newArray]);
     }
 
-    const handleChangeDateFinish = (event) => {
-        setDateFinish(event.target.value)
-    }
+    // const handleChangeDateFinish = (event) => {
+    //     setDateFinish(event.target.value)
+    // }
     let zmienna = `${user.id}AorderA${orders.length + 1}`
 
     const handleSend =() =>{
@@ -280,11 +274,12 @@ function NewForm(user) {
                             </div>
                         </div>
                             <div className={"order_3pkt"}>3. Termin odbioru/dostawy:
-                                najwcześniejsza: <input type="text" value={dateFrom} onSelect={handleDataPicker} onChange={handleChangeDateFrom}/>
-                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-                                {/*TODO DATAPICKERA poprawić. */}
-                                idealna: <input type="text" value={dateIdeal} onChange={handleChangeDateIdeal}/>
-                                najpóźniejsza: <input type="text" value={dateTo} onChange={handleChangeDateto}/>
+                                najwcześniejsza:
+                                <DatePicker selected={dateFrom} value={dateFrom} onChange={date => setDateFrom(date)} />
+                                idealna:
+                                <DatePicker selected={dateIdeal} value={dateIdeal} onChange={date => setDateIdeal(date)} />
+                                najpóźniejsza:
+                                <DatePicker selected={dateTo} value={dateTo} onChange={date => setDateTo(date)} />
                             </div>
 
                         <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
@@ -298,7 +293,7 @@ function NewForm(user) {
                             })}</ol>
                         </div>
                         <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:
-                            <input type="text" value={dateFinish} onChange={handleChangeDateFinish}/>
+                            <DatePicker selected={dateFinish} value={dateFinish} onChange={date => setDateFinish(date)} />
                         </div>
                     </div>
                     <button className={"button_main"} onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>
