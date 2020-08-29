@@ -3,7 +3,9 @@ import LandingPageHeader from "../LandingPage/LandingPage_header"
 import {Link} from "react-router-dom";
 import {API_URL} from "../Fetch/fetch";
 import {PAGE_URL} from "../Fetch/fetch";
+import  bcrypt from 'bcryptjs';
 
+// console.log(bcrypt.compareSync('kubus1', "$2a$10$hJe0dJvzvYj/ghzp2LmWaOK4XSXTfVyAXknzKdPYQPFLPRZj4kg5a"));
 
 function PageLog() {
     const [name, setName] = useState([])
@@ -23,7 +25,7 @@ function PageLog() {
         if (password.length < 5) (arrayErrors.push("hasło musi mieć min. 5 znaków"))
         setError([...arrayErrors])
         if (arrayErrors.length === 0) {
-            fetch(`${API_URL}/user?name=${name}&&password=${password}`, {
+            fetch(`${API_URL}/user?name=${name}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -37,15 +39,22 @@ function PageLog() {
                     }
                 })
                 .then(data => {
-                    setUser(...data)
-                    console.log(...data)
+                    console.log(password);
+                    console.log(data[0].password);
+                    console.log(bcrypt.compareSync(password, data[0].password));
+                    console.log(data[0]);
+                    if(bcrypt.compareSync(password, data[0].password)){
+                        setUser({...data[0]});
+                    }else{
+                        throw new Error("Wrong password")
+                    }
                 })
-                .catch(err => console.log(err))
-
+                .catch(err => {
+                    console.log(err);
+                    arrayErrors.push("błędne hasło lub nazwa");
+                    setError([...arrayErrors])
+                })
         }
-        setTimeout(()=> {arrayErrors.push("błędne hasło lub nazwa"); setError([...arrayErrors])},1500)
-
-        setError([...arrayErrors])
     }
 
     return (
@@ -85,17 +94,7 @@ function PageLog() {
                 </div>
 
             </div>
-            {/*<div>*/}
-            {/*    <input type="text"*/}
-            {/*           placeholder={"Tutaj wpisz jak masz na imię"}*/}
-            {/*           value={input}*/}
-            {/*           onChange={e => setInput(e.target.value)}*/}
-            {/*    />*/}
-            {/*</div>*/}
-            {/*<div className={'instructions__add'}>*/}
-            {/*    <textarea rows={'4'} type="text" value={instruction} onChange={handleChangeInstruction}/>*/}
-            {/*    <i className="fas fa-plus-square" onClick={handleAddInstruction}/>*/}
-            {/*</div>*/}
+
         </section>
     );
 }

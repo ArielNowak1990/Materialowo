@@ -1,3 +1,4 @@
+import  bcrypt from 'bcryptjs';
 
 export const API_URL = 'http://localhost:3000';
 export const PAGE_URL = 'http://localhost:3001';
@@ -78,6 +79,8 @@ export const PAGE_URL = 'http://localhost:3001';
 // }
 
 export function addUser (user){
+    user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10));
+    console.log(user);
     fetch(`${API_URL}/user`, {
         method: 'POST',
         body: JSON.stringify(user),

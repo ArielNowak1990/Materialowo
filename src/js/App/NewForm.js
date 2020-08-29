@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {API_URL, PAGE_URL} from "../Fetch/fetch";
+import "react-datepicker/dist/react-datepicker.css"
+import DatePicker from 'react-datepicker';
 
 function NewForm(user) {
 
@@ -24,6 +26,7 @@ function NewForm(user) {
     const data = new Date();
 
     const[orders, setOrders] = useState([])
+    const [startDate, setStartDate] = useState(new Date());
 
     useEffect(() => {
         fetch(`${API_URL}/orders`)
@@ -113,6 +116,12 @@ function NewForm(user) {
     const handleChangeDateto = (event) => {
         setDateTo(event.target.value)
     }
+
+    const handleDataPicker = () => {
+        return (
+            <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+        );
+    };
 
     const handleAddFirm = (event) => {
         setFirm(event.target.value)
@@ -271,7 +280,9 @@ function NewForm(user) {
                             </div>
                         </div>
                             <div className={"order_3pkt"}>3. Termin odbioru/dostawy:
-                                najwcześniejsza: <input type="text" value={dateFrom} onChange={handleChangeDateFrom}/>
+                                najwcześniejsza: <input type="text" value={dateFrom} onSelect={handleDataPicker} onChange={handleChangeDateFrom}/>
+                                <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
+                                {/*TODO DATAPICKERA poprawić. */}
                                 idealna: <input type="text" value={dateIdeal} onChange={handleChangeDateIdeal}/>
                                 najpóźniejsza: <input type="text" value={dateTo} onChange={handleChangeDateto}/>
                             </div>

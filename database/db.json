@@ -51,6 +51,58 @@
       "logo": "false",
       "coworkers": "false",
       "id": 4
+    },
+    {
+      "name": "Ariel12",
+      "password": "haslo",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "alek123qasda23@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "password": "$2a$10$wd4zZ10N4FrmQd1W4mux/O3zB3ZkhRWJrc1LDwPYaU4ew8uTi4ew.",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "sdfsd@sdf.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "password": "$2a$10$VRXv9Uqfh0DZkxJUyZ2Rr.wO9z8BO9Nl.4an94/R8.xdAMoPcdjpy",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "sdfsd@sdf.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 7
+    },
+    {
+      "name": "kubus",
+      "password": "$2a$10$hJe0dJvzvYj/ghzp2LmWaOK4XSXTfVyAXknzKdPYQPFLPRZj4kg5a",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kubus123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 8
     }
   ],
   "orders": [
