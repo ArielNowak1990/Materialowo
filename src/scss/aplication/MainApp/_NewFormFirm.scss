@@ -1,0 +1,99 @@
+@import "src/scss/variables/variables";
+
+
+.NewFormFirm{
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 90vw;
+  height: 93vh;
+  padding: 20px;
+  h3{
+    background-color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+  .firmForm{
+    border: 1px solid black;
+    width: 90%;
+    height: 88%;
+    margin: 0 auto;
+    padding: 20px;
+
+    h4{
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+.firmForm{
+
+
+  .wycena{
+
+  table{
+    border: 1px solid black;
+    margin-bottom: 20px;
+
+    input{
+      width: 90%;
+      background-color: orange;
+      border: 0 solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  td:nth-child(1){
+    width: 5%;
+  }
+  td:nth-child(2){
+  width: 15%;
+  }
+  td:nth-child(3){
+  width: 5%;
+  }
+  td:nth-child(4){
+    width: 5%;
+  }
+  td:nth-child(5){
+    width: 15%;
+  }
+  td:nth-child(6){
+    width: 5%;
+  }
+  td:nth-child(7){
+    width: 5%;
+  }
+  td:nth-child(8){
+    width: 25%;
+  }
+
+  input{
+    background-color: orange;
+    border: 0 solid black;
+    border-bottom: 1px solid black;
+  }
+
+  thead{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  td{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  }
+}

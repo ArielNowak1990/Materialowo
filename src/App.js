@@ -10,6 +10,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import NewFormFirm from "./js/App/NewFormFirm";
 
 
 
@@ -24,6 +25,7 @@ function App() {
                     <Route path={'/app/log'} component={Log}/>
                     <Route path={'/app/sign'} component={Sign}/>
                     <Route path={'/app/MainApp'} component={MainApp}/>
+                    <Route path={'/NewFormFirm'} component={NewFormFirm}/>
                 </Switch>
             </Router>
         </>

@@ -1,8 +1,12 @@
 @import "src/scss/variables/variables";
 
 *{
-  background-color: $color-background-first;
   font-family: 'Nunito Sans', sans-serif;
+  .landing_Page{
+    background-color: $color-background-first;
+  }
+
+
 
   a{
     font-size: inherit;

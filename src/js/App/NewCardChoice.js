@@ -1,11 +1,16 @@
 import React from 'react';
 
-function NewCardChoice(user) {
+function NewCardChoice() {
 
 
     return (
         <section className={"container"}>
-Jajco
+            <div className={"form"}>
+                <h3>Karta wyboru do zamówienia ............. </h3>
+                <div className={"NewOrder"}>
+                    jajco
+                </div>
+            </div>
         </section>
     );
 }
