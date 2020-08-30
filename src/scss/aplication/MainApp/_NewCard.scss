@@ -1,0 +1,44 @@
+@import "src/scss/variables/variables";
+
+
+.container_Choice{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  margin: 0 auto;
+
+.cardChoice{
+  width: 90%;
+  height: 90%;
+  background-color: orange;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.2em;
+
+  h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  table{
+    border: 1px solid black;
+    width: 99%;
+    margin: 0 auto;
+    tr{
+      width: 90%;
+      border: 1px solid black;
+    }
+    td{
+      border: 1px solid black;
+    }
+    thead{
+      td{
+        height: 2em;
+      }
+    }
+  }
+
+}
+}
