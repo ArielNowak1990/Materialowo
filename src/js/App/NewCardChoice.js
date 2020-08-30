@@ -3,6 +3,10 @@ import {API_URL} from "../Fetch/fetch";
 
 function NewCardChoice() {
     const [allOfert, setAllOfert] =useState(false)
+    const [quantityFirm, setQuantityFirm] = useState([1,2,3,4])
+    const [quantityProducts, setQuantityProducts] = useState([1,2,3,4,5])
+    const sum = [];
+
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -22,18 +26,30 @@ function NewCardChoice() {
             })
             .then(data => {
                 setAllOfert([...data])
-                console.log([...data])
+                // let newArray = [];
+                // for (let i=1; i<=[...data].length ;i++){newArray.push(i)}
+                // setQuantityFirm([...newArray])
+                // console.log(quantityFirm)
+                // let newArrays = [];
+                // for (let i=1; i<=[...data][0].elements.length ;i++){newArrays.push(i)}
+                // setQuantityProducts([...newArrays])
+                // console.log(quantityProducts);
             })
             .catch(err => console.log(err));
     },[])
 
 
 
+
 if (!allOfert){return ("wczytywanie")}
 if (allOfert){
-    const style= {
-        rowspan: 3
-    }
+
+    for (let i=0; i<allOfert.length; i++){
+        let array = 0;
+        allOfert[i].elements.map( (element) => { array= array + +element.priceAll })
+        sum.push(array)
+    };
+
     return (
         <section className={"container_Choice"}>
             <div className={"cardChoice"}>
@@ -42,11 +58,7 @@ if (allOfert){
                     <table>
                         <thead>
                         <tr>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
+                            <td colSpan={5}> </td>
                             {allOfert[0].firm.map((element, index) => {return(
                                 <td colSpan={3} key={index}>{element}</td>
                             )})}
@@ -68,21 +80,40 @@ if (allOfert){
                         </tr>
                         </thead>
                         <tbody>
-                        {allOfert[0].elements.map((element,index)=>{
-                            return(
-                                <tr key={index}>
-                                    <td>{index+1}</td>
-                                    <td>{element.fabric}</td>
-                                    <td>{element.unit}</td>
-                                    <td>{element.quantity}</td>
-                                    <td>{element.note}</td>
-                                    <td>{element.price}</td>
-                                    <td>{element.priceAll}</td>
-                                    <td>{element.noteFirm}</td>
-                                </tr>
-                            )
-                        })}
-
+                        {quantityProducts.map( (element, index)=>{return(
+                            <tr key={index}>
+                                <td>{index+1}</td>
+                                <td>{allOfert[0].elements[index].fabric}</td>
+                                <td>{allOfert[0].elements[index].unit}</td>
+                                <td>{allOfert[0].elements[index].quantity}</td>
+                                <td>{allOfert[0].elements[index].note}</td>
+                                {quantityFirm.map((elem,id)=>{return(
+                                    <>
+                                        <td key={id}>{allOfert[id].elements[index].price}</td>
+                                        <td>{allOfert[id].elements[index].priceAll}</td>
+                                        <td>{allOfert[id].elements[index].noteFirm}</td>
+                                    </>
+                                )})}
+                            </tr>
+                        )})}
+                        <tr>
+                            <td colSpan={5}> Suma całkowita: </td>
+                            {quantityFirm.map((element, index) => {return(
+                                <td colSpan={3} key={index}>{sum[index]}</td>
+                            )})}
+                        </tr>
+                        <tr>
+                            <td colSpan={5}> Oferowany termin dostawy:</td>
+                            {quantityFirm.map((element, index) => {return(
+                                <td colSpan={3} key={index}>{allOfert[index].deliveryFirm}</td>
+                            )})}
+                        </tr>
+                        <tr>
+                            <td colSpan={5}> Koszt dostawy:</td>
+                            {quantityFirm.map((element, index) => {return(
+                                <td colSpan={3} key={index}>{allOfert[index].deliveryPrice}</td>
+                            )})}
+                        </tr>
                         </tbody>
                     </table>
                     </div>

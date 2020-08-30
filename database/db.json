@@ -783,8 +783,8 @@
           "unit": "szt",
           "quantity": "24",
           "note": "",
-          "price": 0,
-          "priceAll": 0,
+          "price": "2",
+          "priceAll": "48",
           "noteFirm": ""
         },
         {
@@ -792,8 +792,8 @@
           "unit": "szt",
           "quantity": "160",
           "note": "metalowe",
-          "price": 0,
-          "priceAll": 0,
+          "price": "10",
+          "priceAll": "1600",
           "noteFirm": ""
         }
       ],
@@ -836,16 +836,16 @@
           "quantity": "4",
           "note": "Z rozładunkiem",
           "price": "12",
-          "priceAll": "rozładunek po waszej stronie",
-          "noteFirm": ""
+          "priceAll": "48",
+          "noteFirm": "rozładunek po waszej stronie"
         },
         {
           "fabric": "Styropian AQUA 12cm",
           "unit": "m2",
           "quantity": "42",
           "note": "",
-          "price": "134",
-          "priceAll": "12",
+          "price": "2",
+          "priceAll": "84",
           "noteFirm": ""
         },
         {
@@ -853,8 +853,8 @@
           "unit": "szt",
           "quantity": "24",
           "note": "",
-          "price": "12",
-          "priceAll": "12",
+          "price": "2",
+          "priceAll": "48",
           "noteFirm": ""
         },
         {
@@ -862,8 +862,8 @@
           "unit": "szt",
           "quantity": "160",
           "note": "metalowe",
-          "price": "124",
-          "priceAll": "12",
+          "price": "10",
+          "priceAll": "160",
           "noteFirm": ""
         }
       ],
@@ -906,7 +906,7 @@
           "quantity": "4",
           "note": "Z rozładunkiem",
           "price": "12",
-          "priceAll": "12",
+          "priceAll": "48",
           "noteFirm": ""
         },
         {
@@ -914,8 +914,8 @@
           "unit": "m2",
           "quantity": "42",
           "note": "",
-          "price": "12",
-          "priceAll": "12",
+          "price": "2",
+          "priceAll": "84",
           "noteFirm": ""
         },
         {
@@ -923,8 +923,8 @@
           "unit": "szt",
           "quantity": "24",
           "note": "",
-          "price": "12",
-          "priceAll": "12",
+          "price": "2",
+          "priceAll": "48",
           "noteFirm": ""
         },
         {
@@ -932,8 +932,8 @@
           "unit": "szt",
           "quantity": "160",
           "note": "metalowe",
-          "price": "2332",
-          "priceAll": "221",
+          "price": "11",
+          "priceAll": "177",
           "noteFirm": ""
         }
       ],
@@ -967,7 +967,7 @@
           "quantity": "1",
           "note": "Do testowania aplikacji",
           "price": "11",
-          "priceAll": "16",
+          "priceAll": "11",
           "noteFirm": ""
         },
         {
@@ -976,16 +976,16 @@
           "quantity": "4",
           "note": "Z rozładunkiem",
           "price": "12",
-          "priceAll": "Brak rozładunku",
-          "noteFirm": ""
+          "priceAll": "48",
+          "noteFirm": "Brak rozładunku"
         },
         {
           "fabric": "Styropian AQUA 12cm",
           "unit": "m2",
           "quantity": "42",
           "note": "",
-          "price": "13",
-          "priceAll": "18",
+          "price": "1",
+          "priceAll": "42",
           "noteFirm": ""
         },
         {
@@ -993,18 +993,18 @@
           "unit": "szt",
           "quantity": "24",
           "note": "",
-          "price": "14",
-          "priceAll": "ale tylko ogniowa",
-          "noteFirm": ""
+          "price": "2",
+          "priceAll": "48",
+          "noteFirm": "ale tylko ogniowa"
         },
         {
           "fabric": "kołki do styropianu 14cm",
           "unit": "szt",
           "quantity": "160",
           "note": "metalowe",
-          "price": "15",
-          "priceAll": "20",
-          "noteFirm": ""
+          "price": "10",
+          "priceAll": "1600",
+          "noteFirm": "jakaś tam uwaga"
         }
       ],
       "dateAuthor": [

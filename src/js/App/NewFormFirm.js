@@ -6,6 +6,7 @@ import DatePicker from "react-datepicker";
 function NewFormFirm() {
     const [myOfert, setMyOfert]=useState(false)
     const [dateFrom, setDateFrom] = useState(new Date())
+    const [deliveryPrice, setDeliveryPrice] = useState("")
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -50,6 +51,8 @@ function NewFormFirm() {
 
     const handleSend = () =>{
         myOfert.status = "close";
+        myOfert.deliveryFirm = dateFrom;
+        myOfert.deliveryPrice = deliveryPrice;
         fetch(`${API_URL}/ofert/${myOfert.id}`,
             {
                 method: 'PUT',
@@ -63,6 +66,13 @@ function NewFormFirm() {
             .then(alert("zapytanie zostało zapisane"))
             .catch(error => console.log(error))
     }
+
+
+    const handledeliveryPrice = (event) => {
+        setDeliveryPrice(event.target.value)
+    }
+
+
 
     if(!myOfert){return("wczytywanie")}
     if (myOfert && myOfert.status === "close"){return ("Na zapytanie została już udzielona oferta")}
@@ -105,7 +115,7 @@ function NewFormFirm() {
                             </tbody>
                         </table>
                         <div>
-                           <h4> 2. Koszt transportu {myOfert.delivery}: {myOfert.placeDelivery} <input/></h4>
+                           <h4> 2. Koszt transportu {myOfert.delivery}: {myOfert.placeDelivery}  <input type="text" value={deliveryPrice} onChange={handledeliveryPrice}/></h4>
                         </div>
                         <div >
                             <h4> 3. Termin odbioru/dostawy:
