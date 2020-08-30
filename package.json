@@ -9,6 +9,7 @@
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.5.2",
+    "emailjs-com": "^2.6.3",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-datepicker": "^3.1.3",

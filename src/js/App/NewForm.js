@@ -168,6 +168,7 @@ function NewForm(user) {
             const ofert = {
                 author: user.userEmail,
                 id:  zmiennaOfert,
+                idOrder: zmienna,
                 dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
                 delivery: "jeśli jest adres to dostawa:",
                 placeDelivery: place,
