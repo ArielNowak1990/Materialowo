@@ -16,7 +16,7 @@ function Welcome(names) {
                             <div className="choice"><Link to='/app/NewForm'>Stwórz zamówienie</Link></div>
                             <div className="choice"><Link to='/app/ActualForm'>Wysłane zapytania</Link></div>
                             <div className="choice"><Link to='/app/ActualCardChoice'>Gotowe karty wyboru</Link></div>
-                            <div className="choice"><Link to='/app/HistoryForm'>Historia Twoich zamówień</Link></div>
+                            <div className="choice"><Link to='/app/HistoryForm'>Archiwum Twoich zamówień</Link></div>
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {API_URL} from "../Fetch/fetch";
+import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import {Link} from "react-router-dom";
 
 function ActualForm(user) {
     const [myUser, setMyUser] = useState(user)
     const [orders, setOrders] = useState("")
+    const [actualOrders, setActualOrders] =useState([])
 
     useEffect(() => {
         fetch(`${API_URL}/orders?author=${myUser.userEmail}`)
@@ -17,12 +18,39 @@ function ActualForm(user) {
             })
             .then(order => {
                 setOrders([...order])
+                let arrayActual = [];
+                order.map(element => {if (element.status === "open"){arrayActual.push(element)}})
+                setActualOrders([...arrayActual])
             })
             .catch(err => console.log(err));
+
+
     },[])
 
-    if (orders.length < 1) {return ( "trwa wczytywanie danych")}
-    if (orders.length >=1) {
+    const handleChangeStatus = (id) => {
+        actualOrders.map(element => {if (element.id === id){
+            element.status="close";
+            fetch(`${API_URL}/orders/${id}`,
+                {
+                    method: 'PUT',
+                    body: JSON.stringify(element),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+                .then(response => response.json())
+                .then(alert("Zapytanie zostało zamknięte i stworzono kartę wyboru"))
+                .catch(error => console.log(error))
+        }
+            let arrayActual = [];
+            actualOrders.map(element => {if (element.status === "open"){arrayActual.push(element)}})
+            setActualOrders([...arrayActual])
+        })}
+
+
+
+    if (actualOrders.length < 1) {return ( "trwa wczytywanie danych")}
+    if (actualOrders.length >=1) {
     return (
         <section className={"container"}>
                     <div className={"list"}>
@@ -39,14 +67,14 @@ function ActualForm(user) {
                                 <div className={"akcje"}>AKCJE</div>
                             </div>
                             <div className={"table"}>
-                                {orders.map((element, index) => {return(
+                                {actualOrders.map((element, index) => {return(
                                     <div key={element.id} className={"table_element"}>
-                                        <div className={"id"}>{element.id}</div>
+                                        <div className={"id"}>{index+1}</div>
                                         <div className={"odbiorcy"}><ol>
                                             {element.firm.map( (el, ind) =>{return ( <li key={ind}>{ind+1} {el}</li>)} )}</ol></div>
                                         <div className={"term"}>{element.dateAuthor[1]}</div>
                                         <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}>{inde+1} {ele.fabric} {ele.unit} {ele.quantity} </li>)})}</ol></div>
-
+                                        <div onClick={ () => handleChangeStatus(element.id)}><i className="fas fa-file-invoice-dollar">Stwórz kartę wyboru</i></div>
                                     </div>
                                 )})}
                             </div>

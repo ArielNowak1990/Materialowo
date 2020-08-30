@@ -11,6 +11,7 @@ import {
     Route,
 } from "react-router-dom";
 import NewFormFirm from "./js/App/NewFormFirm";
+import NewCardChoice from "./js/App/NewCardChoice";
 
 
 
@@ -26,6 +27,7 @@ function App() {
                     <Route path={'/app/sign'} component={Sign}/>
                     <Route path={'/app/MainApp'} component={MainApp}/>
                     <Route path={'/NewFormFirm'} component={NewFormFirm}/>
+                    <Route path={'/NewCardChoice'} component={NewCardChoice}/>
                 </Switch>
             </Router>
         </>

@@ -120,7 +120,7 @@
         "alek123@wp.pl",
         "en48@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "papa",
@@ -155,7 +155,7 @@
         "alek1234@wp.pl",
         "alek12345@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "Czajnik",
@@ -191,7 +191,7 @@
         "sdasd",
         "sssa"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -216,7 +216,7 @@
       "delivery": "jeśli jest adres to dostawa:",
       "placeDelivery": "",
       "firm": [],
-      "status": "send",
+      "status": "open",
       "elements": [],
       "dateAuthor": [
         "2020-08-28T22:53:07.632Z",
@@ -234,7 +234,7 @@
       "delivery": "jeśli jest adres to dostawa:",
       "placeDelivery": "",
       "firm": [],
-      "status": "send",
+      "status": "archive",
       "elements": [
         {
           "fabric": "datapicker",
@@ -261,7 +261,7 @@
       "firm": [
         "alek123@wp.pl"
       ],
-      "status": "send",
+      "status": "archive",
       "elements": [
         {
           "fabric": "derulo",
@@ -290,7 +290,7 @@
         "alek1234@wp.pl",
         "alek12345@wp.pl"
       ],
-      "status": "send",
+      "status": "close",
       "elements": [
         {
           "fabric": "bloczki do murowania",
@@ -332,7 +332,7 @@
         "alek12345@wp.pl",
         "alek12@wp.pl"
       ],
-      "status": "send",
+      "status": "close",
       "elements": [
         {
           "fabric": "Zamówienie próbne",
@@ -400,7 +400,7 @@
         "asdass",
         "dds"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -442,7 +442,7 @@
         "alek123@wp.pl",
         "en48@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "papa",
@@ -478,7 +478,7 @@
         "sdasd",
         "sssa"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -508,7 +508,7 @@
         "sdasd",
         "sssa"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -538,7 +538,7 @@
         "sdasd",
         "sssa"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -568,7 +568,7 @@
         "sdasd",
         "sssa"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -595,7 +595,7 @@
       "firm": [
         "alek123@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "derulo",
@@ -624,7 +624,7 @@
         "alek1234@wp.pl",
         "alek12345@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "bloczki do murowania",
@@ -665,7 +665,7 @@
         "alek1234@wp.pl",
         "alek12345@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "bloczki do murowania",
@@ -706,7 +706,7 @@
         "alek1234@wp.pl",
         "alek12345@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "bloczki do murowania",
@@ -748,7 +748,7 @@
         "alek12345@wp.pl",
         "alek12@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "Zamówienie próbne",
@@ -817,7 +817,7 @@
         "alek12345@wp.pl",
         "alek12@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "Zamówienie próbne",
@@ -955,7 +955,7 @@
         "alek12345@wp.pl",
         "alek12@wp.pl"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "Zamówienie próbne",
@@ -1023,7 +1023,7 @@
         "asdass",
         "dds"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -1064,7 +1064,7 @@
         "asdass",
         "dds"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
@@ -1105,7 +1105,7 @@
         "asdass",
         "dds"
       ],
-      "status": "send",
+      "status": "open",
       "elements": [
         {
           "fabric": "asdasd",
