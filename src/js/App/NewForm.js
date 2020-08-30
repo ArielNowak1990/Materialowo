@@ -13,6 +13,7 @@ function NewForm(user) {
     const [edit, setEdit] = useState(false)
 
     const [place, setPlace] = useState("");
+    const [delivery, setDelivery] = useState("");
 
     const [dateFrom, setDateFrom] = useState(new Date())
     const [dateIdeal, setDateIdeal] = useState(new Date())
@@ -64,6 +65,9 @@ function NewForm(user) {
                 unit: unit,
                 quantity: quantity,
                 note: note,
+                price: 0,
+                priceAll: 0,
+                noteFirm: ""
             };
             setElements([...newArray]);
             setEdit(false);
@@ -77,6 +81,9 @@ function NewForm(user) {
                 unit: unit,
                 quantity: quantity,
                 note: note,
+                price: 0,
+                priceAll: 0,
+                noteFirm: ""
             }
             ])
             setFabric("")
@@ -107,16 +114,9 @@ function NewForm(user) {
     const handleChangePlace = (event) => {
         setPlace(event.target.value)
     }
-    // const handleChangeDateFrom = (event) => {
-    //     setDateFrom(event.target.value)
-    // }
-    // const handleChangeDateIdeal = (event) => {
-    //     setDateIdeal(event.target.value)
-    // }
-    // const handleChangeDateto = (event) => {
-    //     setDateTo(event.target.value)
-    // }
-
+    const handleChangeDelivery = (event) => {
+        setDelivery(event.target.value)
+    }
     const handleAddFirm = (event) => {
         setFirm(event.target.value)
     }
@@ -148,9 +148,6 @@ function NewForm(user) {
         setFirms([...newArray]);
     }
 
-    // const handleChangeDateFinish = (event) => {
-    //     setDateFinish(event.target.value)
-    // }
     let zmienna = `${user.id}AorderA${orders.length + 1}`
 
     const handleSend =() =>{
@@ -159,10 +156,10 @@ function NewForm(user) {
                 author: user.userEmail,
                 id:  zmienna,
                 dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
-                delivery: "jeśli jest adres to dostawa:",
+                delivery: delivery,
                 placeDelivery: place,
                 firm: firms,
-                status: "send",
+                status: "open",
                 elements: elements,
                 dateAuthor: [data, dateFinish],
             }
@@ -175,7 +172,7 @@ function NewForm(user) {
                 delivery: "jeśli jest adres to dostawa:",
                 placeDelivery: place,
                 firm: firms,
-                status: "send",
+                status: "open",
                 elements: elements,
                 dateAuthor: [data, dateFinish],
             }
@@ -263,13 +260,13 @@ function NewForm(user) {
                             <div>
                                 <label>
                                     <input type="radio" id={"odbiór osobisty"} name={"przekazanie"}
-                                              value={"odbiór"}/>Odbiór osobisty
+                                              value={"odbiór"} onChange={handleChangeDelivery}/>Odbiór osobisty
                                 </label>
                                 <div className="question"><label>
                                     <input type="radio" id={"dostawa"} name={"przekazanie"}
-                                           value={"dostarczenie"} onChange={handleChangePlace}/>
+                                           value={"dostarczenie"} onChange={handleChangeDelivery}/>
                                     Dostawa na adres:
-                                    <input type="text" className="hidden-textbox"/> </label>
+                                    <input type="text" className="hidden-textbox"  onChange={handleChangePlace}/> </label>
                                 </div>
                             </div>
                         </div>

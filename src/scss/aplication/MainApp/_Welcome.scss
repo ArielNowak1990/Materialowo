@@ -60,6 +60,7 @@
           justify-content: center;
           font-size: 2em;
           text-align: center;
+          background-color: white;
 
           @include desktop(900px){
             border: 1px solid black;

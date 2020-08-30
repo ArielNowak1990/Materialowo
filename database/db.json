@@ -274,6 +274,157 @@
         "2020-08-29T09:08:41.896Z",
         "2020-08-29T09:08:01.491Z"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-09-03T07:10:08.000Z",
+        "2020-09-04T07:10:08.000Z",
+        "2020-09-05T07:10:08.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "bloczki do murowania",
+          "unit": "szt",
+          "quantity": "500",
+          "note": "porotherm",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "bloczki do ścian działowych ",
+          "unit": "szt",
+          "quantity": "29",
+          "note": "lekkie",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T07:11:34.494Z",
+        "2020-08-30T07:10:08.783Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-07T08:49:46.000Z",
+        "2020-09-08T08:49:46.000Z",
+        "2020-09-09T08:49:46.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl",
+        "alek12@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "Zamówienie próbne",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "Do testowania aplikacji",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Bloczki YTONG",
+          "unit": "palet",
+          "quantity": "4",
+          "note": "Z rozładunkiem",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Styropian AQUA 12cm",
+          "unit": "m2",
+          "quantity": "42",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Piana do styropianu",
+          "unit": "szt",
+          "quantity": "24",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "kołki do styropianu 14cm",
+          "unit": "szt",
+          "quantity": "160",
+          "note": "metalowe",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T08:52:56.450Z",
+        "2020-09-04T08:49:46.000Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków bombonierki 12",
+      "firm": [
+        "wp.pl",
+        "asdass",
+        "dds"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "sss",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "aasd",
+          "unit": "dsa",
+          "quantity": "sdd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T09:04:13.300Z",
+        "2020-08-30T09:03:50.106Z"
+      ]
     }
   ],
   "ofert": [
@@ -456,6 +607,528 @@
       "dateAuthor": [
         "2020-08-29T09:08:41.896Z",
         "2020-08-29T09:08:01.491Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA7AofertA0",
+      "dateDeliveryAuthor": [
+        "2020-09-03T07:10:08.000Z",
+        "2020-09-04T07:10:08.000Z",
+        "2020-09-05T07:10:08.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "bloczki do murowania",
+          "unit": "szt",
+          "quantity": "500",
+          "note": "porotherm",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "bloczki do ścian działowych ",
+          "unit": "szt",
+          "quantity": "29",
+          "note": "lekkie",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T07:11:34.494Z",
+        "2020-08-30T07:10:08.783Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA7AofertA1",
+      "dateDeliveryAuthor": [
+        "2020-09-03T07:10:08.000Z",
+        "2020-09-04T07:10:08.000Z",
+        "2020-09-05T07:10:08.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "bloczki do murowania",
+          "unit": "szt",
+          "quantity": "500",
+          "note": "porotherm",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "bloczki do ścian działowych ",
+          "unit": "szt",
+          "quantity": "29",
+          "note": "lekkie",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T07:11:34.494Z",
+        "2020-08-30T07:10:08.783Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA7AofertA2",
+      "dateDeliveryAuthor": [
+        "2020-09-03T07:10:08.000Z",
+        "2020-09-04T07:10:08.000Z",
+        "2020-09-05T07:10:08.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "bloczki do murowania",
+          "unit": "szt",
+          "quantity": "500",
+          "note": "porotherm",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "bloczki do ścian działowych ",
+          "unit": "szt",
+          "quantity": "29",
+          "note": "lekkie",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T07:11:34.494Z",
+        "2020-08-30T07:10:08.783Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA8AofertA0",
+      "dateDeliveryAuthor": [
+        "2020-09-07T08:49:46.000Z",
+        "2020-09-08T08:49:46.000Z",
+        "2020-09-09T08:49:46.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl",
+        "alek12@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "Zamówienie próbne",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "Do testowania aplikacji",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Bloczki YTONG",
+          "unit": "palet",
+          "quantity": "4",
+          "note": "Z rozładunkiem",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Styropian AQUA 12cm",
+          "unit": "m2",
+          "quantity": "42",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Piana do styropianu",
+          "unit": "szt",
+          "quantity": "24",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "kołki do styropianu 14cm",
+          "unit": "szt",
+          "quantity": "160",
+          "note": "metalowe",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T08:52:56.450Z",
+        "2020-09-04T08:49:46.000Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA8AofertA1",
+      "dateDeliveryAuthor": [
+        "2020-09-07T08:49:46.000Z",
+        "2020-09-08T08:49:46.000Z",
+        "2020-09-09T08:49:46.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl",
+        "alek12@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "Zamówienie próbne",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "Do testowania aplikacji",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Bloczki YTONG",
+          "unit": "palet",
+          "quantity": "4",
+          "note": "Z rozładunkiem",
+          "price": "12",
+          "priceAll": "rozładunek po waszej stronie",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Styropian AQUA 12cm",
+          "unit": "m2",
+          "quantity": "42",
+          "note": "",
+          "price": "134",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Piana do styropianu",
+          "unit": "szt",
+          "quantity": "24",
+          "note": "",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "kołki do styropianu 14cm",
+          "unit": "szt",
+          "quantity": "160",
+          "note": "metalowe",
+          "price": "124",
+          "priceAll": "12",
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T08:52:56.450Z",
+        "2020-09-04T08:49:46.000Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA8AofertA2",
+      "dateDeliveryAuthor": [
+        "2020-09-07T08:49:46.000Z",
+        "2020-09-08T08:49:46.000Z",
+        "2020-09-09T08:49:46.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "dostarczenie",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl",
+        "alek12@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Zamówienie próbne",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "Do testowania aplikacji",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Bloczki YTONG",
+          "unit": "palet",
+          "quantity": "4",
+          "note": "Z rozładunkiem",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Styropian AQUA 12cm",
+          "unit": "m2",
+          "quantity": "42",
+          "note": "",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Piana do styropianu",
+          "unit": "szt",
+          "quantity": "24",
+          "note": "",
+          "price": "12",
+          "priceAll": "12",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "kołki do styropianu 14cm",
+          "unit": "szt",
+          "quantity": "160",
+          "note": "metalowe",
+          "price": "2332",
+          "priceAll": "221",
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T08:52:56.450Z",
+        "2020-09-04T08:49:46.000Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA8AofertA3",
+      "dateDeliveryAuthor": [
+        "2020-09-07T08:49:46.000Z",
+        "2020-09-08T08:49:46.000Z",
+        "2020-09-09T08:49:46.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko pasikonika 123",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl",
+        "alek12345@wp.pl",
+        "alek12@wp.pl"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "Zamówienie próbne",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "Do testowania aplikacji",
+          "price": "11",
+          "priceAll": "16",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Bloczki YTONG",
+          "unit": "palet",
+          "quantity": "4",
+          "note": "Z rozładunkiem",
+          "price": "12",
+          "priceAll": "Brak rozładunku",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Styropian AQUA 12cm",
+          "unit": "m2",
+          "quantity": "42",
+          "note": "",
+          "price": "13",
+          "priceAll": "18",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Piana do styropianu",
+          "unit": "szt",
+          "quantity": "24",
+          "note": "",
+          "price": "14",
+          "priceAll": "ale tylko ogniowa",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "kołki do styropianu 14cm",
+          "unit": "szt",
+          "quantity": "160",
+          "note": "metalowe",
+          "price": "15",
+          "priceAll": "20",
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T08:52:56.450Z",
+        "2020-09-04T08:49:46.000Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA9AofertA0",
+      "dateDeliveryAuthor": [
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków bombonierki 12",
+      "firm": [
+        "wp.pl",
+        "asdass",
+        "dds"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "sss",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "aasd",
+          "unit": "dsa",
+          "quantity": "sdd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T09:04:13.300Z",
+        "2020-08-30T09:03:50.106Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA9AofertA1",
+      "dateDeliveryAuthor": [
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków bombonierki 12",
+      "firm": [
+        "wp.pl",
+        "asdass",
+        "dds"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "sss",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "aasd",
+          "unit": "dsa",
+          "quantity": "sdd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T09:04:13.300Z",
+        "2020-08-30T09:03:50.106Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "8AorderA9AofertA2",
+      "dateDeliveryAuthor": [
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z",
+        "2020-08-30T09:03:50.106Z"
+      ],
+      "delivery": "dostawa",
+      "placeDelivery": "Kraków bombonierki 12",
+      "firm": [
+        "wp.pl",
+        "asdass",
+        "dds"
+      ],
+      "status": "send",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "sss",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "aasd",
+          "unit": "dsa",
+          "quantity": "sdd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-30T09:04:13.300Z",
+        "2020-08-30T09:03:50.106Z"
       ]
     }
   ]
