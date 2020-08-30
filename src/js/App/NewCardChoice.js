@@ -3,10 +3,12 @@ import {API_URL} from "../Fetch/fetch";
 
 function NewCardChoice() {
     const [allOfert, setAllOfert] =useState(false)
-    const [quantityFirm, setQuantityFirm] = useState([1,2,3,4])
-    const [quantityProducts, setQuantityProducts] = useState([1,2,3,4,5])
-    const sum = [];
-
+    // const [quantityFirm, setQuantityFirm] = useState([1,2,3,4])
+    // const [quantityProducts, setQuantityProducts] = useState([1,2,3,4,5])
+    let quantityFirm = [];
+    let quantityProducts = [];
+    let sum = [];
+    let goodPrice = 0;
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -26,14 +28,6 @@ function NewCardChoice() {
             })
             .then(data => {
                 setAllOfert([...data])
-                // let newArray = [];
-                // for (let i=1; i<=[...data].length ;i++){newArray.push(i)}
-                // setQuantityFirm([...newArray])
-                // console.log(quantityFirm)
-                // let newArrays = [];
-                // for (let i=1; i<=[...data][0].elements.length ;i++){newArrays.push(i)}
-                // setQuantityProducts([...newArrays])
-                // console.log(quantityProducts);
             })
             .catch(err => console.log(err));
     },[])
@@ -44,11 +38,28 @@ function NewCardChoice() {
 if (!allOfert){return ("wczytywanie")}
 if (allOfert){
 
+    let newArray = [];
+    for (let i=1; i<=allOfert.length ;i++){newArray.push(i)}
+    quantityFirm =[...newArray]
+    console.log(quantityFirm)
+    let newArrays = [];
+    for (let i=1; i<=allOfert[0].elements.length ;i++){newArrays.push(i)}
+    quantityProducts =[...newArrays]
+    console.log(quantityProducts);
+
+    function compareNr(a, b) {
+        return a - b
+    }
+
     for (let i=0; i<allOfert.length; i++){
         let array = 0;
         allOfert[i].elements.map( (element) => { array= array + +element.priceAll })
         sum.push(array)
     };
+
+
+
+
 
     return (
         <section className={"container_Choice"}>
@@ -116,6 +127,13 @@ if (allOfert){
                         </tr>
                         </tbody>
                     </table>
+
+                    <h4>REKOMENDOWANY PRZEZ PROGRAM DOSTAWCA:</h4>
+                    <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy ...... </p>
+                    <p>Dostawa oczekiwana była w zakresie od ........ do ......., z najdogodniejszym terminem ......... natomiast termin zaproponowany przez firmę ......... to ........</p>
+                    <p>Przed zamówieniem konieczne jest indywidualne przeglądniecie ofert, i porównanie wszystkich danych !</p>
+
+
                     </div>
             </div>
         </section>
