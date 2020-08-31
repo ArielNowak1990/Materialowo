@@ -25,6 +25,84 @@
       "logo": "false",
       "coworkers": "false",
       "id": 2
+    },
+    {
+      "name": "kamil",
+      "password": "$2a$10$4G/ktgX2i8y33s8.8XLLx.Fp40PQfzTsmEgKptH8kpp4djykvGXvy",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kamil@mail.com",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 3
+    },
+    {
+      "name": "Kuchar",
+      "password": "$2a$10$5/.VSxYLY3YCQLayOrqeC.7vl4NExFXmFOkNO7COPJuvKc130YtNW",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kuchar@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 4
+    },
+    {
+      "name": "Kucharek",
+      "password": "$2a$10$UiLKueLuAq5I6ItqhXhpcejIOENRgVJKMnglnhHaZG8hnXpVKdiGa",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kucharek@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 5
+    },
+    {
+      "name": "adrianka",
+      "password": "$2a$10$2/Ny6Pt8Kb0ugDicitCHl.8flQeXJhVMPp0PxAk9wPAdvAmlXn.MG",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "adrianka@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 6
+    },
+    {
+      "name": "Sabina",
+      "password": "$2a$10$kC7Em1liQE8gB4lyNz1pNej.GckgXojJZOKLLTbp7qQ.3kdtQiN4q",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "sabina@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 7
+    },
+    {
+      "name": "jajeczko",
+      "password": "$2a$10$vLf13bitGkvKuMeK5irDiec0goiyS.r0.Vi4tE4ZyHDsAghj8Ma.m",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "jajeczko1@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 8
     }
   ],
   "orders": [
@@ -158,6 +236,156 @@
       "dateAuthor": [
         "2020-08-31T10:00:47.488Z",
         "2020-08-31T09:59:34.863Z"
+      ]
+    },
+    {
+      "author": "kamil@mail.com",
+      "id": "3AorderA4",
+      "dateDeliveryAuthor": [
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-04T12:57:14.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "os dywizjoinu 3030",
+      "firm": [
+        "kamil@mail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "pustak",
+          "unit": "szt",
+          "quantity": "2000",
+          "note": "dobre żeby byy",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "dddd",
+          "unit": "",
+          "quantity": "",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T13:00:37.403Z",
+        "2020-09-03T12:57:14.000Z"
+      ]
+    },
+    {
+      "author": "kamil@mail.com",
+      "id": "3AorderA5",
+      "dateDeliveryAuthor": [
+        "2020-08-31T13:06:30.530Z",
+        "2020-08-31T13:06:30.530Z",
+        "2020-08-31T13:06:30.530Z"
+      ],
+      "delivery": "odbiór",
+      "placeDelivery": "",
+      "firm": [
+        ""
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "asd",
+          "unit": "123",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T13:07:23.934Z",
+        "2020-06-16T13:06:30.000Z"
+      ]
+    },
+    {
+      "author": "sabina@wp.pl",
+      "id": "7AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-04T16:23:26.000Z",
+        "2020-09-05T16:23:26.000Z",
+        "2020-09-06T16:23:26.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "adfsdfasd",
+      "firm": [
+        "sabina@wp.,pl",
+        "sabina12@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "duże A+",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "3",
+          "note": "ziemniaczanka",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T16:24:28.097Z",
+        "2020-08-31T16:23:26.132Z"
+      ]
+    },
+    {
+      "author": "jajeczko1@wp.pl",
+      "id": "8AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko mickiewicza 21",
+      "firm": [
+        "alek123@wp.pl",
+        "marek123@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duże A+",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "ziemniaczana",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T17:32:39.903Z",
+        "2020-08-31T17:31:59.617Z"
       ]
     }
   ],
@@ -392,6 +620,295 @@
       ],
       "deliveryFirm": "2020-08-31T10:17:25.035Z",
       "deliveryPrice": "110"
+    },
+    {
+      "author": "kamil@mail.com",
+      "id": "3AorderA4AofertA0",
+      "idOrder": "3AorderA4",
+      "dateDeliveryAuthor": [
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-04T12:57:14.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "os dywizjoinu 3030",
+      "firm": [
+        "kamil@mail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "pustak",
+          "unit": "szt",
+          "quantity": "2000",
+          "note": "dobre żeby byy",
+          "price": "10",
+          "priceAll": 20000,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "dddd",
+          "unit": "",
+          "quantity": "",
+          "note": "",
+          "price": "",
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T13:00:37.403Z",
+        "2020-09-03T12:57:14.000Z"
+      ],
+      "deliveryFirm": "2020-08-31T13:01:12.280Z",
+      "deliveryPrice": "150"
+    },
+    {
+      "author": "kamil@mail.com",
+      "id": "3AorderA4AofertA1",
+      "idOrder": "3AorderA4",
+      "dateDeliveryAuthor": [
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-01T12:57:14.000Z",
+        "2020-09-04T12:57:14.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "os dywizjoinu 3030",
+      "firm": [
+        "kamil@mail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "pustak",
+          "unit": "szt",
+          "quantity": "2000",
+          "note": "dobre żeby byy",
+          "price": "120",
+          "priceAll": 240000,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "dddd",
+          "unit": "",
+          "quantity": "",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T13:00:37.403Z",
+        "2020-09-03T12:57:14.000Z"
+      ],
+      "deliveryFirm": "2020-08-31T13:01:14.540Z",
+      "deliveryPrice": "100"
+    },
+    {
+      "author": "kamil@mail.com",
+      "id": "3AorderA5AofertA0",
+      "idOrder": "3AorderA5",
+      "dateDeliveryAuthor": [
+        "2020-08-31T13:06:30.530Z",
+        "2020-08-31T13:06:30.530Z",
+        "2020-08-31T13:06:30.530Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        ""
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "asd",
+          "unit": "123",
+          "quantity": "asd",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T13:07:23.934Z",
+        "2020-06-16T13:06:30.000Z"
+      ]
+    },
+    {
+      "author": "sabina@wp.pl",
+      "id": "7AorderA6AofertA0",
+      "idOrder": "7AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-04T16:23:26.000Z",
+        "2020-09-05T16:23:26.000Z",
+        "2020-09-06T16:23:26.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "adfsdfasd",
+      "firm": [
+        "sabina@wp.,pl",
+        "sabina12@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "duże A+",
+          "price": "2",
+          "priceAll": "asd",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "3",
+          "note": "ziemniaczanka",
+          "price": "12",
+          "priceAll": "asdd",
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T16:24:28.097Z",
+        "2020-08-31T16:23:26.132Z"
+      ],
+      "deliveryFirm": "2020-08-31T16:24:35.342Z",
+      "deliveryPrice": "12"
+    },
+    {
+      "author": "sabina@wp.pl",
+      "id": "7AorderA6AofertA1",
+      "idOrder": "7AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-04T16:23:26.000Z",
+        "2020-09-05T16:23:26.000Z",
+        "2020-09-06T16:23:26.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "adfsdfasd",
+      "firm": [
+        "sabina@wp.,pl",
+        "sabina12@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "duże A+",
+          "price": "2",
+          "priceAll": "asd",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "3",
+          "note": "ziemniaczanka",
+          "price": "2",
+          "priceAll": 6,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T16:24:28.097Z",
+        "2020-08-31T16:23:26.132Z"
+      ],
+      "deliveryFirm": "2020-08-31T16:24:52.932Z",
+      "deliveryPrice": "12"
+    },
+    {
+      "author": "jajeczko1@wp.pl",
+      "id": "8AorderA7AofertA0",
+      "idOrder": "8AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko mickiewicza 21",
+      "firm": [
+        "alek123@wp.pl",
+        "marek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duże A+",
+          "price": "12",
+          "priceAll": "brak",
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "ziemniaczana",
+          "price": "21",
+          "priceAll": 21,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T17:32:39.903Z",
+        "2020-08-31T17:31:59.617Z"
+      ],
+      "deliveryFirm": "2020-08-31T17:33:14.623Z",
+      "deliveryPrice": "100"
+    },
+    {
+      "author": "jajeczko1@wp.pl",
+      "id": "8AorderA7AofertA1",
+      "idOrder": "8AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z",
+        "2020-08-31T17:31:59.617Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko mickiewicza 21",
+      "firm": [
+        "alek123@wp.pl",
+        "marek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duże A+",
+          "price": "1",
+          "priceAll": 1,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mąka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "ziemniaczana",
+          "price": "12",
+          "priceAll": 12,
+          "noteFirm": "brak"
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T17:32:39.903Z",
+        "2020-08-31T17:31:59.617Z"
+      ],
+      "deliveryFirm": "2020-08-31T17:36:02.747Z",
+      "deliveryPrice": "100"
     }
   ]
 }

@@ -80,11 +80,13 @@ function PageLog() {
                             />
                         </div>
                             <button className={"button_main"}>Loguj!</button>
+                        <ul>
                         {error.map((element, index) => {
-                            return (<ul key={index}>
-                                <li>{element}</li>
-                            </ul>)
+                            return (
+                                <li key={index}>{element}</li>
+                            )
                         })}
+                        </ul>
                     </form>
                 </div>
                 <div className={"LogSign white"}>

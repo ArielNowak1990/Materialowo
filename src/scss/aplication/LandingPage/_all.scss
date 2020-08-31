@@ -2,12 +2,10 @@
 
 *{
   font-family: 'Nunito Sans', sans-serif;
+  background-color: $color-background-first;
+
   .landing_Page{
     background-color: $color-background-first;
-  }
-
-  switch{
-    color: $color-background-font;
   }
 
 
@@ -15,6 +13,7 @@
     font-size: inherit;
     color: inherit;
     color: $color-background-font;
+    background-color: inherit;
   }
 }
 

@@ -62,6 +62,12 @@
           text-align: center;
           background-color: white;
 
+          &:hover{
+            color: red;
+            transform: scale(1.1);
+            border: 5px solid  #BF4158;
+          }
+
           @include desktop(900px){
             border: 1px solid black;
             width: 22%;

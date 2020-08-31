@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {API_URL} from "../Fetch/fetch";
+import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import {Link} from "react-router-dom";
 
 function HistoryForm(user) {
@@ -25,6 +25,9 @@ function HistoryForm(user) {
             .catch(err => console.log(err));
     },[])
 
+    const handleOpenCard = (id) =>{
+        window.location.href=`${PAGE_URL}/NewCardChoice/${id}`;
+    }
 
 
     if (actualOrders.length < 1) {return ( "Niestety. Brak danych do wyświetlenia. ")}
@@ -34,7 +37,6 @@ function HistoryForm(user) {
                 <div className={"list"}>
                     <div className={"list_header"}>
                         <h1>LISTA ARCHIWALNYCH ZAMÓWIEŃ:</h1>
-                        <Link to={"/app/NewForm"}><i className="fas fa-plus-square"/></Link>
                     </div>
                     <div className={"list_table"}>
                         <div className={"table_header"}>
@@ -52,7 +54,7 @@ function HistoryForm(user) {
                                         {element.firm.map( (el, ind) =>{return ( <li key={ind}>{ind+1} {el}</li>)} )}</ol></div>
                                     <div className={"term"}>{element.dateAuthor[1]}</div>
                                     <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}>{inde+1} {ele.fabric} {ele.unit} {ele.quantity} </li>)})}</ol></div>
-                                    <div><i className="fas fa-file-invoice-dollar">Stwórz kartę wyboru</i></div>
+                                    <div onClick={ () => handleOpenCard(element.id)}><i className="fas fa-file-invoice-dollar">Otwórz Kartę</i></div>
                                 </div>
                             )})}
                         </div>

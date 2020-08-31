@@ -33,7 +33,7 @@ function NewFormFirm() {
     const handleChangeNote = (event, {index}) => {
         let element = myOfert.elements;
         let myElem = element[+index];
-        myElem.priceAll = event.target.value
+        myElem.noteFirm = event.target.value
         console.log(myElem)
     }
 

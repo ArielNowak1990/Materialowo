@@ -11,6 +11,8 @@ function NewForm(user) {
     const [quantity, setQuantity] = useState("")
     const [note, setNote] = useState("")
     const [edit, setEdit] = useState(false)
+    const [addError, setAddError] =useState([])
+    const [addErrorMail, setAddErrorMail] =useState([])
 
     const [place, setPlace] = useState("");
     const [delivery, setDelivery] = useState("");
@@ -58,6 +60,12 @@ function NewForm(user) {
     }
 
     const handleAddElement = () => {
+        let ArrayError = [];
+        setAddError([...ArrayError]);
+        if(fabric.length < 3){ArrayError.push("Nazwa materiału ma być dłuższa niż 3 litery")}
+        if(unit.length < 1){ArrayError.push("Nazwa jednostki ma być dłuższa niż 1 litera")}
+        if(quantity.length < 1){ArrayError.push("ilość ma być dłuższa niż 1 litera")}
+        if(ArrayError.length===0){
         if (edit !== false) {
             const newArray = [...elements];
             newArray[edit] = {
@@ -90,7 +98,8 @@ function NewForm(user) {
             setUnit("")
             setQuantity("")
             setNote("")
-        }
+        }}
+        if(ArrayError.length>0){ setAddError([...ArrayError])}
     }
 
     const handleEditeElement = (e, index) => {
@@ -121,16 +130,22 @@ function NewForm(user) {
         setFirm(event.target.value)
     }
     const handleAddFirms = () => {
-        if (editFirm !== false ) {
-            const newArray = [...firms];
-            newArray[editFirm] = firm;
-            setFirms([...newArray])
-            setFirm("")
+        let ArrayError = [];
+        setAddErrorMail([...ArrayError]);
+        if(firm.length < 5){ArrayError.push("Nazwa maila ma być dłuższa niż 5 liter, ")}
+        if (firm.indexOf("@") < 0) (ArrayError.push(" Mail nie posiada znaku @"))
+        if(ArrayError.length===0) {
+            if (editFirm !== false) {
+                const newArray = [...firms];
+                newArray[editFirm] = firm;
+                setFirms([...newArray])
+                setFirm("")
+            } else {
+                setFirms([...firms, firm]);
+                setFirm("")
+            }
         }
-        else {
-            setFirms([...firms, firm]);
-            setFirm("")
-        }
+        if(ArrayError.length>0){ setAddErrorMail([...ArrayError])}
     }
 
     const handleEditeFirm = (e, index) => {
@@ -228,11 +243,18 @@ function NewForm(user) {
                                     <td><input type="text" value={unit} onChange={handleChangeUnit}/></td>
                                     <td><input type="text" value={quantity} onChange={handleChangeQuantity}/></td>
                                     <td><input type="text" value={note} onChange={handleChangeNote}/></td>
-                                    <td><i className="fas fa-plus-square" onClick={handleAddElement}/></td>
+                                    <td>  <i className="fas fa-plus-square" onClick={handleAddElement}/>DODAJ</td>
                                 </tr>
                                 </tbody>
                             </table>
-<br/>
+                             <ol>
+                            {addError.map(( element, index) =>{
+                                return(
+                                    <li key={index}>{element}</li>
+                                )
+                            })}
+                             </ol>
+                            <br/>
                             <table className={"order"}>
                                 <thead>
                                 </thead>
@@ -281,7 +303,7 @@ function NewForm(user) {
 
                         <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
                             <input type="text" value={firm} onChange={handleAddFirm}/>
-                        <i className="fas fa-plus-square" onClick={handleAddFirms}/></div>
+                        <i className="fas fa-plus-square" onClick={handleAddFirms}/> DODAJ <p>{addErrorMail.map((element, index)=> {return(<span key={index}>{element}</span>)})}</p></div>
                         <div>
                             <ol> {firms.map((elements, index) => {
                                 return (<li key={index}>{index + 1}. {elements}

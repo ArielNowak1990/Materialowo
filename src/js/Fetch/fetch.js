@@ -89,6 +89,7 @@ export function addUser (user){
         }
     })
         .then(response => response.json())
+        .then( window.location.href="http://localhost:3001/app/log")
         .catch(error => console.log(error))
 }
 
