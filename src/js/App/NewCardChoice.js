@@ -47,19 +47,12 @@ if (allOfert){
     quantityProducts =[...newArrays]
     console.log(quantityProducts);
 
-    function compareNr(a, b) {
-        return a - b
-    }
 
     for (let i=0; i<allOfert.length; i++){
         let array = 0;
         allOfert[i].elements.map( (element) => { array= array + +element.priceAll })
         sum.push(array)
     };
-
-
-
-
 
     return (
         <section className={"container_Choice"}>

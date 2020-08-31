@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import LandingPageHeader from "../LandingPage/LandingPage_header"
+import LandingPageHeader2 from "../LandingPage/LandingPage_header2"
 import Welcome from "../App/Welcome";
 import NewForm from "./NewForm";
 
@@ -43,6 +43,7 @@ function MainApp() {
                 setMyUser(person)
             })
             .catch(err => console.log(err));
+
     },[])
 
 
@@ -51,7 +52,7 @@ function MainApp() {
         <Router>
             <Switch>
                 <section className={"container"}>
-                    <LandingPageHeader/>
+                    <LandingPageHeader2/>
                     <Route path={'/app/MainApp'} component={ () => Welcome(name)}/>
                     <Route path={'/app/NewForm'} component={ () => NewForm(myUser)}/>
                     <Route path={'/app/ActualForm'} component={ () => ActualForm(myUser)}/>

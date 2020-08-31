@@ -186,7 +186,6 @@ function NewForm(user) {
             })
                 .then(response => response.json())
                 .catch(error => console.log(error))
-
         }
 
         fetch(`${API_URL}/orders`, {
