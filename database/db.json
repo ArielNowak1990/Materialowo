@@ -387,6 +387,410 @@
         "2020-08-31T17:32:39.903Z",
         "2020-08-31T17:31:59.617Z"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-08-31T19:42:46.738Z",
+        "2020-08-31T19:42:46.738Z",
+        "2020-08-31T19:42:46.738Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "19",
+          "note": "duże",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T19:43:06.919Z",
+        "2020-08-31T19:42:46.739Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:03:06.174Z",
+        "2020-08-31T20:02:38.369Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA10",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:05:48.248Z",
+        "2020-08-31T20:05:48.249Z",
+        "2020-08-31T20:05:48.249Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "brakerson",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:06:07.824Z",
+        "2020-08-31T20:05:48.249Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA12",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:14:48.637Z",
+        "2020-08-31T20:14:27.794Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA13",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:16:03.273Z",
+        "2020-08-31T20:15:40.760Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA14",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mało",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "11",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:18:11.543Z",
+        "2020-08-31T20:17:50.106Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA15",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:20:15.732Z",
+        "2020-08-31T20:19:53.803Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA16",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:21:43.663Z",
+        "2020-08-31T20:21:26.307Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA17",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:22:58.180Z",
+        "2020-08-31T20:22:41.681Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA18",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:26:14.691Z",
+        "2020-08-31T20:25:55.098Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA19",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:27:01.240Z",
+        "2020-08-31T20:27:01.240Z",
+        "2020-08-31T20:27:01.240Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "ALEK123@WP.PL"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "alek13",
+          "unit": "sz",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:27:12.359Z",
+        "2020-08-31T20:27:01.240Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA20",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "ALEK123@WP.PL",
+        "ARIEL.NOWAK90@GMAIL.COM"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "JAJKA",
+          "unit": "SZT",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:27:58.165Z",
+        "2020-08-31T20:27:40.729Z"
+      ]
     }
   ],
   "ofert": [
@@ -909,6 +1313,885 @@
       ],
       "deliveryFirm": "2020-08-31T17:36:02.747Z",
       "deliveryPrice": "100"
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA8AofertA0",
+      "idOrder": "2AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-08-31T19:42:46.738Z",
+        "2020-08-31T19:42:46.738Z",
+        "2020-08-31T19:42:46.738Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "19",
+          "note": "duże",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T19:43:06.919Z",
+        "2020-08-31T19:42:46.739Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9AofertA0",
+      "idOrder": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:03:06.174Z",
+        "2020-08-31T20:02:38.369Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9AofertA1",
+      "idOrder": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:03:06.174Z",
+        "2020-08-31T20:02:38.369Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9AofertA2",
+      "idOrder": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z",
+        "2020-08-31T20:02:38.369Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:03:06.174Z",
+        "2020-08-31T20:02:38.369Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA10AofertA0",
+      "idOrder": "2AorderA10",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:05:48.248Z",
+        "2020-08-31T20:05:48.249Z",
+        "2020-08-31T20:05:48.249Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "brakerson",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:06:07.824Z",
+        "2020-08-31T20:05:48.249Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11AofertA0",
+      "idOrder": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11AofertA1",
+      "idOrder": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11AofertA2",
+      "idOrder": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11AofertA3",
+      "idOrder": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA11AofertA4",
+      "idOrder": "2AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z",
+        "2020-08-31T20:07:58.618Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com",
+        " ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jaja",
+          "unit": "s",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:08:34.463Z",
+        "2020-08-31T20:07:58.618Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA12AofertA0",
+      "idOrder": "2AorderA12",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:14:48.637Z",
+        "2020-08-31T20:14:27.794Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA12AofertA1",
+      "idOrder": "2AorderA12",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z",
+        "2020-08-31T20:14:27.794Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:14:48.637Z",
+        "2020-08-31T20:14:27.794Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA13AofertA0",
+      "idOrder": "2AorderA13",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:16:03.273Z",
+        "2020-08-31T20:15:40.760Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA13AofertA1",
+      "idOrder": "2AorderA13",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z",
+        "2020-08-31T20:15:40.760Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:16:03.273Z",
+        "2020-08-31T20:15:40.760Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA14AofertA0",
+      "idOrder": "2AorderA14",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mało",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "11",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:18:11.543Z",
+        "2020-08-31T20:17:50.106Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA14AofertA1",
+      "idOrder": "2AorderA14",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z",
+        "2020-08-31T20:17:50.106Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mało",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "11",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:18:11.543Z",
+        "2020-08-31T20:17:50.106Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA15AofertA0",
+      "idOrder": "2AorderA15",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:20:15.732Z",
+        "2020-08-31T20:19:53.803Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA15AofertA1",
+      "idOrder": "2AorderA15",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z",
+        "2020-08-31T20:19:53.803Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ariel.nowak90@gmail.com",
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:20:15.732Z",
+        "2020-08-31T20:19:53.803Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA16AofertA0",
+      "idOrder": "2AorderA16",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:21:43.663Z",
+        "2020-08-31T20:21:26.307Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA16AofertA1",
+      "idOrder": "2AorderA16",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z",
+        "2020-08-31T20:21:26.307Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duze",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:21:43.663Z",
+        "2020-08-31T20:21:26.307Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA17AofertA0",
+      "idOrder": "2AorderA17",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:22:58.180Z",
+        "2020-08-31T20:22:41.681Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA17AofertA1",
+      "idOrder": "2AorderA17",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z",
+        "2020-08-31T20:22:41.681Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleczko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:22:58.180Z",
+        "2020-08-31T20:22:41.681Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA18AofertA0",
+      "idOrder": "2AorderA18",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:26:14.691Z",
+        "2020-08-31T20:25:55.098Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA18AofertA1",
+      "idOrder": "2AorderA18",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z",
+        "2020-08-31T20:25:55.098Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:26:14.691Z",
+        "2020-08-31T20:25:55.098Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA19AofertA0",
+      "idOrder": "2AorderA19",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:27:01.240Z",
+        "2020-08-31T20:27:01.240Z",
+        "2020-08-31T20:27:01.240Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ALEK123@WP.PL"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "alek13",
+          "unit": "sz",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:27:12.359Z",
+        "2020-08-31T20:27:01.240Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA20AofertA0",
+      "idOrder": "2AorderA20",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ALEK123@WP.PL",
+        "ARIEL.NOWAK90@GMAIL.COM"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "JAJKA",
+          "unit": "SZT",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:27:58.165Z",
+        "2020-08-31T20:27:40.729Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA20AofertA1",
+      "idOrder": "2AorderA20",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z",
+        "2020-08-31T20:27:40.729Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "ALEK123@WP.PL",
+        "ARIEL.NOWAK90@GMAIL.COM"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "JAJKA",
+          "unit": "SZT",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:27:58.165Z",
+        "2020-08-31T20:27:40.729Z"
+      ]
     }
   ]
 }

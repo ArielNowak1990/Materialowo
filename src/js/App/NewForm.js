@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import "react-datepicker/dist/react-datepicker.css"
 import DatePicker from 'react-datepicker';
+import {sendConfirmationEmail} from '../mailer'
 
 function NewForm(user) {
 
@@ -163,6 +164,7 @@ function NewForm(user) {
         setFirms([...newArray]);
     }
 
+
     let zmienna = `${user.id}AorderA${orders.length + 1}`
 
     const handleSend =() =>{
@@ -180,6 +182,7 @@ function NewForm(user) {
             }
         for (let i=0; i<firms.length; i++){
             let zmiennaOfert= `${zmienna}AofertA${i}`
+            let confirmationToken = zmiennaOfert;
             const ofert = {
                 author: user.userEmail,
                 id:  zmiennaOfert,
@@ -199,7 +202,11 @@ function NewForm(user) {
                     "Content-Type": "application/json"
                 }
             })
-                .then(response => response.json())
+                .then(response => {
+                    let yourLink = `${PAGE_URL}/NewFormFirm/${zmiennaOfert}`;
+                    console.log(firms[i], yourLink);
+                    sendConfirmationEmail(firms[i], yourLink)
+                    response.json()})
                 .catch(error => console.log(error))
         }
 
@@ -211,7 +218,7 @@ function NewForm(user) {
             }
         })
             .then(response => response.json())
-            .then(window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
+            // .then(window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
             .then(alert("zapytanie zostało zapisane"))
             .catch(error => console.log(error))
     }
