@@ -61,6 +61,104 @@
         "2020-08-27",
         "2020-08-29"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA2",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "asas"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "linczek",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "działa ?",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "lineczek",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "nie wiem...",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T09:48:19.556Z",
+        "2020-08-31T09:47:46.275Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA3",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko, ul. Jasielska 12",
+      "firm": [
+        "Jagoda123@wp.pl",
+        "Jagoda1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "masło",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "makaron",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T10:00:47.488Z",
+        "2020-08-31T09:59:34.863Z"
+      ]
     }
   ],
   "ofert": [
@@ -90,6 +188,210 @@
         "2020-08-29T09:08:41.896Z",
         "2020-08-29T09:08:01.491Z"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA2AofertA0",
+      "idOrder": "2AorderA2",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "asas"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "linczek",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "działa ?",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "lineczek",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "nie wiem...",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T09:48:19.556Z",
+        "2020-08-31T09:47:46.275Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA2AofertA1",
+      "idOrder": "2AorderA2",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z",
+        "2020-08-31T09:47:46.275Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "asas"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "linczek",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "działa ?",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "lineczek",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "nie wiem...",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T09:48:19.556Z",
+        "2020-08-31T09:47:46.275Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA3AofertA0",
+      "idOrder": "2AorderA3",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, ul. Jasielska 12",
+      "firm": [
+        "Jagoda123@wp.pl",
+        "Jagoda1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "",
+          "price": "12",
+          "priceAll": 144,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "masło",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "makaron",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "2",
+          "priceAll": 20,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T10:00:47.488Z",
+        "2020-08-31T09:59:34.863Z"
+      ],
+      "deliveryFirm": "2020-08-31T10:17:23.260Z",
+      "deliveryPrice": "100"
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA3AofertA1",
+      "idOrder": "2AorderA3",
+      "dateDeliveryAuthor": [
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z",
+        "2020-08-31T09:59:34.863Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, ul. Jasielska 12",
+      "firm": [
+        "Jagoda123@wp.pl",
+        "Jagoda1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "12",
+          "note": "",
+          "price": "12",
+          "priceAll": 144,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "masło",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "makaron",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "",
+          "price": "1.5",
+          "priceAll": 15,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T10:00:47.488Z",
+        "2020-08-31T09:59:34.863Z"
+      ],
+      "deliveryFirm": "2020-08-31T10:17:25.035Z",
+      "deliveryPrice": "110"
     }
   ]
 }

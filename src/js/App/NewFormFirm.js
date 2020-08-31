@@ -7,6 +7,7 @@ function NewFormFirm() {
     const [myOfert, setMyOfert]=useState(false)
     const [dateFrom, setDateFrom] = useState(new Date())
     const [deliveryPrice, setDeliveryPrice] = useState("")
+    const [render, setRender] = useState(0)
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -19,14 +20,16 @@ function NewFormFirm() {
         let element = myOfert.elements;
         let myElem = element[+index];
         myElem.price = event.target.value
+        myElem.priceAll = event.target.value *  myElem.quantity
         console.log(myElem)
+        setRender(render+1)
     }
-    const handleChangePriceAll = (event, {index}) => {
-        let element = myOfert.elements;
-        let myElem = element[+index];
-        myElem.priceAll = event.target.value
-        console.log(myElem)
-    }
+    // const handleChangePriceAll = (event, {index}) => {
+    //     let element = myOfert.elements;
+    //     let myElem = element[+index];
+    //     myElem.priceAll = event.target.value *  myElem.quantity
+    //     console.log(myElem)
+    // }
     const handleChangeNote = (event, {index}) => {
         let element = myOfert.elements;
         let myElem = element[+index];
@@ -74,7 +77,7 @@ function NewFormFirm() {
 
 
 
-    if(!myOfert){return("wczytywanie")}
+    if(!myOfert){return("Niestety. Brak danych do wyświetlenia. ")}
     if (myOfert && myOfert.status === "close"){return ("Na zapytanie została już udzielona oferta")}
     if(myOfert){
     return (
@@ -106,7 +109,7 @@ function NewFormFirm() {
                                         <td>{element.quantity}</td>
                                         <td>{element.note}</td>
                                         <td><input type="text"  onChange={(event) => handleChangePrice(event, {index})}/></td>
-                                        <td><input type="text"  onChange={(event) => handleChangePriceAll(event, {index})}/></td>
+                                        <td>{element.priceAll}</td>
                                         <td><input type="text"  onChange={(event) => handleChangeNote(event, {index})}/></td>
                                     </tr>
                                 )

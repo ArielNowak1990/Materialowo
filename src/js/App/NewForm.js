@@ -286,7 +286,7 @@ function NewForm(user) {
                             <ol> {firms.map((elements, index) => {
                                 return (<li key={index}>{index + 1}. {elements}
                                 <i className="fas fa-edit" onClick={(e) => handleEditeFirm(e, index)}/>
-                                <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/></li>)
+                                <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/> Link do ręcznego wysłania: {PAGE_URL}/NewFormFirm/{user.id}AorderA{orders.length + 1}AofertA{index} </li>)
                             })}</ol>
                         </div>
                         <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:

@@ -49,7 +49,7 @@ function ActualForm(user) {
 
 
 
-    if (actualOrders.length < 1) {return ( "trwa wczytywanie danych")}
+    if (actualOrders.length < 1) {return ( "Niestety. Brak danych do wyświetlenia. ")}
     if (actualOrders.length >=1) {
     return (
         <section className={"container"}>

@@ -1,14 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import {API_URL} from "../Fetch/fetch";
+import {API_URL, PAGE_URL} from "../Fetch/fetch";
 
 function NewCardChoice() {
     const [allOfert, setAllOfert] =useState(false)
+    const [Author, setAuthor] =useState(false)
+    const [idAuthor, setIdAuthor] =useState(false)
+
     // const [quantityFirm, setQuantityFirm] = useState([1,2,3,4])
     // const [quantityProducts, setQuantityProducts] = useState([1,2,3,4,5])
     let quantityFirm = [];
     let quantityProducts = [];
     let sum = [];
     let goodPrice = 0;
+
+
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -28,24 +33,40 @@ function NewCardChoice() {
             })
             .then(data => {
                 setAllOfert([...data])
+                setAuthor(data[0].id)
+                setIdAuthor(data[0].id.charAt(0))
             })
             .catch(err => console.log(err));
+
+        // fetch(`${API_URL}/user?userEmail=${Author}`)
+        //     .then(response => {
+        //         if (response.ok === false) {
+        //             throw new Error("błąd sieci!")
+        //         } else {
+        //             return response.json();
+        //         }
+        //     })
+        //     .then(data => {
+        //         setIdAuthor(data.id)
+        //         console.log(Author)
+        //         console.log(data)
+        //     })
+        //     .catch(err => console.log(err));
     },[])
 
 
 
 
-if (!allOfert){return ("wczytywanie")}
+if (!allOfert){return ("Niestety. Brak danych do wyświetlenia. ")}
 if (allOfert){
 
     let newArray = [];
     for (let i=1; i<=allOfert.length ;i++){newArray.push(i)}
     quantityFirm =[...newArray]
-    console.log(quantityFirm)
     let newArrays = [];
     for (let i=1; i<=allOfert[0].elements.length ;i++){newArrays.push(i)}
     quantityProducts =[...newArrays]
-    console.log(quantityProducts);
+
 
 
     for (let i=0; i<allOfert.length; i++){
@@ -125,9 +146,9 @@ if (allOfert){
                     <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy ...... </p>
                     <p>Dostawa oczekiwana była w zakresie od ........ do ......., z najdogodniejszym terminem ......... natomiast termin zaproponowany przez firmę ......... to ........</p>
                     <p>Przed zamówieniem konieczne jest indywidualne przeglądniecie ofert, i porównanie wszystkich danych !</p>
-
-
                     </div>
+
+                <a href={`${PAGE_URL}/app/MainApp/${idAuthor}`}> TWOJA GŁÓWNA </a>
             </div>
         </section>
     )}
