@@ -181,8 +181,7 @@ function NewForm(user) {
                 dateAuthor: [data, dateFinish],
             }
         for (let i=0; i<firms.length; i++){
-            let zmiennaOfert= `${zmienna}AofertA${i}`
-            let confirmationToken = zmiennaOfert;
+            let zmiennaOfert = `${zmienna}AofertA${i}`
             const ofert = {
                 author: user.userEmail,
                 id:  zmiennaOfert,
@@ -218,7 +217,6 @@ function NewForm(user) {
             }
         })
             .then(response => response.json())
-            // .then(window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
             .then(alert("zapytanie zostało zapisane"))
             .catch(error => console.log(error))
     }

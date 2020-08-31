@@ -791,6 +791,37 @@
         "2020-08-31T20:27:58.165Z",
         "2020-08-31T20:27:40.729Z"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA21",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:52:17.519Z",
+        "2020-08-31T20:52:01.666Z"
+      ]
     }
   ],
   "ofert": [
@@ -2191,6 +2222,70 @@
       "dateAuthor": [
         "2020-08-31T20:27:58.165Z",
         "2020-08-31T20:27:40.729Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA21AofertA0",
+      "idOrder": "2AorderA21",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:52:17.519Z",
+        "2020-08-31T20:52:01.666Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA21AofertA1",
+      "idOrder": "2AorderA21",
+      "dateDeliveryAuthor": [
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z",
+        "2020-08-31T20:52:01.665Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl",
+        "ariel.nowak90@gmail.com"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "jajeczka",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-08-31T20:52:17.519Z",
+        "2020-08-31T20:52:01.666Z"
       ]
     }
   ]
