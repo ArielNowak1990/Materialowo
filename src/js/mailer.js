@@ -5,7 +5,7 @@ const from = '"Materiałowo"'
 
 function setup() {
     return  nodemailer.createTransport({
-        //tutaj ma być dane mailingu.
+        //tutaj ma być dane mailingu. które
         }
     });
 }
