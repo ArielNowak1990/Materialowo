@@ -67,13 +67,18 @@ if (allOfert){
     for (let i=1; i<=allOfert[0].elements.length ;i++){newArrays.push(i)}
     quantityProducts =[...newArrays]
 
-
-
     for (let i=0; i<allOfert.length; i++){
         let array = 0;
         allOfert[i].elements.map( (element) => { array= array + +element.priceAll })
-        sum.push(array)
+        sum.push(array + +allOfert[i].deliveryPrice)
     };
+
+    let betterOfert = sum.sort((a,b) => { return (a-b)})
+    let betterIndex;
+    for (let i=0; i<allOfert.length; i++){
+        if (betterOfert[0] === sum[i]) {betterIndex = i}
+        console.log(`${betterOfert[0]}  ${sum[i]}`)
+    }
 
     return (
         <section className={"container_Choice"}>
@@ -122,6 +127,12 @@ if (allOfert){
                             </tr>
                         )})}
                         <tr>
+                            <td colSpan={5}> Koszt dostawy:</td>
+                            {quantityFirm.map((element, index) => {return(
+                                <td colSpan={3} key={index}>{allOfert[index].deliveryPrice}</td>
+                            )})}
+                        </tr>
+                        <tr>
                             <td colSpan={5}> Suma całkowita: </td>
                             {quantityFirm.map((element, index) => {return(
                                 <td colSpan={3} key={index}>{sum[index]}</td>
@@ -133,18 +144,12 @@ if (allOfert){
                                 <td colSpan={3} key={index}>{allOfert[index].deliveryFirm}</td>
                             )})}
                         </tr>
-                        <tr>
-                            <td colSpan={5}> Koszt dostawy:</td>
-                            {quantityFirm.map((element, index) => {return(
-                                <td colSpan={3} key={index}>{allOfert[index].deliveryPrice}</td>
-                            )})}
-                        </tr>
                         </tbody>
                     </table>
 
                     <h4>REKOMENDOWANY PRZEZ PROGRAM DOSTAWCA:</h4>
-                    <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy ...... </p>
-                    <p>Dostawa oczekiwana była w zakresie od ........ do ......., z najdogodniejszym terminem ......... natomiast termin zaproponowany przez firmę ......... to ........</p>
+                    <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy {allOfert[betterIndex].firm[betterIndex]} </p>
+                    <p>Dostawa oczekiwana była w zakresie od {allOfert[betterIndex].dateDeliveryAuthor[0]} do {allOfert[betterIndex].dateDeliveryAuthor[2]}, z najdogodniejszym terminem {allOfert[betterIndex].dateDeliveryAuthor[1]} natomiast termin zaproponowany przez firmę {allOfert[betterIndex].firm[betterIndex]} to {allOfert[betterIndex].deliveryFirm}</p>
                     <p>Przed zamówieniem konieczne jest indywidualne przeglądniecie ofert, i porównanie wszystkich danych !</p>
                     </div>
 
