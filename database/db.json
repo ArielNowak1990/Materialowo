@@ -822,6 +822,76 @@
         "2020-08-31T20:52:17.519Z",
         "2020-08-31T20:52:01.666Z"
       ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA22",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko pasikonika 12",
+      "firm": [
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "łaciate",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-01T16:03:53.710Z",
+        "2020-09-01T16:03:22.901Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA23",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:08:49.983Z",
+        "2020-09-01T16:08:49.983Z",
+        "2020-09-01T16:08:49.983Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [],
+      "dateAuthor": [
+        "2020-09-01T16:08:55.516Z",
+        "2020-09-01T16:08:49.983Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA24",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:25:27.115Z",
+        "2020-09-01T16:25:27.115Z",
+        "2020-09-01T16:25:27.115Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [],
+      "dateAuthor": [
+        "2020-09-01T16:25:40.010Z",
+        "2020-09-01T16:25:27.115Z"
+      ]
     }
   ],
   "ofert": [
@@ -2286,6 +2356,111 @@
       "dateAuthor": [
         "2020-08-31T20:52:17.519Z",
         "2020-08-31T20:52:01.666Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA22AofertA0",
+      "idOrder": "2AorderA22",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko pasikonika 12",
+      "firm": [
+        "en47@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "łaciate",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-01T16:03:53.710Z",
+        "2020-09-01T16:03:22.901Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA22AofertA1",
+      "idOrder": "2AorderA22",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z",
+        "2020-09-01T16:03:22.901Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko pasikonika 12",
+      "firm": [
+        "en47@wp.pl",
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "łaciate",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-01T16:04:33.231Z",
+        "2020-09-01T16:03:22.901Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA23AofertA0",
+      "idOrder": "2AorderA23",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:08:49.983Z",
+        "2020-09-01T16:08:49.983Z",
+        "2020-09-01T16:08:49.983Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [],
+      "dateAuthor": [
+        "2020-09-01T16:08:55.516Z",
+        "2020-09-01T16:08:49.983Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA24AofertA0",
+      "idOrder": "2AorderA24",
+      "dateDeliveryAuthor": [
+        "2020-09-01T16:25:27.115Z",
+        "2020-09-01T16:25:27.115Z",
+        "2020-09-01T16:25:27.115Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [],
+      "dateAuthor": [
+        "2020-09-01T16:25:40.010Z",
+        "2020-09-01T16:25:27.115Z"
       ]
     }
   ]

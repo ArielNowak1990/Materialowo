@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import "react-datepicker/dist/react-datepicker.css"
 import DatePicker from 'react-datepicker';
-import {sendConfirmationEmail} from '../mailer'
+import emailjs from 'emailjs-com';
+
 
 function NewForm(user) {
 
@@ -30,6 +31,11 @@ function NewForm(user) {
     const data = new Date();
 
     const[orders, setOrders] = useState([])
+
+    const templateParams = {
+        name: 'James',
+        notes: 'Check this out!'
+    };
 
 
     useEffect(() => {
@@ -137,11 +143,14 @@ function NewForm(user) {
         if (firm.indexOf("@") < 0) (ArrayError.push(" Mail nie posiada znaku @"))
         if(ArrayError.length===0) {
             if (editFirm !== false) {
+                handleSubmit(firms)
                 const newArray = [...firms];
                 newArray[editFirm] = firm;
                 setFirms([...newArray])
                 setFirm("")
+
             } else {
+                handleSubmit(firms)
                 setFirms([...firms, firm]);
                 setFirm("")
             }
@@ -163,6 +172,23 @@ function NewForm(user) {
         firms.map((elem, id) => (id !== index) ? newArray.push(elem) : null)
         setFirms([...newArray]);
     }
+
+    const handleSubmit = (mailer) => {
+        sendFeedback({message_html: "tutaj coś wpisz", from_name: "materiałowo", reply_to: mailer})
+    }
+
+    const sendFeedback = (variables) => {
+        window.emailjs.send(
+            'gmail', variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            // Handle errors here however you like, or use a React error boundary
+            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    }
+
+
+
 
 
     let zmienna = `${user.id}AorderA${orders.length + 1}`
@@ -194,19 +220,29 @@ function NewForm(user) {
                 elements: elements,
                 dateAuthor: [data, dateFinish],
             }
-            fetch(`${API_URL}/ofert`, {
-                method: 'POST',
-                body: JSON.stringify(ofert),
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(response => {
-                    let yourLink = `${PAGE_URL}/NewFormFirm/${zmiennaOfert}`;
-                    console.log(firms[i], yourLink);
-                    sendConfirmationEmail(firms[i], yourLink)
-                    response.json()})
-                .catch(error => console.log(error))
+
+            // emailjs.send('<YOUR SERVICE ID>','<YOUR TEMPLATE ID>', templateParams, '<user_1LHSCjtBOeyI8OPPV6OVc>')
+            //     .then((response) => {
+            //         console.log('SUCCESS!', response.status, response.text);
+            //     }, (err) => {
+            //         console.log('FAILED...', err);
+            //     });
+
+
+
+            // fetch(`${API_URL}/ofert`, {
+            //     method: 'POST',
+            //     body: JSON.stringify(ofert),
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     }
+            // })
+            //     .then(response => {
+            //         let yourLink = `${PAGE_URL}/NewFormFirm/${zmiennaOfert}`;
+            //         console.log(firms[i], yourLink);
+            //         sendConfirmationEmail(firms[i], yourLink)
+            //         response.json()})
+            //     .catch(error => console.log(error))
         }
 
         fetch(`${API_URL}/orders`, {
@@ -319,6 +355,10 @@ function NewForm(user) {
                         <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:
                             <DatePicker selected={dateFinish} value={dateFinish} onChange={date => setDateFinish(date)} />
                         </div>
+                    {/*tutaj poczatek*/}
+
+
+                    {/*    Tutaj koniec*/}
                     </div>
                     <button className={"button_main"} onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>
                 </div>
