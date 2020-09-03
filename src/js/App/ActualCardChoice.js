@@ -64,7 +64,7 @@ function ActualCardChoice(user) {
                         <div className={"table_header"}>
                             <div className={"id"}>ID</div>
                             <div className={"odbiorcy"}>ODBIORCY:</div>
-                            <div className={"term"}>ZAKONCZENIE</div>
+                            <div className={"term"}>KONIEC</div>
                             <div className={"materialy"}>MATERIAŁY</div>
                             <div className={"akcje"}>AKCJE</div>
                         </div>
@@ -73,11 +73,11 @@ function ActualCardChoice(user) {
                                 <div key={element.id} className={"table_element"}>
                                     <div className={"id"}>{index+1}</div>
                                     <div className={"odbiorcy"}><ol>
-                                        {element.firm.map( (el, ind) =>{return ( <li key={ind}>{ind+1} {el}</li>)} )}</ol></div>
-                                    <div className={"term"}>{element.dateAuthor[1]}</div>
-                                    <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}>{inde+1} {ele.fabric} {ele.unit} {ele.quantity} </li>)})}</ol></div>
-                                    <div onClick={ () => handleOpenCard(element.id)}><i className="fas fa-file-invoice-dollar">Otwórz Kartę</i></div>
-                                    <div onClick={ () => handleChangeStatus(element.id)}><i className="fas fa-file-invoice-dollar">przenieś do archiwum</i></div>
+                                        {element.firm.map( (el, ind) =>{return ( <li key={ind}>{el},</li>)} )}</ol></div>
+                                    <div className={"term"}>{element.dateAuthor[1].slice(0,10)}</div>
+                                    <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}> {ele.fabric} {ele.unit} {ele.quantity}, </li>)})}</ol></div>
+                                    <div className={"cursorHand"} onClick={ () => handleOpenCard(element.id)}><i className="far fa-envelope-open"/>Otwórz Kartę</div>
+                                    <div className={"cursorHand"} onClick={ () => handleChangeStatus(element.id)}><i className="fas fa-box-open"/>przenieś do archiwum</div>
                                 </div>
                             )})}
                         </div>

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Welcome(names) {
 
     return (
-        <section className={"container"}>
+        <section className={"container white"}>
             <div className={"Welcome_back"}>
                 <div className={"Welcome_back_container"}>
                     <h2>Witaj {names} !</h2>

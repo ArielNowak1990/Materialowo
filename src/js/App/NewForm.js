@@ -11,8 +11,8 @@ function NewForm(user) {
     const [quantity, setQuantity] = useState("")
     const [note, setNote] = useState("")
     const [edit, setEdit] = useState(false)
-    const [addError, setAddError] =useState([])
-    const [addErrorMail, setAddErrorMail] =useState([])
+    const [addError, setAddError] = useState([])
+    const [addErrorMail, setAddErrorMail] = useState([])
 
     const [place, setPlace] = useState("");
     const [delivery, setDelivery] = useState("");
@@ -28,7 +28,7 @@ function NewForm(user) {
 
     const data = new Date();
 
-    const[orders, setOrders] = useState([])
+    const [orders, setOrders] = useState([])
 
 
     useEffect(() => {
@@ -44,13 +44,14 @@ function NewForm(user) {
                 setOrders([...order])
             })
             .catch(err => console.log(err));
-    },[])
+    }, [])
 
     const handleChangeFabric = (event) => {
         setFabric(event.target.value)
     }
     const handleChangeUnit = (event) => {
         setUnit(event.target.value)
+        console.log(dateFrom, dateIdeal, dateTo)
     }
     const handleChangeQuantity = (event) => {
         setQuantity(event.target.value)
@@ -62,44 +63,53 @@ function NewForm(user) {
     const handleAddElement = () => {
         let ArrayError = [];
         setAddError([...ArrayError]);
-        if(fabric.length < 3){ArrayError.push("Nazwa materiału ma być dłuższa niż 3 litery")}
-        if(unit.length < 1){ArrayError.push("Nazwa jednostki ma być dłuższa niż 1 litera")}
-        if(quantity.length < 1){ArrayError.push("ilość ma być dłuższa niż 1 litera")}
-        if(ArrayError.length===0){
-        if (edit !== false) {
-            const newArray = [...elements];
-            newArray[edit] = {
-                fabric: fabric,
-                unit: unit,
-                quantity: quantity,
-                note: note,
-                price: 0,
-                priceAll: 0,
-                noteFirm: ""
-            };
-            setElements([...newArray]);
-            setEdit(false);
-            setFabric("")
-            setUnit("")
-            setQuantity("")
-            setNote("")
-        } else {
-            setElements([...elements, {
-                fabric: fabric,
-                unit: unit,
-                quantity: quantity,
-                note: note,
-                price: 0,
-                priceAll: 0,
-                noteFirm: ""
+        if (fabric.length < 3) {
+            ArrayError.push("Nazwa materiału ma być dłuższa niż 3 litery")
+        }
+        if (unit.length < 1) {
+            ArrayError.push("Nazwa jednostki ma być dłuższa niż 1 litera")
+        }
+        if (quantity.length < 1) {
+            ArrayError.push("ilość ma być dłuższa niż 1 litera")
+        }
+        if (ArrayError.length === 0) {
+            if (edit !== false) {
+                const newArray = [...elements];
+                newArray[edit] = {
+                    fabric: fabric,
+                    unit: unit,
+                    quantity: quantity,
+                    note: note,
+                    price: 0,
+                    priceAll: 0,
+                    noteFirm: ""
+                };
+                setElements([...newArray]);
+                setEdit(false);
+                setFabric("")
+                setUnit("")
+                setQuantity("")
+                setNote("")
+            } else {
+                setElements([...elements, {
+                    fabric: fabric,
+                    unit: unit,
+                    quantity: quantity,
+                    note: note,
+                    price: 0,
+                    priceAll: 0,
+                    noteFirm: ""
+                }
+                ])
+                setFabric("")
+                setUnit("")
+                setQuantity("")
+                setNote("")
             }
-            ])
-            setFabric("")
-            setUnit("")
-            setQuantity("")
-            setNote("")
-        }}
-        if(ArrayError.length>0){ setAddError([...ArrayError])}
+        }
+        if (ArrayError.length > 0) {
+            setAddError([...ArrayError])
+        }
     }
 
     const handleEditeElement = (e, index) => {
@@ -132,9 +142,11 @@ function NewForm(user) {
     const handleAddFirms = () => {
         let ArrayError = [];
         setAddErrorMail([...ArrayError]);
-        if(firm.length < 5){ArrayError.push("Nazwa maila ma być dłuższa niż 5 liter, ")}
+        if (firm.length < 5) {
+            ArrayError.push("Nazwa maila ma być dłuższa niż 5 liter, ")
+        }
         if (firm.indexOf("@") < 0) (ArrayError.push(" Mail nie posiada znaku @"))
-        if(ArrayError.length===0) {
+        if (ArrayError.length === 0) {
             if (editFirm !== false) {
                 const newArray = [...firms];
                 newArray[editFirm] = firm;
@@ -145,14 +157,16 @@ function NewForm(user) {
                 setFirm("")
             }
         }
-        if(ArrayError.length>0){ setAddErrorMail([...ArrayError])}
+        if (ArrayError.length > 0) {
+            setAddErrorMail([...ArrayError])
+        }
     }
 
     const handleEditeFirm = (e, index) => {
         setEditFirm(index)
         firms.map((elem, id) => {
             if (id === index) {
-                    setFirm(elem)
+                setFirm(elem)
             }
         })
     }
@@ -165,26 +179,26 @@ function NewForm(user) {
 
     let zmienna = `${user.id}AorderA${orders.length + 1}`
 
-    const handleSend =() =>{
-       let zmienna = `${user.id}AorderA${orders.length + 1}`
-            const order = {
-                author: user.userEmail,
-                id:  zmienna,
-                dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
-                delivery: delivery,
-                placeDelivery: place,
-                firm: firms,
-                status: "open",
-                elements: elements,
-                dateAuthor: [data, dateFinish],
-            }
-        for (let i=0; i<firms.length; i++){
-            let zmiennaOfert= `${zmienna}AofertA${i}`
+    const handleSend = () => {
+        let zmienna = `${user.id}AorderA${orders.length + 1}`
+        const order = {
+            author: user.userEmail,
+            id: zmienna,
+            dateDeliveryAuthor: [dateFrom, dateIdeal, dateTo],
+            delivery: delivery,
+            placeDelivery: place,
+            firm: firms,
+            status: "open",
+            elements: elements,
+            dateAuthor: [data, dateFinish],
+        }
+        for (let i = 0; i < firms.length; i++) {
+            let zmiennaOfert = `${zmienna}AofertA${i}`
             const ofert = {
                 author: user.userEmail,
-                id:  zmiennaOfert,
+                id: zmiennaOfert,
                 idOrder: zmienna,
-                dateDeliveryAuthor: [dateFrom,dateIdeal,dateTo],
+                dateDeliveryAuthor: [dateFrom, dateIdeal, dateTo],
                 delivery: "jeśli jest adres to dostawa:",
                 placeDelivery: place,
                 firm: firms,
@@ -211,7 +225,7 @@ function NewForm(user) {
             }
         })
             .then(response => response.json())
-            .then(window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
+            .then(window.location.href = `${PAGE_URL}/app/MainApp/${user.id}`)
             .then(alert("zapytanie zostało zapisane"))
             .catch(error => console.log(error))
     }
@@ -243,17 +257,17 @@ function NewForm(user) {
                                     <td><input type="text" value={unit} onChange={handleChangeUnit}/></td>
                                     <td><input type="text" value={quantity} onChange={handleChangeQuantity}/></td>
                                     <td><input type="text" value={note} onChange={handleChangeNote}/></td>
-                                    <td>  <i className="fas fa-plus-square" onClick={handleAddElement}/>DODAJ</td>
+                                    <td><i className="fas fa-plus-square" onClick={handleAddElement}/>DODAJ</td>
                                 </tr>
                                 </tbody>
                             </table>
-                             <ol>
-                            {addError.map(( element, index) =>{
-                                return(
-                                    <li key={index}>{element}</li>
-                                )
-                            })}
-                             </ol>
+                            <ol className={"ListError"}>
+                                {addError.map((element, index) => {
+                                    return (
+                                        <li key={index}>{element}</li>
+                                    )
+                                })}
+                            </ol>
                             <br/>
                             <table className={"order"}>
                                 <thead>
@@ -282,37 +296,48 @@ function NewForm(user) {
                             <div>
                                 <label>
                                     <input type="radio" id={"odbiór osobisty"} name={"przekazanie"}
-                                              value={"odbiór"} onChange={handleChangeDelivery}/>Odbiór osobisty
+                                           value={"odbiór"} onChange={handleChangeDelivery}/>Odbiór osobisty
                                 </label>
                                 <div className="question"><label>
                                     <input type="radio" id={"dostawa"} name={"przekazanie"}
                                            value={"dostarczenie"} onChange={handleChangeDelivery}/>
                                     Dostawa na adres:
-                                    <input type="text" className="hidden-textbox"  onChange={handleChangePlace}/> </label>
+                                    <input type="text" className="hidden-textbox" onChange={handleChangePlace}/>
+                                </label>
                                 </div>
                             </div>
                         </div>
-                            <div className={"order_3pkt"}>3. Termin odbioru/dostawy:
-                                najwcześniejsza:
-                                <DatePicker selected={dateFrom} value={dateFrom} onChange={date => setDateFrom(date)} />
-                                idealna:
-                                <DatePicker selected={dateIdeal} value={dateIdeal} onChange={date => setDateIdeal(date)} />
-                                najpóźniejsza:
-                                <DatePicker selected={dateTo} value={dateTo} onChange={date => setDateTo(date)} />
-                            </div>
+                        <div className={"order_3pkt"}>3. Termin odbioru/dostawy: <br/>
+                            <p> najwcześniejsza:
+                                <DatePicker dateFormat="yyyy/MM/dd" selected={dateFrom} value={dateFrom}
+                                            onChange={date => setDateFrom(date)} withPortal/></p>
+                            <p>idealna:
+                                <DatePicker dateFormat="yyyy/MM/dd" selected={dateIdeal} value={dateIdeal}
+                                            onChange={date => setDateIdeal(date)} withPortal/>
+                            </p> <p> najpóźniejsza:
+                                <DatePicker dateFormat="yyyy/MM/dd" selected={dateTo} value={dateTo}
+                                            onChange={date => setDateTo(date)} withPortal/>
+                            </p></div>
 
                         <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
                             <input type="text" value={firm} onChange={handleAddFirm}/>
-                        <i className="fas fa-plus-square" onClick={handleAddFirms}/> DODAJ <p>{addErrorMail.map((element, index)=> {return(<span key={index}>{element}</span>)})}</p></div>
+                            <i className="fas fa-plus-square" onClick={handleAddFirms}/> DODAJ <p
+                                className={"ListError"}>{addErrorMail.map((element, index) => {
+                                return (<span key={index}>{element}</span>)
+                            })}</p></div>
                         <div>
                             <ol> {firms.map((elements, index) => {
                                 return (<li key={index}>{index + 1}. {elements}
-                                <i className="fas fa-edit" onClick={(e) => handleEditeFirm(e, index)}/>
-                                <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/> Link do ręcznego wysłania: {PAGE_URL}/NewFormFirm/{user.id}AorderA{orders.length + 1}AofertA{index} </li>)
+                                    <i className="fas fa-edit" onClick={(e) => handleEditeFirm(e, index)}/>
+                                    <i className="fal fa-trash-alt" onClick={(e) => handleRemoveFirm(e, index)}/> Link
+                                    do ręcznego
+                                    wysłania: {PAGE_URL}/NewFormFirm/{user.id}AorderA{orders.length + 1}AofertA{index}
+                                </li>)
                             })}</ol>
                         </div>
                         <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:
-                            <DatePicker selected={dateFinish} value={dateFinish} onChange={date => setDateFinish(date)} />
+                            <DatePicker dateFormat="yyyy/MM/dd" selected={dateFinish} value={dateFinish}
+                                        onChange={date => setDateFinish(date)} withPortal/>
                         </div>
                     </div>
                     <button className={"button_main"} onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>

@@ -103,6 +103,32 @@
       "logo": "false",
       "coworkers": "false",
       "id": 8
+    },
+    {
+      "name": "Edwardson",
+      "password": "$2a$10$rfKtGmQ5YF68DYKkQO8S7e9ElONgiz6eVEGrN2iP2L1OZEQPhoJZ6",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "Edwardson123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 9
+    },
+    {
+      "name": "Efendi",
+      "password": "$2a$10$nVCbHsVs1wyDj0GpuvKht.ERR4GGdhvVIQcj.sCheWEnJQHU/Rc2a",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "Efendi@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 10
     }
   ],
   "orders": [
@@ -386,6 +412,105 @@
       "dateAuthor": [
         "2020-08-31T17:32:39.903Z",
         "2020-08-31T17:31:59.617Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-02T15:01:45.993Z",
+        "2020-09-02T15:01:45.993Z",
+        "2020-09-02T15:01:45.993Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duże",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-02T15:02:09.316Z",
+        "2020-09-02T15:01:45.993Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-11-20T16:27:47.000Z",
+        "2020-09-24T15:27:47.000Z",
+        "2020-10-10T15:27:47.000Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "kurwa mac",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-02T15:28:59.965Z",
+        "2020-09-02T15:27:47.571Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA10",
+      "dateDeliveryAuthor": [
+        "2020-09-03T09:41:57.221Z",
+        "2020-09-03T09:41:57.222Z",
+        "2020-09-03T09:41:57.222Z"
+      ],
+      "delivery": "",
+      "placeDelivery": "",
+      "firm": [
+        "asddd@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asad",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T09:42:07.911Z",
+        "2020-09-03T09:41:57.222Z"
       ]
     }
   ],
@@ -909,6 +1034,110 @@
       ],
       "deliveryFirm": "2020-08-31T17:36:02.747Z",
       "deliveryPrice": "100"
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA8AofertA0",
+      "idOrder": "2AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-02T15:01:45.993Z",
+        "2020-09-02T15:01:45.993Z",
+        "2020-09-02T15:01:45.993Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "mleko",
+          "unit": "szt",
+          "quantity": "1",
+          "note": "duże",
+          "price": "2",
+          "priceAll": 2,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "jajka",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": "2",
+          "priceAll": 4,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-02T15:02:09.316Z",
+        "2020-09-02T15:01:45.993Z"
+      ],
+      "deliveryFirm": "2020-09-02T15:02:18.904Z",
+      "deliveryPrice": "100"
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA9AofertA0",
+      "idOrder": "2AorderA9",
+      "dateDeliveryAuthor": [
+        "2020-11-20T16:27:47.000Z",
+        "2020-09-24T15:27:47.000Z",
+        "2020-10-10T15:27:47.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "alek123@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "kurwa mac",
+          "unit": "szt",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-02T15:28:59.965Z",
+        "2020-09-02T15:27:47.571Z"
+      ]
+    },
+    {
+      "author": "kubus123@wp.pl",
+      "id": "2AorderA10AofertA0",
+      "idOrder": "2AorderA10",
+      "dateDeliveryAuthor": [
+        "2020-09-03T09:41:57.221Z",
+        "2020-09-03T09:41:57.222Z",
+        "2020-09-03T09:41:57.222Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "",
+      "firm": [
+        "asddd@wp.pl"
+      ],
+      "status": "open",
+      "elements": [
+        {
+          "fabric": "asdasd",
+          "unit": "asad",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T09:42:07.911Z",
+        "2020-09-03T09:41:57.222Z"
+      ]
     }
   ]
 }

@@ -61,8 +61,8 @@ function ActualForm(user) {
                         <div className={"list_table"}>
                             <div className={"table_header"}>
                                 <div className={"id"}>ID</div>
-                                <div className={"odbiorcy"}>ODBIORCY:</div>
-                                <div className={"term"}>ZAKONCZENIE</div>
+                                <div className={"odbiorcy"}>ODBIORCY</div>
+                                <div className={"term"}>KONIEC</div>
                                 <div className={"materialy"}>MATERIAŁY</div>
                                 <div className={"akcje"}>AKCJE</div>
                             </div>
@@ -71,10 +71,10 @@ function ActualForm(user) {
                                     <div key={element.id} className={"table_element"}>
                                         <div className={"id"}>{index+1}</div>
                                         <div className={"odbiorcy"}><ol>
-                                            {element.firm.map( (el, ind) =>{return ( <li key={ind}>{ind+1} {el}</li>)} )}</ol></div>
-                                        <div className={"term"}>{element.dateAuthor[1]}</div>
-                                        <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}>{inde+1} {ele.fabric} {ele.unit} {ele.quantity} </li>)})}</ol></div>
-                                        <div onClick={ () => handleChangeStatus(element.id)}><i className="fas fa-file-invoice-dollar">Stwórz kartę wyboru</i></div>
+                                            {element.firm.map( (el, ind) =>{return ( <li key={ind}>{el}</li>)} )}</ol></div>
+                                        <div className={"term"}>{element.dateAuthor[1].slice(0,10)}</div>
+                                        <div className={"materialy"}><ol>{element.elements.map( (ele, inde) => {return(<li key={inde}>{ele.fabric} {ele.unit} {ele.quantity} </li>)})}</ol></div>
+                                        <div className={"cursorHand"} onClick={ () => handleChangeStatus(element.id)}><i className="fas fa-file-invoice-dollar"/> Stwórz kartę wyboru</div>
                                     </div>
                                 )})}
                             </div>

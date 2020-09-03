@@ -1,9 +1,9 @@
 @import "src/scss/variables/variables";
 
 .LogSign_all{
-  background-color: $color-background-first;
+  background-image: linear-gradient(to right,  white 50%, #282c34 50%);
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,7 @@
     input{
       margin-top: 10px;
       margin-bottom: 10px;
+      background-color: white;
     }
 
     ul{
@@ -76,9 +77,9 @@
 
 
 .LogSign_all2{
-  background-color: $color-background-first;
+  background-image: linear-gradient(to right,  #282c34 50%, white 50%);
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +113,7 @@
     input{
       margin-top: 10px;
       margin-bottom: 10px;
+      background-color: white;
     }
 
     form{
@@ -123,7 +125,7 @@
       color: white;
     }
     input{
-      background-color: $color-background-first;
+      background-color: white;
       color: $color-background-second;
       font-size: 1.2em;
     }

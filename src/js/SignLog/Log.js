@@ -59,7 +59,6 @@ function PageLog() {
 
     return (
         <section className={"container"}>
-            <LandingPageHeader/>
             <div className={"LogSign_all"}>
                 <div className={"LogSign"}>
                     <h3>Logowanie</h3>

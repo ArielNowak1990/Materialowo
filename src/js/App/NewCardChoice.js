@@ -98,7 +98,7 @@ if (allOfert){
                             <td>Materiał</td>
                             <td>Miara</td>
                             <td>Ilość</td>
-                            <td>Uwagi Zamawiającego</td>
+                            <td>Uwagi</td>
                             {allOfert[0].firm.map((element, index) => {return(
                                <>
                                 <td key={index}>Cena J</td>
@@ -141,7 +141,7 @@ if (allOfert){
                         <tr>
                             <td colSpan={5}> Oferowany termin dostawy:</td>
                             {quantityFirm.map((element, index) => {return(
-                                <td colSpan={3} key={index}>{allOfert[index].deliveryFirm}</td>
+                                <td colSpan={3} key={index}>{allOfert[index].deliveryFirm.slice(0,10)}</td>
                             )})}
                         </tr>
                         </tbody>
@@ -149,7 +149,7 @@ if (allOfert){
 
                     <h4>REKOMENDOWANY PRZEZ PROGRAM DOSTAWCA:</h4>
                     <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy {allOfert[betterIndex].firm[betterIndex]} </p>
-                    <p>Dostawa oczekiwana była w zakresie od {allOfert[betterIndex].dateDeliveryAuthor[0]} do {allOfert[betterIndex].dateDeliveryAuthor[2]}, z najdogodniejszym terminem {allOfert[betterIndex].dateDeliveryAuthor[1]} natomiast termin zaproponowany przez firmę {allOfert[betterIndex].firm[betterIndex]} to {allOfert[betterIndex].deliveryFirm}</p>
+                    <p>Dostawa oczekiwana była w zakresie od {allOfert[betterIndex].dateDeliveryAuthor[0].slice(0,10)} do {allOfert[betterIndex].dateDeliveryAuthor[2].slice(0,10)}, z najdogodniejszym terminem {allOfert[betterIndex].dateDeliveryAuthor[1].slice(0,10)} natomiast termin zaproponowany przez firmę {allOfert[betterIndex].firm[betterIndex]} to {allOfert[betterIndex].deliveryFirm.slice(0,10)}</p>
                     <p>Przed zamówieniem konieczne jest indywidualne przeglądniecie ofert, i porównanie wszystkich danych !</p>
                     </div>
 

@@ -44,7 +44,6 @@ function PageSign() {
 
     return (
         <section className={"container"}>
-            <LandingPageHeader/>
             <div className={"LogSign_all2"}>
                 <div className={"LogSign"}>
                     <Link to='/app/log'>

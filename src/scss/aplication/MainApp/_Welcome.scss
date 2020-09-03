@@ -3,8 +3,8 @@
 
 .Welcome_back{
   width: 100vw;
-  height: calc(100vh - 100px);
-  background-color: $color-background-first;
+  height: calc(100vh - 85px);
+  background-image: linear-gradient( white 70%, #282c34 30%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   .Welcome_back_container{
     height: 70%;
     width: 80%;
-    border: 1px solid black;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -82,5 +82,16 @@
       }
     }
 
+  }
+}
+
+.choice_menu{
+
+  a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

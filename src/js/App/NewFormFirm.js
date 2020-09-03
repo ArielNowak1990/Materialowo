@@ -93,7 +93,7 @@ function NewFormFirm() {
                                <td>Materiał</td>
                                <td>Miara</td>
                                <td>Ilość</td>
-                               <td>Uwagi Zamawiającego</td>
+                               <td>Uwagi</td>
                                <td>Cena J.</td>
                                <td>Cena C.</td>
                                <td>Uwagi Dostawcy</td>
