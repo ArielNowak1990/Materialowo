@@ -7,6 +7,12 @@
   width: 90vw;
   height: 93vh;
   padding: 20px;
+  background-color: white;
+
+
+  *{
+    background-color: white;
+  }
   h3{
     background-color: white;
     font-size: 1.2em;
@@ -22,6 +28,15 @@
     height: 88%;
     margin: 0 auto;
     padding: 20px;
+
+    position: relative;
+
+    button{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
 
     h4{
       font-size: 1.2em;
@@ -42,9 +57,9 @@
 
     input{
       width: 90%;
-      background-color: orange;
+      background-color: white;
       border: 0 solid black;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgba(255, 165, 0, 1);
     }
   }
 
@@ -74,9 +89,10 @@
   }
 
   input{
-    background-color: orange;
+    background-color: white;
     border: 0 solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(255, 165, 0, 1);
+
   }
 
   thead{
@@ -97,3 +113,33 @@
   }
   }
 }
+
+.button_main{
+  border: 1px solid $color-background-font;
+  background-color: $color-background-second;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+input{
+  font-size: 0.9em;
+}
+
+.pointer{
+  input{
+    margin-bottom: 20px;
+    width: 100px;
+
+  }
+
+  }
+.pointer_right{
+  input{
+    margin-bottom: 20px;
+    width: 100px;
+    text-align: right;
+  }
+
+}
+

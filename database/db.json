@@ -129,6 +129,19 @@
       "logo": "false",
       "coworkers": "false",
       "id": 10
+    },
+    {
+      "name": "Arielson",
+      "password": "$2a$10$MgADlJYFBQyjFw0AzaHXBe6J5lfJ9o8KpFch.geDI8bVtLhNIEQiW",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "Arielson@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 11
     }
   ],
   "orders": [
@@ -220,7 +233,7 @@
         "Jagoda123@wp.pl",
         "Jagoda1234@wp.pl"
       ],
-      "status": "close",
+      "status": "archive",
       "elements": [
         {
           "fabric": "jajka",
@@ -427,7 +440,7 @@
       "firm": [
         "alek123@wp.pl"
       ],
-      "status": "close",
+      "status": "archive",
       "elements": [
         {
           "fabric": "mleko",
@@ -466,7 +479,7 @@
       "firm": [
         "alek123@wp.pl"
       ],
-      "status": "close",
+      "status": "archive",
       "elements": [
         {
           "fabric": "kurwa mac",
@@ -496,7 +509,7 @@
       "firm": [
         "asddd@wp.pl"
       ],
-      "status": "open",
+      "status": "archive",
       "elements": [
         {
           "fabric": "asdasd",
@@ -511,6 +524,55 @@
       "dateAuthor": [
         "2020-09-03T09:42:07.911Z",
         "2020-09-03T09:41:57.222Z"
+      ]
+    },
+    {
+      "author": "Arielson@wp.pl",
+      "id": "11AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-09-07T12:49:19.000Z",
+        "2020-09-08T12:49:19.000Z",
+        "2020-09-09T12:49:19.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko, Kościuszki 47",
+      "firm": [
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Żywica",
+          "unit": "op",
+          "quantity": "2",
+          "note": "Opakowania 5l",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Płytki Krosno E215",
+          "unit": "m2",
+          "quantity": "43",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Klej do płytek ",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "z Atlasa",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T12:51:45.877Z",
+        "2020-09-04T12:49:19.000Z"
       ]
     }
   ],
@@ -1138,6 +1200,110 @@
         "2020-09-03T09:42:07.911Z",
         "2020-09-03T09:41:57.222Z"
       ]
+    },
+    {
+      "author": "Arielson@wp.pl",
+      "id": "11AorderA11AofertA0",
+      "idOrder": "11AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-09-07T12:49:19.000Z",
+        "2020-09-08T12:49:19.000Z",
+        "2020-09-09T12:49:19.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, Kościuszki 47",
+      "firm": [
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Żywica",
+          "unit": "op",
+          "quantity": "2",
+          "note": "Opakowania 5l",
+          "price": "12",
+          "priceAll": 24,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Płytki Krosno E215",
+          "unit": "m2",
+          "quantity": "43",
+          "note": "",
+          "price": "2",
+          "priceAll": 86,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Klej do płytek ",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "z Atlasa",
+          "price": "43",
+          "priceAll": 430,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T12:51:45.877Z",
+        "2020-09-04T12:49:19.000Z"
+      ],
+      "deliveryFirm": "2020-09-03T14:24:57.251Z",
+      "deliveryPrice": "120"
+    },
+    {
+      "author": "Arielson@wp.pl",
+      "id": "11AorderA11AofertA1",
+      "idOrder": "11AorderA11",
+      "dateDeliveryAuthor": [
+        "2020-09-07T12:49:19.000Z",
+        "2020-09-08T12:49:19.000Z",
+        "2020-09-09T12:49:19.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, Kościuszki 47",
+      "firm": [
+        "alek123@wp.pl",
+        "en47@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Żywica",
+          "unit": "op",
+          "quantity": "2",
+          "note": "Opakowania 5l",
+          "price": "1",
+          "priceAll": 2,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Płytki Krosno E215",
+          "unit": "m2",
+          "quantity": "43",
+          "note": "",
+          "price": "2",
+          "priceAll": 86,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Klej do płytek ",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "z Atlasa",
+          "price": "3",
+          "priceAll": 30,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T12:51:45.877Z",
+        "2020-09-04T12:49:19.000Z"
+      ],
+      "deliveryFirm": "2020-09-03T14:29:13.367Z",
+      "deliveryPrice": "12"
     }
   ]
 }

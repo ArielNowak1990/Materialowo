@@ -51,7 +51,28 @@ function ActualCardChoice(user) {
         window.location.href=`${PAGE_URL}/NewCardChoice/${id}`;
     }
 
-    if (actualOrders.length < 1) {return ( "Niestety. Brak danych do wyświetlenia. ")}
+    if (actualOrders.length < 1) {return (
+        <section className={"container"}>
+            <div className={"list"}>
+                <div className={"list_header"}>
+                    <h1>LISTA KART WYBORU:</h1>
+                    <Link to={"/app/NewForm"}><i className="fas fa-plus-square"/></Link>
+                </div>
+                <div className={"list_table"}>
+                    <div className={"table_header"}>
+                        <div className={"id"}>ID</div>
+                        <div className={"odbiorcy"}>ODBIORCY:</div>
+                        <div className={"term"}>KONIEC</div>
+                        <div className={"materialy"}>MATERIAŁY</div>
+                        <div className={"akcje"}>AKCJE</div>
+                    </div>
+                    <div className={"table"}>
+                        <div className={"empty"}>Brak danych do wyświetlenia. <br/> <i className="far fa-folder-open"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )}
     if (actualOrders.length >=1) {
         return (
             <section className={"container"}>

@@ -84,7 +84,7 @@ if (allOfert){
         <section className={"container_Choice"}>
             <div className={"cardChoice"}>
                 <div className={"wycena"}>
-                    <h4>1. Tabela z elementami do wyceny</h4>
+                    <h4>KARTA WYBORU:</h4>
                     <table>
                         <thead>
                         <tr>
@@ -146,14 +146,15 @@ if (allOfert){
                         </tr>
                         </tbody>
                     </table>
-
+                    <div className={"recomendation"}>
                     <h4>REKOMENDOWANY PRZEZ PROGRAM DOSTAWCA:</h4>
                     <p>W związku z przedstawiem najkorzystniejszej oferty pod kątem cenowym, rekomendujemy zamówienie towarów od firmy {allOfert[betterIndex].firm[betterIndex]} </p>
                     <p>Dostawa oczekiwana była w zakresie od {allOfert[betterIndex].dateDeliveryAuthor[0].slice(0,10)} do {allOfert[betterIndex].dateDeliveryAuthor[2].slice(0,10)}, z najdogodniejszym terminem {allOfert[betterIndex].dateDeliveryAuthor[1].slice(0,10)} natomiast termin zaproponowany przez firmę {allOfert[betterIndex].firm[betterIndex]} to {allOfert[betterIndex].deliveryFirm.slice(0,10)}</p>
                     <p>Przed zamówieniem konieczne jest indywidualne przeglądniecie ofert, i porównanie wszystkich danych !</p>
                     </div>
+                    </div>
 
-                <a href={`${PAGE_URL}/app/MainApp/${idAuthor}`}> TWOJA GŁÓWNA </a>
+                <button className={"button_main"}><a href={`${PAGE_URL}/app/MainApp/${idAuthor}`}> TWOJA GŁÓWNA </a></button>
             </div>
         </section>
     )}
