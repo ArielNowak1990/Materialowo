@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import "react-datepicker/dist/react-datepicker.css"
-import DatePicker from 'react-datepicker';
+import DatePicker, {registerLocale} from 'react-datepicker';
 import pl from "date-fns/locale/pl"
 registerLocale("Pl", pl);
 
