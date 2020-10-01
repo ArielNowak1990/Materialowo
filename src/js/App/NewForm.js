@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {API_URL, PAGE_URL} from "../Fetch/fetch";
 import "react-datepicker/dist/react-datepicker.css"
 import DatePicker from 'react-datepicker';
+import pl from "date-fns/locale/pl"
+registerLocale("Pl", pl);
 
 function NewForm(user) {
 
@@ -143,7 +145,7 @@ function NewForm(user) {
         let ArrayError = [];
         setAddErrorMail([...ArrayError]);
         if (firm.length < 5) {
-            ArrayError.push("Nazwa maila ma być dłuższa niż 5 liter, ")
+            ArrayError.push("Nazwa maila ma być dłuższa niż 5 liter")
         }
         if (firm.indexOf("@") < 0) (ArrayError.push(" Mail nie posiada znaku @"))
         if (ArrayError.length === 0) {
@@ -310,13 +312,14 @@ function NewForm(user) {
                         <div className={"order_3pkt"}>3. Termin odbioru/dostawy: <br/>
                             <p> najwcześniejsza:
                                 <DatePicker dateFormat="yyyy/MM/dd" selected={dateFrom} value={dateFrom}
-                                            onChange={date => setDateFrom(date)} withPortal/></p>
+                                            onChange={date => setDateFrom(date)} withPortal locale="Pl"
+                                            /></p>
                             <p>idealna:
                                 <DatePicker dateFormat="yyyy/MM/dd" selected={dateIdeal} value={dateIdeal}
-                                            onChange={date => setDateIdeal(date)} withPortal/>
+                                            onChange={date => setDateIdeal(date)} withPortal locale="Pl"/>
                             </p> <p> najpóźniejsza:
                                 <DatePicker dateFormat="yyyy/MM/dd" selected={dateTo} value={dateTo}
-                                            onChange={date => setDateTo(date)} withPortal/>
+                                            onChange={date => setDateTo(date)} withPortal locale="Pl"/>
                             </p></div>
 
                         <div className={"order_4pkt"}>4. Wyślij do ( podaj email):
@@ -337,7 +340,7 @@ function NewForm(user) {
                         </div>
                         <div className={"order_5pkt"}>5. Termin oczekiwania na oferty:
                             <DatePicker dateFormat="yyyy/MM/dd" selected={dateFinish} value={dateFinish}
-                                        onChange={date => setDateFinish(date)} withPortal/>
+                                        onChange={date => setDateFinish(date)} withPortal locale="Pl"/>
                         </div>
                     </div>
                     <button className={"button_main"} onClick={handleSend}>WYŚLIJ ZAPYTANIE</button>

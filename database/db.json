@@ -38,6 +38,58 @@
       "logo": "false",
       "coworkers": "false",
       "id": 3
+    },
+    {
+      "name": "Kamil123",
+      "password": "$2a$10$z5Ifg6davM3e4XltUzFUzuPH8L.4e5er03NbbUgB9FxfWn9VSqe7G",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kamil123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 4
+    },
+    {
+      "name": "Jakub",
+      "password": "$2a$10$Dzwd8duoLFdpsR517NCTqOpLCVkP.E/sW8l4LTj7u6renllDTtLA6",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "jakub@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 5
+    },
+    {
+      "name": "Alisiek",
+      "password": "$2a$10$kWIe8SA67NCwXg8iPfKow.CD2sdHrj.oe68W/yQON3OaYOr1/ErP2",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "alisiek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 6
+    },
+    {
+      "name": "tomson",
+      "password": "$2a$10$GEtTAYAHN3CKsccsTyrMT.GtMCpgH1lVzPRT9/KFTjEmj0l2zuLO.",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "tomek123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false",
+      "id": 7
     }
   ],
   "orders": [
@@ -135,7 +187,7 @@
         "alek123@wp.pl",
         "alek1234@wp.pl"
       ],
-      "status": "close",
+      "status": "archive",
       "elements": [
         {
           "fabric": "woda",
@@ -207,6 +259,202 @@
       "dateAuthor": [
         "2020-09-03T15:26:59.925Z",
         "2020-09-05T15:26:05.000Z"
+      ]
+    },
+    {
+      "author": "kamil123@wp.pl",
+      "id": "4AorderA5",
+      "dateDeliveryAuthor": [
+        "2020-09-17T16:38:36.000Z",
+        "2020-09-18T16:38:36.000Z",
+        "2020-09-19T16:38:36.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Kraków, Pasikonika 23",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "25",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Woda",
+          "unit": "wiaderk",
+          "quantity": "5",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Cement",
+          "unit": "paleta",
+          "quantity": "2",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T16:40:32.686Z",
+        "2020-09-09T16:38:36.000Z"
+      ]
+    },
+    {
+      "author": "efendi@wp.pl",
+      "id": "5AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-07T18:10:13.000Z",
+        "2020-09-08T18:10:13.000Z",
+        "2020-09-09T18:10:13.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Brzesko, kołłątaja 15",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "Klasa A+",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "l",
+          "quantity": "5",
+          "note": "2%",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Mąka",
+          "unit": "kg",
+          "quantity": "1",
+          "note": "ziemniaczanka",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T18:11:37.725Z",
+        "2020-09-06T18:10:13.000Z"
+      ]
+    },
+    {
+      "author": "jakub@wp.pl",
+      "id": "5AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-09-09T18:10:04.000Z",
+        "2020-09-10T18:10:04.000Z",
+        "2020-09-11T18:10:04.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Kraków, krupnicza 2",
+      "firm": [
+        "jakub123@wp.pl",
+        "jakub12345@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "5",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "cementu",
+          "unit": "kpl",
+          "quantity": "3",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-04T18:11:10.889Z",
+        "2020-09-07T18:10:04.000Z"
+      ]
+    },
+    {
+      "author": "alisiek123@wp.pl",
+      "id": "6AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-14T15:54:23.000Z",
+        "2020-09-15T15:54:23.000Z",
+        "2020-09-16T15:54:23.000Z"
+      ],
+      "delivery": "dostarczenie",
+      "placeDelivery": "Siemce wyzwolenia 7",
+      "firm": [
+        "alek123@wp.pl",
+        "Angelika123@wp.pl"
+      ],
+      "status": "archive",
+      "elements": [
+        {
+          "fabric": "cement",
+          "unit": "szt",
+          "quantity": "6",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "piasek",
+          "unit": "t",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": 0,
+          "priceAll": 0,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-06T15:55:20.723Z",
+        "2020-09-06T15:54:23.619Z"
       ]
     }
   ],
@@ -542,6 +790,422 @@
       ],
       "deliveryFirm": "2020-09-03T15:27:04.275Z",
       "deliveryPrice": "25"
+    },
+    {
+      "author": "kamil123@wp.pl",
+      "id": "4AorderA5AofertA0",
+      "idOrder": "4AorderA5",
+      "dateDeliveryAuthor": [
+        "2020-09-17T16:38:36.000Z",
+        "2020-09-18T16:38:36.000Z",
+        "2020-09-19T16:38:36.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków, Pasikonika 23",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "25",
+          "note": "",
+          "price": "1",
+          "priceAll": 25,
+          "noteFirm": "mamy tylko zółty"
+        },
+        {
+          "fabric": "Woda",
+          "unit": "wiaderk",
+          "quantity": "5",
+          "note": "",
+          "price": "1",
+          "priceAll": 5,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Cement",
+          "unit": "paleta",
+          "quantity": "2",
+          "note": "",
+          "price": "1",
+          "priceAll": 2,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T16:40:32.686Z",
+        "2020-09-09T16:38:36.000Z"
+      ],
+      "deliveryFirm": "2020-09-18T16:41:50.000Z",
+      "deliveryPrice": "150"
+    },
+    {
+      "author": "kamil123@wp.pl",
+      "id": "4AorderA5AofertA1",
+      "idOrder": "4AorderA5",
+      "dateDeliveryAuthor": [
+        "2020-09-17T16:38:36.000Z",
+        "2020-09-18T16:38:36.000Z",
+        "2020-09-19T16:38:36.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków, Pasikonika 23",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "25",
+          "note": "",
+          "price": "2",
+          "priceAll": 50,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Woda",
+          "unit": "wiaderk",
+          "quantity": "5",
+          "note": "",
+          "price": "2",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Cement",
+          "unit": "paleta",
+          "quantity": "2",
+          "note": "",
+          "price": "2",
+          "priceAll": 4,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T16:40:32.686Z",
+        "2020-09-09T16:38:36.000Z"
+      ],
+      "deliveryFirm": "2020-09-03T16:42:51.476Z",
+      "deliveryPrice": "150"
+    },
+    {
+      "author": "efendi@wp.pl",
+      "id": "5AorderA6AofertA0",
+      "idOrder": "5AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-07T18:10:13.000Z",
+        "2020-09-08T18:10:13.000Z",
+        "2020-09-09T18:10:13.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, kołłątaja 15",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "Klasa A+",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "l",
+          "quantity": "5",
+          "note": "2%",
+          "price": "3",
+          "priceAll": 15,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Mąka",
+          "unit": "kg",
+          "quantity": "1",
+          "note": "ziemniaczanka",
+          "price": "5.5",
+          "priceAll": 5.5,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T18:11:37.725Z",
+        "2020-09-06T18:10:13.000Z"
+      ],
+      "deliveryFirm": "2020-09-03T18:11:49.913Z",
+      "deliveryPrice": "20"
+    },
+    {
+      "author": "efendi@wp.pl",
+      "id": "5AorderA6AofertA1",
+      "idOrder": "5AorderA6",
+      "dateDeliveryAuthor": [
+        "2020-09-07T18:10:13.000Z",
+        "2020-09-08T18:10:13.000Z",
+        "2020-09-09T18:10:13.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Brzesko, kołłątaja 15",
+      "firm": [
+        "alek123@wp.pl",
+        "alek1234@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Jajka",
+          "unit": "szt",
+          "quantity": "10",
+          "note": "Klasa A+",
+          "price": "5",
+          "priceAll": 50,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "mleko",
+          "unit": "l",
+          "quantity": "5",
+          "note": "2%",
+          "price": "6",
+          "priceAll": 30,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "Mąka",
+          "unit": "kg",
+          "quantity": "1",
+          "note": "ziemniaczanka",
+          "price": "7",
+          "priceAll": 7,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-03T18:11:37.725Z",
+        "2020-09-06T18:10:13.000Z"
+      ],
+      "deliveryFirm": "2020-09-03T18:13:15.278Z",
+      "deliveryPrice": "50"
+    },
+    {
+      "author": "jakub@wp.pl",
+      "id": "5AorderA7AofertA0",
+      "idOrder": "5AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-09-09T18:10:04.000Z",
+        "2020-09-10T18:10:04.000Z",
+        "2020-09-11T18:10:04.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków, krupnicza 2",
+      "firm": [
+        "jakub123@wp.pl",
+        "jakub12345@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "5",
+          "note": "",
+          "price": "23",
+          "priceAll": 115,
+          "noteFirm": "mamy tylko zielony"
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": "25",
+          "priceAll": 250,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "cementu",
+          "unit": "kpl",
+          "quantity": "3",
+          "note": "",
+          "price": "1",
+          "priceAll": 3,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-04T18:11:10.889Z",
+        "2020-09-07T18:10:04.000Z"
+      ],
+      "deliveryFirm": "2020-09-10T18:11:19.000Z",
+      "deliveryPrice": "100"
+    },
+    {
+      "author": "jakub@wp.pl",
+      "id": "5AorderA7AofertA1",
+      "idOrder": "5AorderA7",
+      "dateDeliveryAuthor": [
+        "2020-09-09T18:10:04.000Z",
+        "2020-09-10T18:10:04.000Z",
+        "2020-09-11T18:10:04.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Kraków, krupnicza 2",
+      "firm": [
+        "jakub123@wp.pl",
+        "jakub12345@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "Piasek",
+          "unit": "t",
+          "quantity": "5",
+          "note": "",
+          "price": "556",
+          "priceAll": 2780,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": "432",
+          "priceAll": 4320,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "cementu",
+          "unit": "kpl",
+          "quantity": "3",
+          "note": "",
+          "price": "23",
+          "priceAll": 69,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-04T18:11:10.889Z",
+        "2020-09-07T18:10:04.000Z"
+      ],
+      "deliveryFirm": "2020-09-12T18:11:57.000Z",
+      "deliveryPrice": "150"
+    },
+    {
+      "author": "alisiek123@wp.pl",
+      "id": "6AorderA8AofertA0",
+      "idOrder": "6AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-14T15:54:23.000Z",
+        "2020-09-15T15:54:23.000Z",
+        "2020-09-16T15:54:23.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Siemce wyzwolenia 7",
+      "firm": [
+        "alek123@wp.pl",
+        "Angelika123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "cement",
+          "unit": "szt",
+          "quantity": "6",
+          "note": "",
+          "price": "1",
+          "priceAll": 6,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "piasek",
+          "unit": "t",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": "1",
+          "priceAll": 10,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-06T15:55:20.723Z",
+        "2020-09-06T15:54:23.619Z"
+      ],
+      "deliveryFirm": "2020-09-06T15:55:32.022Z",
+      "deliveryPrice": "111"
+    },
+    {
+      "author": "alisiek123@wp.pl",
+      "id": "6AorderA8AofertA1",
+      "idOrder": "6AorderA8",
+      "dateDeliveryAuthor": [
+        "2020-09-14T15:54:23.000Z",
+        "2020-09-15T15:54:23.000Z",
+        "2020-09-16T15:54:23.000Z"
+      ],
+      "delivery": "jeśli jest adres to dostawa:",
+      "placeDelivery": "Siemce wyzwolenia 7",
+      "firm": [
+        "alek123@wp.pl",
+        "Angelika123@wp.pl"
+      ],
+      "status": "close",
+      "elements": [
+        {
+          "fabric": "cement",
+          "unit": "szt",
+          "quantity": "6",
+          "note": "",
+          "price": "23",
+          "priceAll": 138,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "piasek",
+          "unit": "t",
+          "quantity": "10",
+          "note": "",
+          "price": "32",
+          "priceAll": 320,
+          "noteFirm": ""
+        },
+        {
+          "fabric": "woda",
+          "unit": "wiaderka",
+          "quantity": "10",
+          "note": "",
+          "price": "21",
+          "priceAll": 210,
+          "noteFirm": ""
+        }
+      ],
+      "dateAuthor": [
+        "2020-09-06T15:55:20.723Z",
+        "2020-09-06T15:54:23.619Z"
+      ],
+      "deliveryFirm": "2020-09-06T15:55:52.813Z",
+      "deliveryPrice": "144"
     }
   ]
 }

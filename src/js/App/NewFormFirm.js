@@ -124,8 +124,8 @@ function NewFormFirm() {
                             <h4> 3. Termin odbioru/dostawy:</h4>
                                 <DatePicker dateFormat="yyyy/MM/dd" selected={dateFrom} value={dateFrom} onChange={date => setDateFrom(date)} /><br/>
                             najwcześniejsza: (wg zamawiającego) {myOfert.dateDeliveryAuthor[0].slice(0,10)}.<br/>
-                            idealna: (wg zamawiającego) {myOfert.dateDeliveryAuthor[0].slice(0,10)}.<br/>
-                            najpóźniejsza: (wg zamawiającego) {myOfert.dateDeliveryAuthor[0].slice(0,10)}.<br/>
+                            idealna: (wg zamawiającego) {myOfert.dateDeliveryAuthor[1].slice(0,10)}.<br/>
+                            najpóźniejsza: (wg zamawiającego) {myOfert.dateDeliveryAuthor[2].slice(0,10)}.<br/>
                         </div>
                     </div>
                     <button className={"button_main"} onClick={handleSend} >WYŚLIJ OFERTĘ</button>
