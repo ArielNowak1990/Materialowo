@@ -1,22 +1,17 @@
-import React, {useState, useEffect} from 'react';
-import LandingPageHeader from "../LandingPage/LandingPage_header"
+import React, {useState, useContext} from 'react';
 import {Link} from "react-router-dom";
 import {API_URL} from "../Fetch/fetch";
 import {PAGE_URL} from "../Fetch/fetch";
-import  bcrypt from 'bcryptjs';
+import FirebaseContext from "../firebase/context"
 
-// console.log(bcrypt.compareSync('kubus1', "$2a$10$hJe0dJvzvYj/ghzp2LmWaOK4XSXTfVyAXknzKdPYQPFLPRZj4kg5a"));
 
 function PageLog() {
     const [email, setEmail] = useState([])
     const [password, setPassword] = useState([])
     const [error, setError] = useState([])
     const [user, setUser] = useState(false)
-
-    useEffect(()=>{
-       if (user) (window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`)
-    },[user, error])
-
+    const [firebaseError, setFirebaseError] = useState(false)
+    const firebase = useContext(FirebaseContext)
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -35,7 +30,7 @@ function PageLog() {
         setError([...arrayErrors])
 
         if (arrayErrors.length === 0) {
-            fetch(`${API_URL}/user?name=${name}`, {
+            fetch(`${API_URL}/user?userEmail=${email}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"
@@ -43,26 +38,31 @@ function PageLog() {
             })
                 .then(response => {
                     if (response.ok === false) {
-                        throw new Error("błąd")
+                        throw new Error("błąd z pobraniem użytkownika")
+                        isValidate = false
                     } else {
                         return response.json();
                     }
                 })
                 .then(data => {
-                    console.log(password);
-                    console.log(data[0].password);
-                    console.log(bcrypt.compareSync(password, data[0].password));
-                    console.log(data[0]);
-                    if(bcrypt.compareSync(password, data[0].password)){
                         setUser({...data[0]});
-                    }else{
-                        throw new Error("Wrong password")
-                    }
                 })
                 .catch(err => {
                     console.log(err);
-                    arrayErrors.push("błędne hasło lub nazwa");
+                    arrayErrors.push("błędne nazwa użytkownika");
+                    isValidate = false
                     setError([...arrayErrors])
+                })
+
+            if (isValidate === false) return;
+
+            firebase
+                .doSignInWithEmailAndPassword(email, password)
+                .then(() => {
+                    window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`
+                })
+                .catch(error => {
+                    setFirebaseError({...error})
                 })
         }
     }
@@ -96,6 +96,7 @@ function PageLog() {
                             )
                         })}
                         </ul>
+                        <ul className={"log_error"}>{firebaseError.message}</ul>
                     </form>
                 </div>
                 <div className={"LogSign white"}>
