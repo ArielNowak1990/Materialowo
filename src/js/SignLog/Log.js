@@ -8,7 +8,7 @@ import  bcrypt from 'bcryptjs';
 // console.log(bcrypt.compareSync('kubus1', "$2a$10$hJe0dJvzvYj/ghzp2LmWaOK4XSXTfVyAXknzKdPYQPFLPRZj4kg5a"));
 
 function PageLog() {
-    const [name, setName] = useState([])
+    const [email, setEmail] = useState([])
     const [password, setPassword] = useState([])
     const [error, setError] = useState([])
     const [user, setUser] = useState(false)
@@ -21,9 +21,19 @@ function PageLog() {
     const handleSubmit = event => {
         event.preventDefault();
         let arrayErrors = [];
-        if (name.length < 3) (arrayErrors.push("Imię jest zbyt krótkie"))
-        if (password.length < 5) (arrayErrors.push("hasło musi mieć min. 5 znaków"))
+        const re = /\S+@\S+\.\S+/;
+        let isValidate = true;
+        if (re.test(email) !== true) {
+            (arrayErrors.push("email jest zbyt krótkie"))
+            isValidate = false
+        }
+
+        if (password.length < 6) {
+            (arrayErrors.push("hasło musi mieć min. 6 znaków"))
+            isValidate = false
+        }
         setError([...arrayErrors])
+
         if (arrayErrors.length === 0) {
             fetch(`${API_URL}/user?name=${name}`, {
                 method: 'GET',
@@ -66,9 +76,9 @@ function PageLog() {
                         <div>
 
                             <input type="text"
-                                   value={name}
-                                   placeholder={"Imię"}
-                                   onChange={e => setName(e.target.value)}
+                                   value={email}
+                                   placeholder={"email"}
+                                   onChange={e => setEmail(e.target.value)}
                             />
                         </div>
                         <div>
