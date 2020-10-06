@@ -65,13 +65,13 @@ function NewForm(user) {
         let ArrayError = [];
         setAddError([...ArrayError]);
         if (fabric.length < 3) {
-            ArrayError = ({...ArrayError, material: "Nazwa materiału ma być dłuższa niż 3 litery"})
+            ArrayError.push("Nazwa materiału ma być dłuższa niż 3 litery")
         }
         if (unit.length < 1) {
-            ArrayError = ({...ArrayError, unit: "Nazwa jednostki ma być dłuższa niż 1 litera"})
+            ArrayError.push("Nazwa jednostki ma być dłuższa niż 1 litera")
         }
         if (quantity.length < 1) {
-            ArrayError = ({...ArrayError, quantity: "ilość ma być dłuższa niż 1 litera"})
+            ArrayError.push("ilość ma być dłuższa niż 1 litera")
         }
         if (ArrayError.length === 0) {
             if (edit !== false) {
@@ -110,7 +110,6 @@ function NewForm(user) {
         }
         if (ArrayError.length > 0) {
             setAddError(ArrayError)
-            console.log(addError)
         }
     }
 
@@ -256,19 +255,10 @@ function NewForm(user) {
                                 <tr className={"green"}>
                                     <td> Auto</td>
                                     <td><input type="text" value={fabric} onChange={handleChangeFabric}/>
-                                        <ol className={"ListError"}>
-                                            <li>{addError.material}</li>
-                                        </ol>
                                     </td>
                                     <td><input type="text" value={unit} onChange={handleChangeUnit}/>
-                                        <ol className={"ListError"}>
-                                           <li>{addError.unit}</li>
-                                        </ol>
                                     </td>
                                     <td><input type="text" value={quantity} onChange={handleChangeQuantity}/>
-                                        <ol className={"ListError"}>
-                                            <li>{addError.quantity}</li>
-                                        </ol>
                                     </td>
                                     <td><input type="text" value={note} onChange={handleChangeNote}/></td>
                                     <td  onClick={handleAddElement}><i className="fas fa-plus-square"/>DODAJ</td>
