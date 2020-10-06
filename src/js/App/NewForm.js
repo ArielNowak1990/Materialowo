@@ -261,7 +261,7 @@ function NewForm(user) {
                                     <td><input type="text" value={quantity} onChange={handleChangeQuantity}/>
                                     </td>
                                     <td><input type="text" value={note} onChange={handleChangeNote}/></td>
-                                    <td  onClick={handleAddElement}><i className="fas fa-plus-square"/>DODAJ</td>
+                                    <td onClick={handleAddElement}><i className="fas fa-plus-square"/>DODAJ</td>
                                 </tr>
                                 </tbody>
                             </table>
