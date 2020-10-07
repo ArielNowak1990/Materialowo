@@ -14,7 +14,6 @@
       "coworkers": "false"
     },
     {
-      "id": 9,
       "name": "kubus123@wp.pl",
       "password": "haslo",
       "isLogged": "false",
@@ -24,7 +23,8 @@
       "firm": "false",
       "placeWork": "false",
       "logo": "false",
-      "coworkers": "false"
+      "coworkers": "false",
+      "id": 9
     },
     {
       "name": "kubus",

@@ -49,6 +49,7 @@ function PageLog() {
                 })
                 .then(data => {
                         setUser({...data[0]});
+                    console.log({...data[0]})
                 })
                 .catch(err => {
                     console.log(err);
@@ -62,9 +63,9 @@ function PageLog() {
             firebase
                 .doSignInWithEmailAndPassword(email, password)
                 .then((authUser) => {
-                    window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`
                     dane={...dane, userEmail: authUser}
-                    console.log(dane)
+                    window.location.href=`${PAGE_URL}/app/MainApp/${dane.userEmail.user.email}`
+
                 })
                 .catch(error => {
                     setFirebaseError({...error})
