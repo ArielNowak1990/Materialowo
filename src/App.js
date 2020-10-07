@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {createContext, useState} from 'react';
 import './scss/main.scss';
 import LandingPage from "./js/LandingPage/LandingPage";
 import Log from "./js/SignLog/Log"
@@ -13,13 +13,26 @@ import {
 import NewFormFirm from "./js/App/NewFormFirm";
 import NewCardChoice from "./js/App/NewCardChoice";
 
+const UserContext = createContext();
 
 
 //tutaj renderowanie końcowe
 
-function App() {
+function App(props) {
+
+    const [dane, setDane] = useState({
+        userEmail: "",
+        userInfo: ""
+    })
+
+    const handleChange = (object) => {
+        setDane({...dane, ...object})
+    }
+
     return (
         <>
+            <UserContext.Provider value={{dane, handleChange}}>
+                {props.children}
             <Router>
                 <Switch>
                     <Route path={'/'} exact component={LandingPage}/>
@@ -30,8 +43,9 @@ function App() {
                     <Route path={'/NewCardChoice'} component={NewCardChoice}/>
                 </Switch>
             </Router>
+            </UserContext.Provider>
         </>
     );
 }
 
-export default App;
+export {App, UserContext};

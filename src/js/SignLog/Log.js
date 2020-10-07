@@ -3,9 +3,12 @@ import {Link} from "react-router-dom";
 import {API_URL} from "../Fetch/fetch";
 import {PAGE_URL} from "../Fetch/fetch";
 import FirebaseContext from "../firebase/context"
+import {UserContext} from "../../App"
 
 
 function PageLog() {
+    let {dane, handleChange} = useContext(UserContext);
+
     const [email, setEmail] = useState([])
     const [password, setPassword] = useState([])
     const [error, setError] = useState([])
@@ -58,8 +61,10 @@ function PageLog() {
 
             firebase
                 .doSignInWithEmailAndPassword(email, password)
-                .then(() => {
+                .then((authUser) => {
                     window.location.href=`${PAGE_URL}/app/MainApp/${user.id}`
+                    dane={...dane, userEmail: authUser}
+                    console.log(dane)
                 })
                 .catch(error => {
                     setFirebaseError({...error})

@@ -14,11 +14,24 @@
       "coworkers": "false"
     },
     {
+      "id": 9,
+      "name": "kubus123@wp.pl",
+      "password": "haslo",
+      "isLogged": "false",
+      "initialized": "false",
+      "userEmail": "kubus123@wp.pl",
+      "surname": "false",
+      "firm": "false",
+      "placeWork": "false",
+      "logo": "false",
+      "coworkers": "false"
+    },
+    {
       "name": "kubus",
       "password": "$2a$10$Gs.Sn3ER9heAJO5zyupPleDAFYVX3xqrKGqXQMfafEvUTABoR0EDe",
       "isLogged": "false",
       "initialized": "false",
-      "userEmail": "kubus123@wp.pl",
+      "userEmail": "kubus1234@wp.pl",
       "surname": "false",
       "firm": "false",
       "placeWork": "false",

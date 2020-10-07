@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import LandingPageHeader2 from "../LandingPage/LandingPage_header2"
 import Welcome from "../App/Welcome";
 import NewForm from "./NewForm";
@@ -13,6 +13,7 @@ import ActualForm from "./ActualForm";
 import HistoryForm from "./HistoryForm";
 import NewCardChoice from "./NewCardChoice";
 import ActualCardChoice from "./ActualCardChoice";
+import {UserContext} from "../../App"
 
 
 
@@ -20,6 +21,7 @@ function MainApp() {
 
     const [name, setName] = useState(false)
     const [myUser, setMyUser] = useState(false)
+    let {dane, handleChange} = useContext(UserContext);
 
     let adres = window.location.href;
     let arrayAdres = [...adres];
@@ -28,6 +30,7 @@ function MainApp() {
     for (let i=0; i<33; i++){ goodAdres=goodAdres+arrayGoodAdres[i]}
     let adresID = adres.replace(`${goodAdres}`,"");
 
+    console.log(dane)
 
     useEffect(() => {
         fetch(`${API_URL}/user/${adresID}`)
