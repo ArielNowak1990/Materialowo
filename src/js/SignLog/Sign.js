@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import LandingPageHeader from "../LandingPage/LandingPage_header";
+import React, {useState, useContext} from 'react';
 import {Link} from "react-router-dom";
-import {addUser} from "../Fetch/fetch"
+import FirebaseContext from "../firebase/context"
+import {PAGE_URL} from "../Fetch/fetch";
 
 
 function PageSign() {
@@ -11,6 +11,8 @@ function PageSign() {
     const [passwordRepeat, setPasswordRepeat] = useState([])
     const [error, setError]= useState([])
 
+    const firebase = useContext(FirebaseContext)
+    console.log(firebase)
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -22,22 +24,27 @@ function PageSign() {
         if (password !== passwordRepeat) (arrayErrors.push("powtórzone hasło musi się zgadzać z hasłem"))
         if (arrayErrors.length === 0) (alert("Konto dodane. Możesz się zalogować"))
         if (arrayErrors.length === 0) {
-            return (
-            addUser(
-                {
-                    name: name,
-                    password: password,
-                    isLogged: "false",
-                    initialized: "false",
-                    userEmail: mail,
-                    surname: "false",
-                    firm: "false",
-                    placeWork: "false",
-                    logo: "false",
-                    coworkers: "false"
-                }
-            )
-        )
+            firebase
+                .doCreateUserWithEmailAndPassword(mail, passwordRepeat)
+                .then(authUser => {
+                    //create a user in Firebase realtime database
+                    return firebase
+                        .user(authUser.user.uid)
+                        .set({
+                            email: mail
+                        })
+                })
+                .then(
+                    setMail(""),
+                    setPassword(""),
+                    setPasswordRepeat("")
+                )
+                .then(
+                    window.location.href=`${PAGE_URL}/app/MainApp/${mail}`
+                )
+                .catch(error => {
+                    console.log(error)
+                })
         }
         setError([...arrayErrors])
     }

@@ -1,6 +1,5 @@
 import React, {useState, useContext} from 'react';
 import {Link} from "react-router-dom";
-import {API_URL} from "../Fetch/fetch";
 import {PAGE_URL} from "../Fetch/fetch";
 import FirebaseContext from "../firebase/context"
 import {UserContext} from "../../App"
@@ -22,7 +21,7 @@ function PageLog() {
         const re = /\S+@\S+\.\S+/;
         let isValidate = true;
         if (re.test(email) !== true) {
-            (arrayErrors.push("email jest zbyt krótkie"))
+            (arrayErrors.push("email jest błędny"))
             isValidate = false
         }
 
@@ -33,32 +32,32 @@ function PageLog() {
         setError([...arrayErrors])
 
         if (arrayErrors.length === 0) {
-            fetch(`${API_URL}/user?userEmail=${email}`, {
-                method: 'GET',
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            })
-                .then(response => {
-                    if (response.ok === false) {
-                        throw new Error("błąd z pobraniem użytkownika")
-                        isValidate = false
-                    } else {
-                        return response.json();
-                    }
-                })
-                .then(data => {
-                        setUser({...data[0]});
-                    console.log({...data[0]})
-                })
-                .catch(err => {
-                    console.log(err);
-                    arrayErrors.push("błędne nazwa użytkownika");
-                    isValidate = false
-                    setError([...arrayErrors])
-                })
-
-            if (isValidate === false) return;
+            // fetch(`${API_URL}/user?userEmail=${email}`, {
+            //     method: 'GET',
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     }
+            // })
+            //     .then(response => {
+            //         if (response.ok === false) {
+            //             throw new Error("błąd z pobraniem użytkownika")
+            //             isValidate = false
+            //         } else {
+            //             return response.json();
+            //         }
+            //     })
+            //     .then(data => {
+            //             setUser({...data[0]});
+            //         console.log({...data[0]})
+            //     })
+            //     .catch(err => {
+            //         console.log(err);
+            //         arrayErrors.push("błędne nazwa użytkownika");
+            //         isValidate = false
+            //         setError([...arrayErrors])
+            //     })
+            //
+            // if (isValidate === false) return;
 
             firebase
                 .doSignInWithEmailAndPassword(email, password)
