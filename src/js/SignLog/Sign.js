@@ -31,7 +31,8 @@ function PageSign() {
                     return firebase
                         .user(authUser.user.uid)
                         .set({
-                            email: mail
+                            email: mail,
+                            name: name,
                         })
                 })
                 .then(
@@ -39,12 +40,10 @@ function PageSign() {
                     setPassword(""),
                     setPasswordRepeat("")
                 )
-                .then(
-                    window.location.href=`${PAGE_URL}/app/MainApp/${mail}`
-                )
                 .catch(error => {
                     console.log(error)
                 })
+            // window.location.href=`${PAGE_URL}/app/MainApp/${mail}`
         }
         setError([...arrayErrors])
     }

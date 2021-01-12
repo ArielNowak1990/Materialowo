@@ -25,11 +25,16 @@ class Firebase {
 
     doSignOut = () => this.auth.signOut();
 
-    //User API
 
-    user = uid => this.db.ref(`users/${uid}`);
+    //User API
     users = () => this.db.ref('users');
+    user = uid => this.db.ref(`users/${uid}`);
+    //Orders API
+    orders = () => this.db.ref('orders');
+    order = uid => this.db.ref(`orders/${uid}`);
 
 }
+
+
 
 export default Firebase;

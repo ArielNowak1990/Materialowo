@@ -1,7 +1,7 @@
 import  bcrypt from 'bcryptjs';
 
 export const API_URL = 'http://localhost:3000';
-export const PAGE_URL = 'http://localhost:3001';
+export const PAGE_URL = 'http://localhost:3000';
 
 
 //schedule
